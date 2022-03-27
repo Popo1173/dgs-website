@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>モック画面一覧</title>
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="title">モック画面一覧</h1>
+    </header>
+    {% set pages = [
+      {
+        name: 'トップ',
+        href: '/pages/top/'
+      }
+    ] %}
+    <nav>
+      <h2>ページ一覧</h2>
+      <ul>
+        {% for page in pages %}
+          <li>
+            <a href="{{page.href}}">{{page.name}}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </body>
+</html>

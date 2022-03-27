@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {% block meta -%}
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible">
+      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+      <meta name="format-detection" content="telephone=no">
+    {%- endblock %}
+    <link rel="icon" href="/img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/img/favicon/android-chrome-192x192.png" sizes="192x192">
+    {% block insertHead -%}
+      <link rel="stylesheet" type="text/css" href="/css/index.css">
+    {%- endblock %}
+  </head>
+  <body>
+    <main class="l-singleColumn">
+      {% block header %}
+        {% include "../components/_header.njk" %}
+      {% endblock %}
+      {% block headingImage %}
+      {% endblock %}
+      <div class="l-singleColumn__localNav">
+        <div class="l-singleColumn__widthFixed">
+          {% block localNav %}
+          {% endblock %}
+        </div>
+      </div>
+      <div class="l-singleColumn__main">
+        <div class="l-singleColumn__widthFixed">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+      {% include "../components/_footer.njk" %}
+    </main>
+    {% block portal -%}
+    {%- endblock %}
+    {% block insertBody -%}
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="/js/index.js"></script>
+    {%- endblock %}
+  </body>
+</html>
