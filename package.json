@@ -12,7 +12,7 @@
     "build": "run-s build:prod",
     "build:prod": "npm-run-all clean -s build:{common,prod}:* copy:*:*",
     "build:prod:html": "nunjucks '**/[^_]*.njk' --path ./src/njk --out ./dist && prettier --write './dist/**/*.html'",
-    "build:prod:img": "node imagemin.prod.config.js && yarn copy:img:ico",
+    "build:prod:img": "cpx -C -L \"./src/**/{*.svg,*.jpeg,*.jpg,*.png,}\" \"./dist\"",
     "build:prod:js": "simplifyify './src/js/**/[^_]*.js' --outfile ./dist/js --minify",
     "fix": "run-s fix:*",
     "fix:html": "htmllint './src/index.html' './src/**/*.html' --fix",
