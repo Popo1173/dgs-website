@@ -1,0 +1,46 @@
+name: GitHub Pages
+
+on: [push]
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: npm install -g yarn
+
+      - name: cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+          key: node-v${{ matrix.node-version }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+
+      - run: yarn --check-files --frozen-lockfile --non-interactive --ignore-scripts
+
+      - name: cache workspace
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+          key: node-v${{ matrix.node-version }}-dg-${{ github.sha }}
+
+      - run: yarn build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
