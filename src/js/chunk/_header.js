@@ -2,6 +2,7 @@ export const setHeader = {
 
   init: () => {
     const breakpoint = 768
+    setHeader.setHeaderPosition(breakpoint)
     setHeader.setSpSideNavi(".js-trigger[data-sidenavi-toggle]", breakpoint)
     setHeader.setTopMenuToggle(".js-trigger[data-type='top-menu']", breakpoint)
     setHeader.setCloseMenuEvent(breakpoint)
@@ -9,6 +10,16 @@ export const setHeader = {
     setHeader.checkScrollEvent()
   },
 
+  setHeaderPosition: (breakpoint) => {
+    const winWidth = $(window).width()
+    if (winWidth < breakpoint) {
+      $('header').css('height', $('.js-spBannerHeight').outerHeight())
+    } else {
+      $('header').css('height', 'auto')
+    }
+    const headerHeight = $('header').height();
+    $('body').css("margin-top", headerHeight);
+  },
   setSpSideNavi: (toggle, breakpoint) => {
     const $toggle = $(toggle);
     const $toggleWrap = $(".js-triggerWrapper[data-sidenavi-status]")
@@ -98,6 +109,7 @@ export const setHeader = {
         $(".js-trigger[data-type='top-menu']").removeClass('is-active').next().attr('aria-hidden', 'true')
       }
       wasPcView = isPcView
+      setHeader.setHeaderPosition(breakpoint)
     })
   },
   checkScrollEvent: () => {
@@ -105,15 +117,15 @@ export const setHeader = {
     function ScrollAnime() {
       const elemTop = 2000;
       const scroll = $(window).scrollTop();
-        //ヘッダーの出し入れをする
-        if(elemTop > scroll || 0 > scroll - beforePos){
-          $('header').removeClass('UpMove');
-          $('header').addClass('DownMove');
-        } else {
-          $('header').removeClass('DownMove');
-          $('header').addClass('UpMove');
-        }
-        beforePos = scroll;
+      //ヘッダーの出し入れをする
+      if(elemTop > scroll || 0 > scroll - beforePos){
+        $('header').removeClass('UpMove');
+        $('header').addClass('DownMove');
+      } else {
+        $('header').removeClass('DownMove');
+        $('header').addClass('UpMove');
+      }
+      beforePos = scroll;
     }
     $(window).scroll(() => {
       ScrollAnime();

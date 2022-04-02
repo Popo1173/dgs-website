@@ -7,6 +7,8 @@ body.modal-open {
   width: 100%;
   z-index: 999;
   position: fixed;
+  top: 0;
+  background-color: var(--color_fff);
 
   &.UpMove {
     animation: UpAnime 0.5s forwards;
