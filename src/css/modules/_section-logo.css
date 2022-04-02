@@ -1,0 +1,28 @@
+.m-sectionLogo {
+  display: inline-flex;
+
+  &__left {
+    background-color: #e90b18;
+    height: 100%;
+    display: inline-block;
+  }
+
+  &__right {
+    background-color: #5652cc;
+    height: 100%;
+    display: inline-block;
+  }
+
+  &.sectionheading {
+    width: 64px;
+    height: 6px;
+
+    & .m-sectionLogo__left {
+      width: 50%;
+    }
+
+    & .m-sectionLogo__right {
+      width: 50%;
+    }
+  }
+}

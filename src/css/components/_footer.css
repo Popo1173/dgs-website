@@ -30,17 +30,6 @@
   font-weight: bold;
 }
 
-.c-link--373582 {
-  color: #fff;
-  background-color: #373582;
-  padding: 18px 38px;
-  border-radius: 30px;
-  letter-spacing: 1px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .c-footerLinks > li {
   &:not(:first-of-type) {
     margin-top: 10px;
@@ -112,7 +101,7 @@
     }
   }
 
-  .c-link--373582 {
+  .c-footer-link-button {
     padding: 10px 16px;
   }
 
