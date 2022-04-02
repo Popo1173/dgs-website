@@ -1,32 +1,40 @@
 name: GitHub Pages
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
+on: [push]
 
 jobs:
-  deploy:
-    runs-on: ubuntu-20.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-    steps:
-      - uses: actions/checkout@v2
+  setup:
+    runs-on: ubuntu-latest
 
-      - name: Setup Node
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: ${{ matrix.node-version }}
 
-      - name: Cache dependencies
+      - run: npm install -g yarn
+
+      - name: cache node_modules
         uses: actions/cache@v2
         with:
           path: |
             node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          key: node-v${{ matrix.node-version }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+
+      - run: yarn --check-files --frozen-lockfile --non-interactive --ignore-scripts
+
+      - name: cache workspace
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+          key: node-v${{ matrix.node-version }}-dg-${{ github.sha }}
 
       - run: yarn build
 
