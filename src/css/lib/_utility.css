@@ -6,6 +6,12 @@
   display: none;
 }
 
+.u-TellText {
+  color: var(--color_373582);
+  font-family: 'Roboto Condensed';
+  font-weight: 800;
+}
+
 .u-text-xsmall {
   font-size: 0.75rem;
 }

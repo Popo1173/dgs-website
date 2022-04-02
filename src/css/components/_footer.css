@@ -1,0 +1,158 @@
+.c-footerContent {
+  padding: 4% 0 5.5%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.c-footerLogoWrap {
+  max-width: 261px;
+  width: 70%;
+
+  & > img {
+    width: 100%;
+  }
+}
+
+.c-footerTellText {
+  font-size: 2rem;
+}
+
+.c-footer-text-space {
+  letter-spacing: 1px;
+}
+
+.c-footerMailText {
+  margin-left: 12px;
+}
+
+.c-footerLinkHeading {
+  font-weight: bold;
+}
+
+.c-link--373582 {
+  color: #fff;
+  background-color: #373582;
+  padding: 18px 38px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-footerLinks > li {
+  &:not(:first-of-type) {
+    margin-top: 10px;
+  }
+
+  white-space: nowrap;
+}
+
+.c-footerCopyright {
+  padding: 30px 80px;
+  background-color: #293345;
+}
+
+.c-footerCopyright__text {
+  font-size: 0.87rem;
+  color: #707070;
+}
+
+.c-footerLeftContent {
+  display: flex;
+}
+
+.c-footerISO {
+  margin-left: 40px;
+}
+
+.c-footerLinkWrap {
+  &:not(:first-of-type) {
+    margin-left: 24px;
+  }
+}
+
+.c-footerLinks {
+  font-size: 0.8rem;
+
+  & li {
+    white-space: nowrap;
+  }
+}
+
+@media (--pc-viewport) and (max-width: 1024px) {
+  .c-footerContent {
+    padding: 4% 0 5.5%;
+  }
+
+  .c-footerLeft {
+    padding-left: 20px;
+  }
+
+  .c-footerLeftContent {
+    font-size: 0.65rem;
+  }
+
+  .c-footerLinkWrap {
+    &:not(:first-of-type) {
+      margin-left: 10px;
+    }
+  }
+
+  .c-footerLinks {
+    font-size: 0.65rem;
+  }
+
+  .c-footerISO {
+    margin-left: 8px;
+
+    & img {
+      width: 54px;
+    }
+  }
+
+  .c-link--373582 {
+    padding: 10px 16px;
+  }
+
+  .c-footerTellWrap {
+    & > img {
+      width: 12px;
+    }
+  }
+
+  .c-footerTellText {
+    font-size: 1rem;
+  }
+}
+
+@media (--sp-viewport) {
+  .c-footerCopyright {
+    padding: 21px 25px;
+  }
+
+  .c-footerCopyright__text {
+    font-size: 0.75rem;
+  }
+
+  .c-footerLogoWrap {
+    width: 100%;
+    text-align: center;
+  }
+
+  .c-footerContent {
+    padding: 60px 0 40px;
+    justify-content: center;
+  }
+
+  .c-footerLeftContent {
+    display: block;
+    text-align: center;
+  }
+
+  .c-footerISO {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
