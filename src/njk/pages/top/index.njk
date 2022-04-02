@@ -1,0 +1,24 @@
+{% extends "../_base.njk" %}
+
+{% block meta -%}
+  {{ super() }}
+{%- endblock %}
+
+{% block insertHead -%}
+  {# headで読みたいもの #}
+  {{ super() }}
+{%- endblock %}
+
+{% block header %}
+  {{ super() }}
+{% endblock %}
+
+{% block content -%}
+  {% include "./modules/_body.njk" %}
+{%- endblock %}
+
+{% block insertBody -%}
+  {# bodyの締めタグ直前で読みたいもの #}
+  {{ super() }}
+  <script src="/js/pages/top.js"></script>
+{%- endblock %}

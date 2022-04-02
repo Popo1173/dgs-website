@@ -1,0 +1,27 @@
+ils
+._*
+.DS_Store
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+# Webpack Isomorphic Tools
+webpack-assets.json
+webpack-stats.json
+
+# vim swap files
+*.swp
+*.swo
+
+/dist/
+
+# browserify
+browserify-cache.json
+
+# Node
+node_modules
+
+# for npm safety updater
+/tmp

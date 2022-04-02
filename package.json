@@ -1,0 +1,116 @@
+{
+  "name": "dgs-website",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm-run-all build:dev -p watch serve",
+    "build:dev": "npm-run-all clean -p build:{common,dev}:* copy:*:*",
+    "build:common:css": "postcss './src/css/**/[^_]*.css' --base ./src/css/ --dir ./dist/css",
+    "build:dev:html": "nunjucks '**/*.njk' --path ./src/njk --out ./dist",
+    "build:dev:img": "node imagemin.dev.config.js && yarn copy:img:ico",
+    "build:dev:js": "simplifyify './src/js/**/[^_]*.js' --outfile ./dist/js",
+    "build": "run-s build:prod",
+    "build:prod": "npm-run-all clean -s build:{common,prod}:* copy:*:*",
+    "build:prod:html": "nunjucks '**/[^_]*.njk' --path ./src/njk --out ./dist && prettier --write './dist/**/*.html'",
+    "build:prod:img": "node imagemin.prod.config.js && yarn copy:img:ico",
+    "build:prod:js": "simplifyify './src/js/**/[^_]*.js' --outfile ./dist/js --minify",
+    "fix": "run-s fix:*",
+    "fix:html": "htmllint './src/index.html' './src/**/*.html' --fix",
+    "fix:css": "prettier './src/css/**/*.css' --write && stylelint './src/css/**/*.css' --fix",
+    "fix:js": "eslint './*.js' './src/js/**/*.js' --fix",
+    "lint": "run-s lint:*",
+    "lint:css": "stylelint './src/css/**/*.css'",
+    "lint:html": "htmllint './src/**/*.html'",
+    "lint:js": "eslint './*.js' './src/js/**/*.js'",
+    "clean": "shx rm -rf ./dist",
+    "copy:img:ico": "cpx \"./src/img/common/favicon.ico\" dist/img/common",
+    "serve": "browser-sync start --server ./dist --open external --no-ghost-mode --startPath mock.html",
+    "reload": "browser-sync reload",
+    "watch": "run-p watch:*",
+    "watch:css": "chokidar './src/css/**/*.css' --command 'yarn build:common:css && yarn reload'",
+    "watch:html": "chokidar './src/**/*.njk' --command 'yarn build:dev:html && yarn reload'",
+    "watch:img": "chokidar './src/img/**/*' --command 'yarn build:dev:img && yarn reload'",
+    "watch:js": "chokidar './src/js/**/*.js' --command 'yarn build:dev:js && yarn reload'"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "core-js": "^3.8.3",
+    "imagemin": "^7.0.1",
+    "imagemin-gifsicle": "^6.0.1",
+    "imagemin-keep-folder": "^5.3.2",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "imagemin-svgo": "^7.0.0",
+    "regenerator-runtime": "^0.13.7",
+    "remeda": "^0.0.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.27.9",
+    "chokidar-cli": "^1.2.0",
+    "cpx": "^1.5.0",
+    "css-mqpacker": "^6.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^12.0.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "htmllint-cli": "^0.0.7",
+    "husky": "^3.1.0",
+    "imagemin-cli": "^3.0.0",
+    "lint-staged": "^9.5.0",
+    "mime-types": "^2.1.28",
+    "npm-run-all": "^4.1.1",
+    "nunjucks-cli": "^0.5.1",
+    "postcss-cli": "^4.1.1",
+    "postcss-import": "^11.0.0",
+    "postcss-nested": "^4.2.3",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^1.10.2",
+    "prettier-eslint": "^8.8.1",
+    "shx": "^0.3.4",
+    "simplifyify": "^3.2.4",
+    "stylelint": "^8.1.1",
+    "stylelint-config-standard": "^17.0.0",
+    "stylelint-order": "^0.7.0"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            [
+              "@babel/preset-env",
+              {
+                "useBuiltIns": "usage",
+                "corejs": 3
+              }
+            ]
+          ]
+        }
+      ]
+    ]
+  },
+  "engines": {
+    "node": ">= 12.13"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.css": [
+      "stylelint --fix",
+      "git add"
+    ],
+    "src/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
