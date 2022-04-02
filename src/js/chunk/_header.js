@@ -25,10 +25,12 @@ export const setHeader = {
 
       if (event === 'open') {
         $toggleWrap.attr('data-sidenavi-status', 'show')
-        $sideNav.attr('aria-modal', 'true').slideToggle();
+        $sideNav.attr('aria-modal', 'true').slideToggle()
+        $('body').addClass('modal-open')
       } else if (event === 'close') {
         $toggleWrap.attr('data-sidenavi-status', 'hide')
-        $sideNav.removeAttr('aria-modal').slideToggle();
+        $sideNav.removeAttr('aria-modal').slideToggle()
+        $('body').removeClass('modal-open')
         window.scrollTo(0, winHeight)
       }
     }
@@ -69,14 +71,16 @@ export const setHeader = {
       const $pcTargetArea = $pcTargetBtn.parent()
       const $spToggleWrap = $('.js-triggerWrapper[data-sidenavi-status]')
       const $spTargetArea = $('#side-navi')
+      const isSpTargetArea = $(e.target).closest($spTargetArea).length || $(e.target).closest($('.js-triggerWrapper[data-sidenavi-status]')).length
 
       if (!$(e.target).closest($pcTargetArea).length && winWidth >= breakpoint) {
         $pcTargetBtn.removeClass('is-active').next().attr('aria-hidden', 'true')
       }
 
-      if (!$(e.target).closest($('header')).length && winWidth < breakpoint && $spToggleWrap.attr('data-sidenavi-status') ==='show') {
+      if (!isSpTargetArea && winWidth < breakpoint && $spToggleWrap.attr('data-sidenavi-status') ==='show') {
         $spToggleWrap.attr('data-sidenavi-status', 'hide')
         $spTargetArea.removeAttr('aria-modal').slideToggle();
+        $('body').removeClass('modal-open')
         window.scrollTo(0, winHeight)
       }
     })

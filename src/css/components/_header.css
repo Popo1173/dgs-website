@@ -1,3 +1,8 @@
+body.modal-open {
+  height: 100%;
+  overflow: hidden;
+}
+
 .c-header {
   width: 100%;
   z-index: 999;
@@ -36,28 +41,28 @@
   }
 }
 
-.c-headerBanner {
-  padding: 32px 5.5%;
-  border-bottom: 1px solid #ccc;
-
-  & button {
-    font-family: var(--fontFamily);
-  }
-}
-
 .c-headerBannerMenu li {
   font-weight: 400;
 }
 
+.c-headerBannerLogoWrapper {
+  padding: 0;
+}
+
 .c-headerBannerLogo {
   width: 25%;
-  max-width: 365px;
 }
 
 .c-headerBannerLogo__image {
   width: 100%;
   max-width: 365px;
   min-width: 190px;
+}
+
+.c-headerBannerMenu {
+  & button {
+    font-family: var(--fontFamily);
+  }
 }
 
 #cse-search-box {
@@ -150,6 +155,23 @@
       background-color: var(--color_000);
       color: var(--color_fff);
     }
+  }
+
+  .c-headerBanner {
+    padding: 32px 5.5%;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .c-headerBannerLogoWrapper {
+    width: 30%;
+  }
+
+  .c-headerBannerLogo {
+    width: 100%;
   }
 
   .c-headerGnavLists {
@@ -261,15 +283,19 @@
 }
 
 @media (--pc-viewport) and (max-width: 1024px) {
-  .c-headerBanner {
-    padding: 16px;
-  }
-
   .c-headerGnavList,
   .c-headerSubNavLists li {
     &:not(:last-of-type) {
       margin-right: 10px;
     }
+  }
+
+  .c-headerBanner {
+    padding: 16px;
+  }
+
+  .c-headerBannerLogoWrapper {
+    width: 25%;
   }
 
   .c-headerBannerMenu,
@@ -306,14 +332,22 @@
 
 @media (--sp-viewport) {
   .c-headerBanner {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  .c-headerBannerLogoWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 24px;
   }
 
   #side-navi {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
     width: 100%;
     z-index: 100;
     overflow: auto;
