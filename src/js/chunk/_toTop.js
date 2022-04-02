@@ -1,5 +1,5 @@
 export const toTop = {
   init: () => {
-    console.log("hoge")
+    console.log("toTop")
   }
 }

@@ -12,9 +12,10 @@
     <link rel="icon" type="image/png" href="/img/favicon/android-chrome-192x192.png" sizes="192x192">
     {% block insertHead -%}
       <link rel="stylesheet" type="text/css" href="/css/index.css">
+      <link type="text/css" rel="stylesheet" href="https://www.google.com/cse/static/element/3e1664f444e6eb06/default+ja.css">
     {%- endblock %}
   </head>
-  <body>
+  <body style="height: 4000px">
     <main class="l-singleColumn">
       {% block header %}
         {% include "../components/_header.njk" %}
@@ -35,10 +36,8 @@
       </div>
       {% include "../components/_footer.njk" %}
     </main>
-    {% block portal -%}
-    {%- endblock %}
     {% block insertBody -%}
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       <script src="/js/index.js"></script>
     {%- endblock %}
   </body>

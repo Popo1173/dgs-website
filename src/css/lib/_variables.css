@@ -1,17 +1,23 @@
 :root {
   /* color */
   --color_fff: #fff;
-  --color_f00: #f00;
-  --color_555: #555;
-  --color_0892c7: #0892c7;
+  --color_000: #000;
+  --color_373582: #373582;
   --color_fd7564: #fd7564;
   --color_dcdcdc: #dcdcdc;
   --color_121317: #121317;
 
   /* text */
-  --fontFamily: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-    "Hiragino Sans", "ヒラギノ角ゴシック", Meiryo, メイリオ, sans-serif;
-  --font-feature-settings: "pkna"1;
+  --fontFamily:
+    'Noto Sans CJK JP',
+    'Hiragino Kaku Gothic ProN',
+    'ヒラギノ角ゴ ProN W3',
+    'Hiragino Sans',
+    'ヒラギノ角ゴシック',
+    Meiryo,
+    メイリオ,
+    sans-serif;
+  --font-feature-settings: 'pkna' 1;
   --fontSize: 16px;
   --lineHeight: 1.25;
   --fontWeight: 300;

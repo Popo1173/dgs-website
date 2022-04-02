@@ -105,7 +105,6 @@
   },
   "lint-staged": {
     "src/**/*.css": [
-      "prettier --write",
       "stylelint --fix",
       "git add"
     ],

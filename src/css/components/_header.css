@@ -1,0 +1,366 @@
+.c-header {
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+
+  &.UpMove {
+    animation: UpAnime 0.5s forwards;
+  }
+
+  &.DownMove {
+    animation: DownAnime 0.5s forwards;
+  }
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.c-headerBanner {
+  padding: 32px 5.5%;
+  border-bottom: 1px solid #ccc;
+
+  & button {
+    font-family: var(--fontFamily);
+  }
+}
+
+.c-headerBannerMenu li {
+  font-weight: 400;
+}
+
+.c-headerBannerLogo {
+  width: 25%;
+  max-width: 365px;
+}
+
+.c-headerBannerLogo__image {
+  width: 100%;
+  max-width: 365px;
+  min-width: 190px;
+}
+
+#cse-search-box {
+  & .searchBoxContent {
+    height: 46px;
+  }
+
+  & .searchBoxContent__input {
+    width: 90%;
+
+    & input {
+      border-radius: 8px 0 0 8px;
+      height: 46px;
+      width: 100%;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  & .searchBoxContent__submit {
+    width: 10%;
+    height: 100%;
+    background-color: #4d90fe;
+    border-radius: 0 8px 8px 0;
+
+    & input {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.c-header-toggl-wrapper[data-sidenavi-status='hide'] {
+  & button[data-sidenavi-toggle='open'] {
+    display: block;
+  }
+
+  & button[data-sidenavi-toggle='close'] {
+    display: none;
+  }
+}
+
+.c-header-toggl-wrapper[data-sidenavi-status='show'] {
+  & button[data-sidenavi-toggle='open'] {
+    display: none;
+  }
+
+  & button[data-sidenavi-toggle='close'] {
+    display: block;
+  }
+}
+
+#select_lang {
+  &:hover {
+    cursor: pointer;
+  }
+
+  margin-left: 6px;
+  border: none;
+  background-color: var(--color_fff);
+}
+
+.c-headerTellText {
+  color: var(--color_373582);
+  font-family: 'Roboto Condensed';
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+@media (--pc-viewport) {
+  .c-headerGnav {
+    margin-top: 10px;
+  }
+
+  .c-headerGnavSlideItem {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.25, 0, 0.45, 1), visibility 0.3s cubic-bezier(0.25, 0, 0.45, 1);
+
+    &[aria-hidden='false'] {
+      opacity: 0.85;
+      visibility: visible;
+      background-color: var(--color_000);
+      color: var(--color_fff);
+    }
+  }
+
+  .c-headerGnavLists {
+    display: flex;
+  }
+
+  .c-headerGnavList,
+  .c-headerSubNavLists li {
+    &:not(:last-of-type) {
+      margin-right: 24px;
+    }
+
+    & span {
+      line-height: normal;
+      letter-spacing: 1px;
+    }
+  }
+
+  .c-headerGnavList button {
+    &::after {
+      width: 6px;
+      height: 6px;
+      content: '';
+      background-color: #ccc;
+      border-radius: 100%;
+      display: block;
+      margin: 6px auto 0;
+    }
+
+    &.is-active {
+      color: #c6141f;
+
+      &::after {
+        background-color: #c6141f;
+      }
+    }
+  }
+
+  .c-headerGnavImage {
+    &--solution,
+    &--guide {
+      max-width: 240px;
+    }
+  }
+
+  .c-headerGnavMenuLinks {
+    white-space: nowrap;
+
+    &:not(:first-of-type) {
+      margin-left: 3%;
+    }
+  }
+
+  .c-headerBannerMenu,
+  .c-headerGnavList button {
+    font-size: 0.93rem;
+  }
+
+  .c-headerGnavMenuContent {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+
+    #side-menu-serch & {
+      padding: 16px 0;
+      padding-right: 5%;
+      justify-content: flex-end;
+    }
+  }
+
+  .c-headerGnavMenuLeftContent {
+    display: flex;
+    border-left: 1px solid #fff;
+    padding-left: 3%;
+
+    #side-menu-goods &,
+    #side-menu-guide & {
+      margin-left: 4%;
+    }
+
+    #side-menu-solution & {
+      margin-left: 3.5%;
+    }
+  }
+
+  .c-headerGnavMenuContent__heading {
+    font-size: 1.4rem;
+  }
+
+  .c-headerGnavMenuContent__productText {
+    font-size: 0.8rem;
+  }
+
+  .c-headerGnavMenuContent__productIcon {
+    margin-left: 6px;
+  }
+
+  .c-headerGnavMenuLinkItem {
+    font-size: 0.875;
+
+    &:not(:first-of-type) {
+      margin-top: 8px;
+    }
+  }
+
+  .c-headerGnavMenuLinkIcon {
+    margin-left: 6px;
+  }
+}
+
+@media (--pc-viewport) and (max-width: 1024px) {
+  .c-headerBanner {
+    padding: 16px;
+  }
+
+  .c-headerGnavList,
+  .c-headerSubNavLists li {
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+  }
+
+  .c-headerBannerMenu,
+  .c-headerGnavList button {
+    font-size: 0.8rem;
+  }
+
+  .c-headerGnavImage {
+    &--solution,
+    &--guide {
+      max-width: 134px;
+    }
+  }
+
+  .c-headerGnavMenuLeftContent {
+    padding-left: 2%;
+
+    #side-menu-goods &,
+    #side-menu-guide & {
+      margin-left: 2%;
+    }
+
+    #side-menu-solution & {
+      margin-left: 3%;
+    }
+  }
+
+  .c-headerGnavMenuLinks {
+    &:not(:first-of-type) {
+      margin-left: 3%;
+    }
+  }
+}
+
+@media (--sp-viewport) {
+  .c-headerBanner {
+    padding: 24px;
+  }
+
+  #side-navi {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    overflow: auto;
+    background-color: var(--color_000);
+    opacity: 0.85;
+    color: var(--color_fff);
+  }
+
+  .c-headerGnavLists {
+    padding: 0 24px 40px;
+  }
+
+  .c-headerGnavList {
+    border-bottom: 1px solid #707070;
+
+    & > button,
+    & > a {
+      padding: 16px 0;
+    }
+
+    & button {
+      text-align: left;
+      color: var(--color_fff);
+      font-size: 1rem;
+
+      & .c-headerGnavList__triggerText {
+        padding-right: 4px;
+
+        &::after {
+          width: 17px;
+          height: 9px;
+          content: '';
+          background: url('/img/icons/icon-chevron-down.svg') no-repeat center;
+        }
+      }
+
+      &.is-active .c-headerGnavList__triggerText::after {
+        background: url('/img/icons/icon-chevron-up.svg') no-repeat center;
+      }
+    }
+  }
+
+  .c-headerGnav li[data-layer='1'] > button:not(.is-active) + [id] {
+    display: none;
+  }
+
+  .c-headerGnavSlideItem {
+    margin-top: 24px;
+  }
+}
