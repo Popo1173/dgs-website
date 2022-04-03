@@ -198,6 +198,18 @@
 
 .p-top-otherContent__linkWrap {
   text-align: right;
+  color: #373582;
+  font-family: 'Roboto Condensed';
+}
+
+.p-top-otherContent__link {
+  &:hover {
+    border-bottom: 1px solid #373582;
+  }
+}
+
+.p-top-otherContent__linkIcon {
+  margin-left: 14px;
 }
 
 .p-top-otherContent__imageWrap {
