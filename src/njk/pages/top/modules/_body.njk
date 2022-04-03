@@ -1,0 +1,52 @@
+{%- from '../../../modules/_section-logo.njk' import sectionLogo -%}
+<section class="p-top-hero">
+  <div>
+    <div class="p-top-heroCarouselWrap">
+      <div class="p-top-heroCarousel" data-toggle="hero-carousel" data-arrows="true" data-autoplay="true" data-fade="true" data-infinite="true" data-swipe="true">
+        <div class="carousel-item">
+          <div class="p-top-heroCarousel__img p-top-heroCarousel__img--1"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="p-top-heroCarousel__img p-top-heroCarousel__img--2"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="p-top-heroCarousel__img p-top-heroCarousel__img--3"></div>
+        </div>
+      </div>
+      <div class="p-top-heroCarouselLogo">
+        <img src="/img/images/top-hero-text.png" alt="SIMPLICITY. DURABILITY. RELIABILITY.">
+      </div>
+    </div>
+  </div>
+  <div class="p-top-heroTextBlock">
+    <div class="p-top-heroTextBlock__left">
+      <div>
+        {{ sectionLogo(
+          usecase="sectionheading"
+        ) }}
+      </div>
+      <p class="p-top-heroTextBlock__main u-mt3">
+        モノづくりを支える<br>
+        ウェルディング・<br>
+        ソリューション
+      </p>
+      <p class="p-top-heroTextBlock__sub u-mt5">
+        総合接合機メーカーとして確かな技術と開発力で<br>
+        ニーズに合わせた製品をご提供します。
+      </p>
+      <div class="p-top-heroTextBlock__right u-show--sp"></div>
+    </div>
+    <div class="p-top-heroTextBlock__right u-show--pc"></div>
+  </div>
+  <div class="p-top-hereSolutions">
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+  </div>
+</section>
