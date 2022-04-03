@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/img/favicon/android-chrome-192x192.png" sizes="192x192">
     {% block insertHead -%}
-      <link rel="stylesheet" type="text/css" href="/css/index.css">
+      <link rel="stylesheet" type="text/css" href="{{ data.root }}css/index.css">
       <link type="text/css" rel="stylesheet" href="https://www.google.com/cse/static/element/3e1664f444e6eb06/default+ja.css">
     {%- endblock %}
   </head>
@@ -30,7 +30,7 @@
     </main>
     {% block insertBody -%}
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-      <script src="/js/index.js"></script>
+      <script src="{{ data.root }}js/index.js"></script>
     {%- endblock %}
   </body>
 </html>
