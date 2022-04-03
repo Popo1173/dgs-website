@@ -131,9 +131,6 @@ body.modal-open {
 }
 
 .c-headerTellText {
-  color: var(--color_373582);
-  font-family: 'Roboto Condensed';
-  font-weight: 800;
   font-size: 1.3rem;
 }
 

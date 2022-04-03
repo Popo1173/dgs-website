@@ -15,19 +15,11 @@
       <link type="text/css" rel="stylesheet" href="https://www.google.com/cse/static/element/3e1664f444e6eb06/default+ja.css">
     {%- endblock %}
   </head>
-  <body style="height: 4000px">
+  <body>
     <main class="l-singleColumn">
       {% block header %}
         {% include "../components/_header.njk" %}
       {% endblock %}
-      {% block headingImage %}
-      {% endblock %}
-      <div class="l-singleColumn__localNav">
-        <div class="l-singleColumn__widthFixed">
-          {% block localNav %}
-          {% endblock %}
-        </div>
-      </div>
       <div class="l-singleColumn__main">
         <div class="l-singleColumn__widthFixed">
           {% block content %}

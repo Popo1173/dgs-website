@@ -6,6 +6,12 @@
   display: none;
 }
 
+.u-TellText {
+  color: var(--color_373582);
+  font-family: 'Roboto Condensed';
+  font-weight: 800;
+}
+
 .u-text-xsmall {
   font-size: 0.75rem;
 }
@@ -566,5 +572,29 @@
 @media (--sp-viewport) {
   .u-show--pc {
     display: none !important;
+  }
+}
+
+.u-link-button {
+  padding: 18px 38px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+
+  &--373582 {
+    color: #fff;
+    background-color: #373582;
+  }
+
+  &--fff {
+    color: #fff;
+    border: 1px solid #fff;
+
+    &:hover {
+      background-color: #5652cc;
+    }
   }
 }
