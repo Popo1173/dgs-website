@@ -422,6 +422,10 @@
     z-index: 1;
   }
 
+  .p-top-heroSolutionWrap {
+    padding-bottom: 60px;
+  }
+
   .p-top-heroSolution__subCol {
     width: 50%;
   }

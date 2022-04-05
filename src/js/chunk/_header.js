@@ -31,16 +31,21 @@ export const setHeader = {
       }
       const winHeight = $(window).scrollTop()
       const event = $(e.currentTarget).data('sidenavi-toggle')
+      const headerBanner = $('.js-headerBanner')
       const sideNaviId = $(e.currentTarget).data('trigger-target')
       const $sideNav = $(`#${sideNaviId}`)
+
 
       if (event === 'open') {
         $toggleWrap.attr('data-sidenavi-status', 'show')
         $sideNav.attr('aria-modal', 'true').slideToggle()
         $('body').addClass('modal-open')
+        headerBanner.css('height', '100vh')
       } else if (event === 'close') {
         $toggleWrap.attr('data-sidenavi-status', 'hide')
-        $sideNav.removeAttr('aria-modal').slideToggle()
+        $sideNav.removeAttr('aria-modal').slideToggle(() => {
+          headerBanner.css('height', 'auto')
+        })
         $('body').removeClass('modal-open')
         window.scrollTo(0, winHeight)
       }
