@@ -274,6 +274,7 @@
   height: 100%;
   background-color: #373778;
   padding: 0 5.5% 2%;
+  position: relative;
 }
 
 .p-top-productColorBlocks__right {
@@ -283,13 +284,18 @@
   padding: 0 5.5%;
 }
 
+.p-top-product__sectionLogoWrap {
+  position: absolute;
+  bottom: 0;
+}
+
 .p-top-productHeading {
   font-size: 2.25rem;
 }
 
 .p-top-productContent {
   background-color: #373778;
-  padding: 0 5.5% 7%;
+  padding: 30px 5.5% 7%;
 }
 
 .p-top-productLists {
