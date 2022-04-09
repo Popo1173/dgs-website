@@ -108,6 +108,7 @@ export const setHeader = {
       const isPcView = currentWinWidth >= breakpoint
       if (wasPcView === false && isPcView === true) {
         $('#side-navi').css('display', '')
+        $('.js-headerBanner').css('height', 'auto')
         $(".js-trigger[data-type='top-menu']").removeClass('is-active').next().css('display', '').attr('aria-hidden', 'true')
         $('.js-triggerWrapper[data-sidenavi-status]').attr('data-sidenavi-status', 'hide')
       } else if (wasPcView === true && isPcView === false) {
