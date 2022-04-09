@@ -69,17 +69,19 @@ body.modal-open {
 
 #cse-search-box {
   & .searchBoxContent {
-    height: 46px;
+    height: 30px;
   }
 
   & .searchBoxContent__input {
-    width: 90%;
+    width: 268px;
+    height: 100%;
 
     & input {
-      border-radius: 8px 0 0 8px;
-      height: 46px;
+      height: 100%;
       width: 100%;
       border: none;
+      font-size: 14px;
+      padding: 0 12px;
 
       &:focus {
         outline: none;
@@ -88,12 +90,25 @@ body.modal-open {
   }
 
   & .searchBoxContent__submit {
-    width: 10%;
+    position: relative;
     height: 100%;
-    background-color: #4d90fe;
-    border-radius: 0 8px 8px 0;
+    width: 70px;
+    margin-left: 15px;
+
+    &::before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      content: '';
+      width: 16px;
+      height: 16px;
+      background-image: url('/img/icons/icon-search.svg');
+    }
 
     & input {
+      background-color: #4d90fe;
+      border: none;
       width: 100%;
       height: 100%;
     }
@@ -257,7 +272,7 @@ body.modal-open {
 
     #side-menu-search & {
       padding: 15px 0;
-      padding-right: 5%;
+      padding-right: 5.5%;
       justify-content: flex-end;
     }
 
@@ -449,5 +464,31 @@ body.modal-open {
 
   .c-headerGnavSlideItem {
     margin-top: 24px;
+  }
+
+  #cse-search-box {
+    & .searchBoxContent {
+      height: 46px;
+    }
+
+    & .searchBoxContent__input {
+      width: 90%;
+
+      & input {
+        border-radius: 8px 0 0 8px;
+        height: 46px;
+        width: 100%;
+      }
+    }
+
+    & .searchBoxContent__submit {
+      margin-left: 0;
+      width: 10%;
+      height: 90%;
+
+      & input {
+        border-radius: 0 8px 8px 0;
+      }
+    }
   }
 }

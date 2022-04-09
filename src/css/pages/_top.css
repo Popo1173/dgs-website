@@ -1,86 +1,25 @@
-.p-top-heroCarouselWrap {
+.p-top-videoWrap {
+  overflow: hidden;
   position: relative;
-  line-height: 1;
-
-  & .slick-slide {
-    font-size: 0;
-  }
-
-  & .slick-prev {
-    z-index: 1;
-    right: 140px;
-    top: auto;
-    bottom: -40px;
-    left: auto;
-    transform: translateY(100%);
-    transition: opacity 0.3s;
-    opacity: 0.6;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    &::before {
-      content: none;
-    }
-
-    & .hero-icon {
-      display: inline-block;
-      width: 20px;
-      height: 40px;
-      background: no-repeat center/cover url(/img/icons/icon-hero-chevron-left.svg);
-    }
-  }
-
-  & .slick-next {
-    z-index: 1;
-    right: 80px;
-    top: auto;
-    bottom: -40px;
-    transform: translateY(100%);
-    transition: opacity 0.3s;
-    opacity: 0.6;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    &::before {
-      content: none;
-    }
-
-    & .hero-icon {
-      display: inline-block;
-      width: 20px;
-      height: 40px;
-      background: no-repeat center/cover url(/img/icons/icon-hero-chevron-right.svg);
-    }
-  }
+  font-size: 0;
 }
 
-.p-top-heroCarousel__img {
-  background: no-repeat center/cover;
-  height: 620px;
-
-  &--1 {
-    background-image: url(/img/images/top-hero-slide-1.jpg);
-  }
-
-  &--2 {
-    background-image: url(/img/images/top-hero-slide-2.jpg);
-  }
-
-  &--3 {
-    background-image: url(http://placehold.jp/712x400.png);
-  }
+.p-top-heroMove {
+  z-index: -1;
+  width: 100vw;
+  min-width: 586px;
+  height: 56.25vw;
+  min-height: 330px;
 }
 
-.p-top-heroCarouselLogo {
+.p-top-heroLogo {
   & > img {
-    width: 26%;
+    width: 56%;
+    max-width: 371px;
     position: absolute;
     right: 77px;
     bottom: 87px;
+    z-index: 1;
   }
 }
 
@@ -91,7 +30,7 @@
 
 .p-top-heroTextBlock__left {
   background-color: #373778;
-  padding: 62px 8% 177px 5.5%;
+  padding: 4.3% 8% 12.3% 5.5%;
 }
 
 .p-top-heroTextBlock__right {
@@ -475,9 +414,23 @@
   .p-top-otherContent__explain {
     width: 70%;
   }
+
+  .p-top-heroLogo {
+    & > img {
+      right: 40px;
+      width: 25%;
+    }
+  }
 }
 
 @media (--sp-viewport) {
+  .p-top-heroLogo {
+    & > img {
+      right: 9px;
+      bottom: 12px;
+    }
+  }
+
   .p-top-heroTextBlock__main {
     font-size: 2rem;
   }

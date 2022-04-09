@@ -1,21 +1,14 @@
 {%- from '../../../modules/_section-logo.njk' import sectionLogo -%}
 <section class="p-top-hero">
-  <div>
-    <div class="p-top-heroCarouselWrap">
-      <div class="p-top-heroCarousel" data-toggle="hero-carousel" data-arrows="true" data-autoplay="false" data-autoplay-speed="5000" data-fade="true" data-infinite="true" data-swipe="true">
-        <div class="carousel-item u-fsz-16">
-          <div class="p-top-heroCarousel__img p-top-heroCarousel__img--1"></div>
-        </div>
-        <div class="carousel-item u-fsz-16">
-          <div class="p-top-heroCarousel__img p-top-heroCarousel__img--2"></div>
-        </div>
-        <div class="carousel-item u-fsz-16">
-          <div class="p-top-heroCarousel__img p-top-heroCarousel__img--3"></div>
-        </div>
-      </div>
-      <div class="p-top-heroCarouselLogo">
-        <img src="/img/images/top-hero-text.png" alt="SIMPLICITY. DURABILITY. RELIABILITY.">
-      </div>
+  <div class="p-top-videoWrap">
+    <video class="p-top-heroMove" poster="/img/images/top-hero-slide-1.jpg" webkit-playsinline playsinline muted autoplay loop>
+      <source src="/img/movies/TopPageFastLong-ss.mp4" type="video/mp4">
+      <p>動画を再生できる環境ではありません。</p>
+    </video>
+    <div class="p-top-heroLogo">
+      <img src="/img/images/top-hero-text.png" alt="SIMPLICITY. DURABILITY. RELIABILITY.">
+    </div>
+    <div class="p-top-videoArea">
     </div>
   </div>
   <div class="p-top-heroTextBlock">
