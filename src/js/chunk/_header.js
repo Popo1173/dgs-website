@@ -123,7 +123,7 @@ export const setHeader = {
       const elemTop = 2000;
       const scroll = $(window).scrollTop();
       //ヘッダーの出し入れをする
-      if(elemTop > scroll || 0 > scroll - beforePos){
+      if (elemTop > scroll || 0 > scroll - beforePos) {
         $('header').removeClass('UpMove');
         $('header').addClass('DownMove');
       } else {
@@ -132,11 +132,8 @@ export const setHeader = {
       }
       beforePos = scroll;
     }
-    $(window).scroll(() => {
+    $(window).on('scroll load', (() => {
       ScrollAnime();
-    });
-    $(window).on('load', () => {
-      ScrollAnime();
-    });
+    }));
   }
 }

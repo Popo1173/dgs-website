@@ -1,19 +1,24 @@
 .c-contact {
-  padding: 80px 25px 100px;
+  padding: 70px 25px 100px;
   background: no-repeat center/cover url(/img/images/bg-contact.jpg);
   color: var(--color_fff);
   text-align: center;
 }
 
 .c-contact__heading {
-  font-size: 2.25rem;
+  letter-spacing: 4px;
 }
 
 .c-contact__sub {
   margin-top: 22px;
   line-height: 1.8;
+  letter-spacing: 0.8px;
 }
 
 .c-contact__button {
   margin-top: 36px;
+}
+
+.c-contact .u-link-button {
+  padding: 16px 50px;
 }

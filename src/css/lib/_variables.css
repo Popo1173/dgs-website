@@ -2,9 +2,8 @@
   /* color */
   --color_fff: #fff;
   --color_000: #000;
-  --color_373582: d;
-  --color_fd7564: #fd7564;
-  --color_dcdcdc: #dcdcdc;
+  --color_purple: #373582;
+  --color_vivid_purple: #5652cc;
   --color_121317: #121317;
 
   /* text */
@@ -31,3 +30,4 @@
 /* media querie */
 @custom-media --sp-viewport (max-width: 767px);
 @custom-media --pc-viewport (min-width: 768px);
+@custom-media --middle-pc-viewport (max-width: 1100px);

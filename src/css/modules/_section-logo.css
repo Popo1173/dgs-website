@@ -8,7 +8,7 @@
   }
 
   &__right {
-    background-color: #5652cc;
+    background-color: var(--color_vivid_purple);
     height: 100%;
     display: inline-block;
   }
