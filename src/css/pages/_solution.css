@@ -229,14 +229,18 @@
   }
 
   .p-solutionProductItem {
-    width: calc(50% - 20px);
+    width: calc(25% - 15px);
 
-    &:not(:nth-of-type(2n+1)) {
-      margin-left: 40px;
+    &:not(:nth-of-type(4n+1)) {
+      margin-left: 20px;
     }
 
-    &:nth-of-type(n+3) {
+    &:nth-of-type(n+5) {
       margin-top: 16px;
+    }
+
+    &:last-of-type {
+      flex-grow: 1;
     }
   }
 }
