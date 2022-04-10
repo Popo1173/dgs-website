@@ -1,11 +1,18 @@
 .p-solutionHeading {
   padding: 46px 0 54px;
-  background-image: url(/img/images/bg-heading-weight-saving-solution.jpg);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
   text-align: center;
   color: var(--color_fff);
+
+  &--weightSaving {
+    background-image: url(/img/images/bg-heading-weight-saving-solution.jpg);
+  }
+
+  &--otherSolution {
+    background-image: url(/img/images/bg-heading-other-solution.jpg);
+  }
 }
 
 .p-solutionHeading__solution {
@@ -107,10 +114,14 @@
   overflow: hidden;
   padding: 4.6% 15% 8%;
   color: var(--color_fff);
-}
 
-.p-solutionMain--weightSaving {
-  background-image: url(/img/images/bg-solution-main-weight-saving.jpg);
+  &--weightSaving {
+    background-image: url(/img/images/bg-solution-main-weight-saving.jpg);
+  }
+
+  &--decarbonization {
+    background-image: url(/img/images/bg-solution-main-decarbonization.jpg);
+  }
 }
 
 .p-solutionMain__logo {
@@ -222,10 +233,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .p-solution--decarbonization & {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .p-solutionMain__topContent {
+    .p-solution--decarbonization & {
+      margin-left: 0;
+    }
   }
 
   .p-solutionMain__topContentImage {
     width: 45%;
+
+    .p-solution--decarbonization & {
+      margin-left: 52px;
+    }
   }
 
   .p-solutionProductItem {
