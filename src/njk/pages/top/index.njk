@@ -1,3 +1,4 @@
+{%- from '../../components/_header.njk' import header -%}
 {% extends "../_base.njk" %}
 
 {% block meta -%}
@@ -10,7 +11,9 @@
 {%- endblock %}
 
 {% block header %}
-  {{ super() }}
+  {{ header(
+    isCurrent=""
+  ) }}
 {% endblock %}
 
 {% block content -%}
