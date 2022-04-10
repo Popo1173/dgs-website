@@ -89,7 +89,6 @@
   background-color: var(--color_fff);
   width: 28vw;
   height: 10.8vw;
-  z-index: -1;
 }
 
 .p-solutionTaskHeading {
