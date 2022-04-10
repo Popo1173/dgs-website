@@ -241,6 +241,13 @@
   }
 }
 
+@media (--pc-viewport) and (--middle-pc-viewport) {
+  .p-solutionTaskColorBlock {
+    width: 28vw;
+    height: 9vw;
+  }
+}
+
 @media (--sp-viewport) {
   .p-solutionHeading {
     padding: 36px 0 40px;
