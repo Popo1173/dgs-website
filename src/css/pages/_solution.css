@@ -122,6 +122,10 @@
   &--decarbonization {
     background-image: url(/img/images/bg-solution-main-decarbonization.jpg);
   }
+
+  &--DX {
+    background-image: url(/img/images/bg-solution-main-DX.jpg);
+  }
 }
 
 .p-solutionMain__logo {
@@ -241,6 +245,10 @@
 
   .p-solutionMain__topContent {
     .p-solution--decarbonization & {
+      margin-left: 0;
+    }
+
+    .p-solution--DX & {
       margin-left: 0;
     }
   }
