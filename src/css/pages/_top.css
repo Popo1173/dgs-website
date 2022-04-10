@@ -89,7 +89,6 @@
 
 .p-top-heroSolution__nav {
   color: #373778;
-  font-family: 'Roboto Condensed';
   font-weight: bold;
   letter-spacing: 1.6px;
 }
@@ -160,7 +159,7 @@
 
 .c-link-more {
   color: var(--color_purple);
-  font-family: 'Roboto Condensed';
+  font-family: var(--fontFamilyCondensed);
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -210,7 +209,6 @@
 
 .p-top-heroNews__time {
   white-space: nowrap;
-  font-family: 'Roboto Condensed';
   font-weight: bold;
   letter-spacing: 1.5px;
 }

@@ -1,0 +1,317 @@
+.p-solutionHeading {
+  padding: 46px 0 54px;
+  background-image: url(/img/images/bg-heading-weight-saving-solution.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  text-align: center;
+  color: var(--color_fff);
+}
+
+.p-solutionHeading__solution {
+  letter-spacing: 2px;
+}
+
+.p-solutionHeading__sub {
+  margin-top: 4px;
+  font-size: 1.375rem;
+  letter-spacing: 2px;
+}
+
+.p-solutionHeading__main {
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+
+.p-solutionIntroduction__squareWrap {
+  padding: 5.6% 0 3.8%;
+  position: relative;
+}
+
+.p-solutionIntroduction__square--red {
+  position: absolute;
+  top: 0;
+  width: 19.5vw;
+  height: 18.5vw;
+  background-color: var(--color_red);
+  z-index: -1;
+}
+
+.p-solutionIntroduction__square--blue {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50vw;
+  height: 11vw;
+  background-color: var(--color_purple);
+  z-index: -1;
+}
+
+.p-solutionIntroduction__img {
+  &.u-show--pc {
+    max-width: 1000px;
+    width: 69.5%;
+  }
+
+  &.u-show--sp {
+    width: 100%;
+  }
+}
+
+.p-solutionIntroduction__textWrap {
+  padding: 7.2% 15% 6.8%;
+}
+
+.p-solutionSectionHeading {
+  letter-spacing: 4px;
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+.p-solutionExplainText {
+  margin-top: 30px;
+  letter-spacing: 0.8px;
+  line-height: 1.7;
+}
+
+.p-solutionTask {
+  background-color: #f0f0f0;
+  padding: 5% 15% 5.7%;
+  position: relative;
+}
+
+.p-solutionTaskColorBlock {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: var(--color_fff);
+  width: 28vw;
+  height: 10.8vw;
+  z-index: -1;
+}
+
+.p-solutionTaskHeading {
+  margin-top: 22px;
+}
+
+.p-solutionTaskText.p-solutionExplainText {
+  margin-top: 50px;
+}
+
+.p-solutionMain {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  overflow: hidden;
+  padding: 4.6% 15% 8%;
+  color: var(--color_fff);
+}
+
+.p-solutionMain--weightSaving {
+  background-image: url(/img/images/bg-solution-main-weight-saving.jpg);
+}
+
+.p-solutionMain__logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 47.5vw;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.p-solutionMainHeading {
+  margin-top: 30px;
+}
+
+.p-solutionMain__topContents {
+  margin-top: 66px;
+}
+
+.p-solutionMain__topContentImage {
+  max-width: 450px;
+}
+
+.p-solutionMain__topContent {
+  margin-left: 52px;
+}
+
+.p-solutionMain__topContentHeading {
+  letter-spacing: 1px;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.p-solutionMain__topContentText {
+  margin-top: 25px;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+
+  & br {
+    content: '';
+    display: block;
+    margin: 11px 0;
+  }
+}
+
+.p-solutionMain__middleText {
+  margin-top: 62px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.p-solutionMain__bottomImageWrap {
+  margin: 50px auto 0;
+  width: 63.5%;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.p-solutionProductWrap {
+  padding: 5.6% 15% 6.5%;
+}
+
+.p-solutionProduct {
+  background-color: #efefef;
+  padding: 2.2% 3.2% 3.2%;
+}
+
+.p-solutionProductHeading {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.p-solutionProductList {
+  margin-top: 12px;
+}
+
+.p-solutionProductLink {
+  color: var(--color_purple);
+
+  & span {
+    margin-left: 4px;
+  }
+
+  &.u-link-hoverLine {
+    padding-bottom: 2px;
+
+    &::after {
+      height: 1px;
+    }
+  }
+}
+
+.p-solutionProductItem {
+  &:not(:first-of-type) {
+    margin-left: 40px;
+  }
+}
+
+@media (--pc-viewport) {
+  .p-solutionIntroduction__square--red {
+    left: 5.3%;
+  }
+
+  .p-solutionMain__topContents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p-solutionMain__topContentImage {
+    width: 45%;
+  }
+}
+
+@media (--sp-viewport) {
+  .p-solutionHeading {
+    padding: 36px 0 40px;
+  }
+
+  .p-solutionHeading__solution {
+    letter-spacing: 1.8px;
+  }
+
+  .p-solutionHeading__sub {
+    font-size: 1.125rem;
+    margin-top: 8px;
+  }
+
+  .p-solutionHeading__main {
+    font-size: 2.25rem;
+    padding: 0 30px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    line-height: 1.3;
+  }
+
+  .p-solutionIntroduction__squareWrap {
+    padding: 16% 0;
+  }
+
+  .p-solutionIntroduction__square--red {
+    width: 37vw;
+  }
+
+  .p-solutionIntroduction__square--blue {
+    height: 16vw;
+  }
+
+  .p-solutionIntroduction__textWrap {
+    padding: 16.4% 7% 18%;
+  }
+
+  .p-solutionSectionHeading {
+    font-size: 2rem;
+    line-height: 1.4;
+    letter-spacing: 3px;
+  }
+
+  .p-solutionTask {
+    padding: 13.3% 7% 18%;
+  }
+
+  .p-solutionTaskColorBlock {
+    width: 50vw;
+    height: 16.2vw;
+  }
+
+  .p-solutionTaskText.p-solutionExplainText {
+    margin-top: 40px;
+  }
+
+  .p-solutionMain__topContents {
+    margin-top: 40px;
+  }
+
+  .p-solutionMain__topContentImage {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+  }
+
+  .p-solutionMain__topContent {
+    margin-left: 0;
+    margin-top: 36px;
+  }
+
+  .p-solutionMain__middleText {
+    margin-top: 40px;
+  }
+
+  .p-solutionMain__bottomImageWrap {
+    width: 100%;
+  }
+
+  .p-solutionProductWrap {
+    padding: 5.6% 4% 6.5%;
+  }
+}

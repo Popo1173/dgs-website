@@ -4,10 +4,21 @@
   --color_000: #000;
   --color_purple: #373582;
   --color_vivid_purple: #5652cc;
+  --color_red: #e90b18;
   --color_121317: #121317;
 
   /* text */
   --fontFamily:
+    'Noto Sans CJK JP',
+    'Hiragino Kaku Gothic ProN',
+    'ヒラギノ角ゴ ProN W3',
+    'Hiragino Sans',
+    'ヒラギノ角ゴシック',
+    Meiryo,
+    メイリオ,
+    sans-serif;
+  --fontFamilyCondensed:
+    'Roboto Condensed',
     'Noto Sans CJK JP',
     'Hiragino Kaku Gothic ProN',
     'ヒラギノ角ゴ ProN W3',

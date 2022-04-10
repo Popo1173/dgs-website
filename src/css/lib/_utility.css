@@ -6,6 +6,10 @@
   display: none;
 }
 
+.u-font-condensed {
+  font-family: var(--fontFamilyCondensed) !important;
+}
+
 .u-TellText {
   color: var(--color_purple);
   font-family: 'Roboto Condensed';
