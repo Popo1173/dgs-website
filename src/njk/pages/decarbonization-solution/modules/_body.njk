@@ -1,9 +1,13 @@
 {%- from '../../../modules/_section-logo.njk' import sectionLogo -%}
+{%- from '../../../modules/_heading.njk' import heading -%}
 <div class="p-solution p-solution--decarbonization">
-  <section class="p-solutionHeading p-solutionHeading--otherSolution">
-    <p class="p-solutionHeading__solution u-font-condensed">Solution</p>
-    <p class="p-solutionHeading__sub">溶接時のエネルギーを1/3に低減</p>
-    <h1 class="p-solutionHeading__main">脱炭素ソリューション</h1>
+  <section class="p-solutionHeading">
+    {{ heading(
+      introduction = 'Solution',
+      subTitle = '溶接時のエネルギーを1/3に低減',
+      title = '脱炭素ソリューション',
+      modifier = '--otherSolution'
+    ) }}
   </section>
   <section class="p-solutionIntroduction">
     <div class="p-solutionIntroduction__squareWrap u-text-center">
