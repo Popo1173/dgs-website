@@ -1,10 +1,16 @@
 export const setMoreButton = {
   init: () => {
-    setMoreButton.hideItem()
-    setMoreButton.setEvent()
+    const breakpoint = 768
+    if ($(window).width() < breakpoint) {
+      setMoreButton.hideItem()
+    }
+    setMoreButton.setEvent(breakpoint)
   },
   hideItem: () => {
+    const $targetElement = $('.js-moreButton')
     const $target = $('.js-moreButtonTarget')
+    $targetElement.show()
+
     $target.each((i, element) => {
       const targetBorder = $(element).data('border')
       const targetItem = $(element).children()
@@ -16,7 +22,22 @@ export const setMoreButton = {
       })
     })
   },
-  setEvent: () => {
+  showAllItem: () => {
+    $('.js-moreButtonTarget').children().removeClass('more-hidden')
+  },
+  setEvent: (breakpoint) => {
+    let wasPcView = ''
+    $(window).on('resize', () => {
+      const currentWinWidth = $(window).width()
+      const isPcView = currentWinWidth >= breakpoint
+      if (wasPcView === false && isPcView === true) {
+        setMoreButton.showAllItem()
+      } else if (wasPcView === true && isPcView === false) {
+        setMoreButton.hideItem()
+      }
+      wasPcView = isPcView
+    })
+
     const $targetElement = $('.js-moreButton')
     $targetElement.click((e) => {
       const $targetWrap = $(e.target).closest('.js-moreButtonTargetWrap')

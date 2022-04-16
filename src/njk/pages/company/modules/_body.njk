@@ -10,9 +10,97 @@
     ) }}
   </section>
   <section class="p-companyNavi">
-
+    <div class="p-companyNaviWrap u-show--pc">
+      <div class="p-companyNavi__items">
+        <div class="p-companyNavi__item">
+          <a href="#p-company-introduction">
+            <span class="p-companyNavi__linkContent">
+              会社概要・沿革
+              <img src="/img/icons/icon-red-chevron-down.svg" width="10" height="5" alt="">
+            </span>
+          </a>
+        </div>
+        <div class="p-companyNavi__item">
+          <a href="#p-company-places">
+            <span class="p-companyNavi__linkContent">
+              本社・工場
+              <img src="/img/icons/icon-red-chevron-down.svg" width="10" height="5" alt="">
+            </span>
+          </a>
+        </div>
+        <div class="p-companyNavi__item">
+          <a href="#p-company-office">
+            <span class="p-companyNavi__linkContent">
+              国内事業所
+              <img src="/img/icons/icon-red-chevron-down.svg" width="10" height="5" alt="">
+            </span>
+          </a>
+        </div>
+        <div class="p-companyNavi__item">
+          <a href="#p-company-overseas">
+            <span class="p-companyNavi__linkContent">
+              海外事業所
+              <img src="/img/icons/icon-red-chevron-down.svg" width="10" height="5" alt="">
+            </span>
+          </a>
+        </div>
+        <div class="p-companyNavi__item">
+          <a href="#p-company-overseas-agency">
+            <span class="p-companyNavi__linkContent">
+              海外主要代理店
+              <img src="/img/icons/icon-red-chevron-down.svg" width="10" height="5" alt="">
+            </span>
+          </a>
+        </div>
+        <div class="p-companyNavi__item">
+          <a href="#p-company-client">
+            <span class="p-companyNavi__linkContent">
+              主要取引先
+              <img src="/img/icons/icon-red-chevron-down.svg" width="10" height="5" alt="">
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="p-companyNaviWrap u-show--sp">
+      <a class="is-closed p-companyNavi__toggle" data-toggle="accordion" data-target="#p-companyNaviContent" data-accordion-status="internalToggle">
+        会社案内
+      </a>
+      <div id="p-companyNaviContent" class="p-companyNavi__items" data-accordion-status="internalTarget">
+        <div class="p-companyNavi__item">
+          <a href="#p-company-introduction">
+            会社概要・沿革
+          </a>
+        </div>
+        <div class="p-companyNavi__item">
+          <a href="#p-company-places">
+            本社・工場
+          </a>
+        </div>
+        <div class="p-companyNavi__item">
+          <a href="#p-company-office">
+            国内事業所
+          </a>
+        </div>
+        <div class="p-companyNavi__item">
+          <a href="#p-company-overseas">
+            海外事業所
+          </a>
+        </div>
+        <div class="p-companyNavi__item">
+          <a href="#p-company-overseas-agency">
+            海外主要代理店
+          </a>
+        </div>
+        <div class="p-companyNavi__item">
+          <a href="#p-company-client">
+            主要取引先
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="p-companyIntroduction">
+  <section id="p-company-introduction" class="p-companyIntroduction">
     <div class="p-companyIntroduction__content">
       <div class="p-companyIntroduction__heading">
         <div class="p-companyTask__sectionLogoWrap">
@@ -198,7 +286,7 @@
       </div>
     </div>
   </section>
-  <section class="p-companyPlaces">
+  <section id="p-company-places" class="p-companyPlaces">
     <div class="p-companyPlaces__square"></div>
     <div class="p-companyPlaces__main">
       <div class="p-companyPlaces__sectionLogoWrap">
@@ -297,7 +385,7 @@
       </div>
     </div>
   </section>
-  <section class="p-companyOffice js-moreButtonTargetWrap">
+  <section id="p-company-office" class="p-companyOffice js-moreButtonTargetWrap">
     <div class="p-companyOffice__headingWrap">
       <div class="p-companyOffice__sectionLogoWrap">
         {{ sectionLogo(
@@ -442,7 +530,7 @@
       </button>
     </p>
   </section>
-  <section class="p-companyOverseas js-moreButtonTargetWrap">
+  <section id="p-company-overseas" class="p-companyOverseas js-moreButtonTargetWrap">
     <div class="p-companyOverseas__headingWrap">
       <div class="p-companyOverseas__sectionLogoWrap">
         {{ sectionLogo(
@@ -516,7 +604,7 @@
           </button>
         </p>
       </div>
-      <div class="p-companyOverseas__agencyWrap js-moreButtonTargetWrap">
+      <div id="p-company-overseas-agency" class="p-companyOverseas__agencyWrap js-moreButtonTargetWrap">
         <h3 class="p-companyOverseas__sectionTitle">海外主要代理店一覧</h3>
         <div class="p-companyOverseas__agency">
           <table class="p-companyOverseas__table">
@@ -628,7 +716,7 @@
       </div>
     </div>
   </section>
-  <section class="p-companyClient js-moreButtonTargetWrap">
+  <section id="p-company-client" class="p-companyClient js-moreButtonTargetWrap">
     <div class="p-companyClient__sectionLogoWrap">
       {{ sectionLogo(
         usecase="sectionheading"
