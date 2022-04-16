@@ -297,21 +297,23 @@
       </div>
     </div>
   </section>
-  <section class="p-companyOffice">
-    <div class="p-companyOffice__sectionLogoWrap">
-      {{ sectionLogo(
-        usecase="sectionheading"
-      ) }}
+  <section class="p-companyOffice js-moreButtonTargetWrap">
+    <div class="p-companyOffice__headingWrap">
+      <div class="p-companyOffice__sectionLogoWrap">
+        {{ sectionLogo(
+          usecase="sectionheading"
+        ) }}
+      </div>
+      <h2 class="p-companyOffice__heading p-companySectionHeading">国内事業所案内</h2>
     </div>
-    <h2 class="p-companyOffice__heading p-companySectionHeading">国内事業所案内</h2>
     <table class="p-companyOffice__table">
-      <thead>
+      <thead class="u-show--pc">
         <tr>
           <th class="p-companyOffice__tableHeading">事業所</th>
           <th class="p-companyOffice__tableHeading">所在地</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="js-moreButtonTarget">
         <tr>
           <td class="p-companyOffice__tableDescription">
             本社 <span class="u-d-inline-block">海外事業部</span>
@@ -402,92 +404,230 @@
             <a class="p-companyOffice__tableMap" href="">Map</a>
           </td>
         </tr>
-        <tr>
-          <td class="p-companyOffice__tableDescription">
-            本社 <span class="u-d-inline-block">営業・システム課</span>
-          </td>
-          <td class="p-companyOffice__tableDescription p-companyOffice__tableDescription--address">
-            〒214-8588<br>
-            神奈川県川崎市多摩区枡形1-23-1
-          </td>
-          <td class="p-companyOffice__tableDescription p-companyOffice__tableDescription--contact">
-            <div class="p-companyOffice__tableContacts">
-              <a href="" class="p-companyOffice__tableTellWrap">
-                <img src="/img/icons/icon-black-tell.svg" alt="" width="12" height="12">
-                044-922-1121
-              </a>
-              <a href="">
-                <img src="/img/icons/icon-black-fax.svg" alt="" width="15" height="12">
-                044-922-1100
-              </a>
-            </div>
-            <p class="p-companyOffice__tableMailWrap">
-              <a href="">
-                <img src="/img/icons/icon-black-mail.svg" alt="" width="14" height="11">
-                dgt_sales@dengenshatoa.co.jp
-              </a>
-            </p>
-          </td>
-          <td class="p-companyOffice__tableDescription p-companyOffice__tableDescription--map">
-            <a class="p-companyOffice__tableMap" href="">Map</a>
-          </td>
-        </tr>
       </tbody>
     </table>
+    <p class="p-companyMoreContentWrap u-show--sp">
+      <button class="p-companyMoreContent" type="button">
+        もっと見る
+      </button>
+    </p>
   </section>
-  <section class="p-companyOverseas">
-    <div class="p-companyOverseas__sectionLogoWrap">
-      {{ sectionLogo(
-        usecase="sectionheading"
-      ) }}
+  <section class="p-companyOverseas js-moreButtonTargetWrap">
+    <div class="p-companyOverseas__headingWrap">
+      <div class="p-companyOverseas__sectionLogoWrap">
+        {{ sectionLogo(
+          usecase="sectionheading"
+        ) }}
+      </div>
+      <h2 class="p-companyOverseas__heading p-companySectionHeading">海外事業所案内</h2>
     </div>
-    <h2 class="p-companyOverseas__heading p-companySectionHeading">海外事業所案内</h2>
     <div class="p-companyOverseas__contentsWrap">
-      <h3 class="p-companyOverseas__sectionTitle">海外事業会社一覧</h3>
-      <div class="p-companyOverseas__contents">
-        <div class="p-companyOverseas__content">
-          <img class="p-companyOverseas__img" src="/img/images/company-overseas-1.jpg" alt="" width="180">
-          <div class="p-companyOverseas__textWrap">
-            <p class="p-companyOverseas__place">
-              <span class="p-companyOverseas__placeName">電元社アメリカ</span>
-              <span class="p-companyOverseas__placeName">クリーブランド本社</span>
-            </p>
-            <p class="p-companyOverseas__address">7647 First Place DriveBedford, Ohio 44146</p>
-            <div class="p-companyOverseas__contact u-d-flex u-align-items-center">
-              <a href="" class="p-companyOverseas__tellWrap">
-                <img src="/img/icons/icon-black-tell.svg" alt="" width="12" height="12">
-                TEL +1(440)439-8081
-              </a>
-              <a href="" class="p-companyOverseas__tellWrap">
-                <img src="/img/icons/icon-black-fax.svg" alt="" width="15" height="12">
-                FAX +1(440)439-8217
+      <div class="p-companyOverseas__main">
+        <h3 class="p-companyOverseas__sectionTitle">海外事業会社一覧</h3>
+        <div class="p-companyOverseas__contents js-moreButtonTarget">
+          <div class="p-companyOverseas__content">
+            <img class="p-companyOverseas__img" src="/img/images/company-overseas-1.jpg" alt="" width="180">
+            <div class="p-companyOverseas__textWrap">
+              <p class="p-companyOverseas__place">
+                <span class="p-companyOverseas__placeName">電元社アメリカ</span>
+                <span class="p-companyOverseas__placeName">クリーブランド本社</span>
+              </p>
+              <p class="p-companyOverseas__address">7647 First Place DriveBedford, Ohio 44146</p>
+              <div class="p-companyOverseas__contact">
+                <a href="" class="p-companyOverseas__tellWrap">
+                  <img src="/img/icons/icon-black-tell.svg" alt="" width="12" height="12">
+                  TEL +1(440)439-8081
+                </a>
+                <a href="" class="p-companyOverseas__tellWrap">
+                  <img src="/img/icons/icon-black-fax.svg" alt="" width="15" height="12">
+                  FAX +1(440)439-8217
+                </a>
+              </div>
+              <a href="" class="p-companyOverseas__link">
+                <img src="/img/icons/icon-black-link.svg" alt="" width="14" height="14">
+                http://dengensha.com/
               </a>
             </div>
-            <a href="" class="p-companyOverseas__link">
-              <img src="/img/icons/icon-black-link.svg" alt="" width="14" height="14">
-              http://dengensha.com/
-            </a>
+          </div>
+          <div class="p-companyOverseas__content">
+            <img class="p-companyOverseas__img" src="/img/images/company-overseas-2.jpg" alt="" width="180">
+            <div class="p-companyOverseas__textWrap">
+              <p class="p-companyOverseas__place">
+                <span class="p-companyOverseas__placeName">電元社アメリカ</span>
+                <span class="p-companyOverseas__placeName">シンシナティ支社</span>
+              </p>
+              <p class="p-companyOverseas__address">300 E Business Way, Suite 200 #225, Summit Woods Corp Center, Cincinnati, OH 45241</p>
+            </div>
           </div>
         </div>
-        <div class="p-companyOverseas__content">
-          <img class="p-companyOverseas__img" src="/img/images/company-overseas-2.jpg" alt="" width="180">
-          <div class="p-companyOverseas__textWrap">
-            <p class="p-companyOverseas__place">
-              <span class="p-companyOverseas__placeName">電元社アメリカ</span>
-              <span class="p-companyOverseas__placeName">シンシナティ支社</span>
-            </p>
-            <p class="p-companyOverseas__address">300 E Business Way, Suite 200 #225, Summit Woods Corp Center, Cincinnati, OH 45241</p>
-          </div>
+        <p class="p-companyMoreContentWrap u-show--sp">
+          <button class="p-companyMoreContent" type="button">
+            もっと見る
+          </button>
+        </p>
+      </div>
+      <div class="p-companyOverseas__agencyWrap js-moreButtonTargetWrap">
+        <h3 class="p-companyOverseas__sectionTitle">海外主要代理店一覧</h3>
+        <div class="p-companyOverseas__agency">
+          <table class="p-companyOverseas__table">
+            <thead class="u-show--pc">
+              <tr>
+                <th class="p-companyOverseas__tableHeading">海外主要取引先</th>
+                <th class="p-companyOverseas__tableHeading">エリア</th>
+              </tr>
+            </thead>
+            <tbody class="js-moreButtonTarget">
+              <tr>
+                <td class="p-companyOverseas__tableDescription">
+                  信邦有限公司
+                </td>
+                <td class="p-companyOverseas__tableDescription p-companyOverseas__tableDescription--address">
+                  中国
+                </td>
+                <td class="p-companyOverseas__tableDescription p-companyOverseas__tableDescription--tell">
+                  <a href="" class="p-companyOverseas__tableTellWrap">
+                    <img src="/img/icons/icon-black-tell.svg" alt="" width="12" height="12">
+                    +86-20-8858-1856
+                  </a>
+                  <a href="" class="p-companyOverseas__tableMailWrap">
+                    <img src="/img/icons/icon-black-fax.svg" alt="" width="15" height="12">
+                    +86-20-8858-1861
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="p-companyOverseas__tableDescription">
+                  康吉森国際（香港）有限公司
+                </td>
+                <td class="p-companyOverseas__tableDescription p-companyOverseas__tableDescription--address">
+                  中国
+                </td>
+                <td class="p-companyOverseas__tableDescription p-companyOverseas__tableDescription--tell">
+                  <a href="" class="p-companyOverseas__tableTellWrap">
+                    <img src="/img/icons/icon-black-tell.svg" alt="" width="12" height="12">
+                    +86-20-8858-1856
+                  </a>
+                  <a href="" class="p-companyOverseas__tableMailWrap">
+                    <img src="/img/icons/icon-black-fax.svg" alt="" width="15" height="12">
+                    +86-20-8858-1861
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="p-companyOverseas__tableDescription">
+                  YMA Solutions in Engineering
+                </td>
+                <td class="p-companyOverseas__tableDescription p-companyOverseas__tableDescription--address">
+                  ブラジル
+                </td>
+                <td class="p-companyOverseas__tableDescription p-companyOverseas__tableDescription--tell">
+                  <a href="" class="p-companyOverseas__tableTellWrap">
+                    <img src="/img/icons/icon-black-tell.svg" alt="" width="12" height="12">
+                    +86-20-8858-1856
+                  </a>
+                  <a href="" class="p-companyOverseas__tableMailWrap">
+                    <img src="/img/icons/icon-black-fax.svg" alt="" width="15" height="12">
+                    +86-20-8858-1861
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="p-companyMoreContentWrap u-show--sp">
+            <button class="p-companyMoreContent" type="button">
+              もっと見る
+            </button>
+          </p>
         </div>
       </div>
     </div>
   </section>
-  <section class="p-companyAgency">
-    <div class="p-companyAgency__sectionLogoWrap">
+  <section class="p-companyClient js-moreButtonTargetWrap">
+    <div class="p-companyClient__sectionLogoWrap">
       {{ sectionLogo(
         usecase="sectionheading"
       ) }}
     </div>
-    <h2 class="p-companyAgency__heading p-companySectionHeading">海外事業所案内</h2>
+    <h2 class="p-companyClient__heading p-companySectionHeading">主要取引先</h2>
+    <div class="p-companyClient__listWrap js-moreButtonTarget">
+      <ul class="p-companyClient__list">
+        <li>（株）アイシン</li>
+        <li>中央精機（株）</li>
+        <li>（株）ダイセル</li>
+        <li>（株）ダイクレ</li>
+        <li>ダイハツ工業（株）</li>
+        <li>（株）デンソー</li>
+        <li>ファナック（株）</li>
+        <li>（株）エフテック</li>
+        <li>フタバ産業（株）</li>
+        <li>日野自動車（株）</li>
+        <li>（株）ヒロテック</li>
+        <li>（株）日立製作所</li>
+        <li>日立オートモティブシステムズ（株）</li>
+        <li>本田技研工業（株）</li>
+        <li> （株）エイチワン</li>
+        <li>（株）IHI</li>
+        <li>（株）稲葉製作所</li>
+        <li> いすゞ自動車（株）</li>
+        <li> （株）総合車両製作所</li>
+        <li>JFEスチール（株）</li>
+        <li>川崎重工業（株）</li>
+        <li>（株）キーレックス</li>
+        <li>（株）ジーテクト</li>
+        <li>（株）神戸製鋼所</li>
+      </ul>
+      <ul class="p-companyClient__list">
+        <li>（株）協豊製作所</li>
+        <li>（株）旭洋工業製作所</li>
+        <li>丸紅（株）</li>
+        <li>マツダ（株）</li>
+        <li>三菱電機（株）</li>
+        <li>三菱重工業（株）</li>
+        <li>三菱自動車工業（株）</li>
+        <li>日本発条（株）</li>
+        <li>日本金属工業（株）</li>
+        <li>日本車輌製造（株）</li>
+        <li>新日鐵住金（株）</li>
+        <li>日産自動車（株）</li>
+        <li>日産車体（株）</li>
+        <li>日産車体マニュファクチュアリング（株）</li>
+        <li>日鍛バルブ（株）</li>
+        <li>岡本プレス工業（株）</li>
+        <li>パナソニック（株）</li>
+        <li>プレス工業（株）</li>
+        <li>リンテックス（株）</li>
+        <li>三恵工業（株）</li>
+        <li>積水化学工業（株）</li>
+        <li>（株）SUBARU
+        <li>住友重機械工業（株）</li>
+        <li>スズキ（株）</li>
+      </ul>
+      <ul class="p-companyClient__list">
+        <li>THK（株）</li>
+        <li>THKリズム（株）</li>
+        <li>東亜工業（株）</li>
+        <li>東京ラヂエーター製造（株）</li>
+        <li>東プレ（株）</li>
+        <li>トピー工業（株）</li>
+        <li>（株）東芝</li>
+        <li>豊田鉄工（株）</li>
+        <li>トヨタ車体（株）</li>
+        <li>（株）豊田自動織機</li>
+        <li>トヨタ自動車（株）</li>
+        <li>トヨタ自動車東日本（株）</li>
+        <li>UDトラックス（株）</li>
+        <li>ユニプレス（株）</li>
+        <li>八千代工業（株）</li>
+        <li>ヤマハ発動機（株）</li>
+        <li>（株）安川電機</li>
+        <li>（株）ヨロズ</li>
+        <li>（株）ワイテック</li>
+      </ul>
+    </div>
+    <p class="p-companyMoreContentWrap u-show--sp">
+      <button class="p-companyMoreContent" type="button">
+        もっと見る
+      </button>
+    </p>
   </section>
 </div>

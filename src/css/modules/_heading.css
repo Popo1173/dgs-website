@@ -1,9 +1,8 @@
 .u-heading {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   min-height: 201px;
-  padding: 46px 0 54px;
+  padding-top: 46px;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -37,7 +36,8 @@
 
 @media (--sp-viewport) {
   .u-heading {
-    padding: 36px 0 40px;
+    padding-top: 36px;
+    min-height: 230px;
   }
 
   .u-heading__introduction {

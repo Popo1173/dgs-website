@@ -3,6 +3,20 @@
   src: url('/fonts/DIN-30640-Std-Neuzeit-Grotesk-Light.otf') format('opentype');
 }
 
+.p-companyMoreContent {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color_purple);
+  border: 1px solid var(--color_purple);
+  padding: 15px 80px;
+  border-radius: 30px;
+
+  &Wrap {
+    margin-top: 35px;
+    text-align: center;
+  }
+}
+
 .p-companyNavi {
   padding: 63px 0;
 }
@@ -14,7 +28,8 @@
   font-weight: normal;
 
   .p-companyIntroduction &,
-  .p-companyOffice & {
+  .p-companyOffice &,
+  .p-companyClient & {
     margin-top: 25px;
   }
 
@@ -90,21 +105,11 @@
       & .p-companyHistory__mainYear {
         padding-top: 22px;
       }
-
-      & .p-companyHistory__list {
-        padding-top: 32px;
-      }
     }
 
     &:not(:first-of-type) {
       & .p-companyHistory__mainYear {
         padding-top: 6px;
-      }
-    }
-
-    &:last-of-type {
-      & .p-companyHistory__list {
-        padding-bottom: 100px;
       }
     }
   }
@@ -203,12 +208,12 @@
 
 .p-companyPlaces {
   position: relative;
-  padding: 12.5% 0 0;
+  padding-top: 180px;
   color: var(--color_fff);
 
   &__square {
     position: absolute;
-    top: 10.8%;
+    top: 100px;
     right: 0;
     background-color: var(--color_red);
     width: 28%;
@@ -224,15 +229,6 @@
 
   &__wrap {
     margin-top: 50px;
-    display: flex;
-  }
-
-  &__content {
-    max-width: calc(33% - 24px);
-
-    &:not(:first-of-type) {
-      margin-left: 36px;
-    }
   }
 
   &__topImage {
@@ -330,30 +326,12 @@
   }
 
   &__tableDescription {
-    line-height: 1.5;
-
     &:first-of-type {
-      width: 22.1%;
-      padding: 9px 3px 14px 10px;
       font-weight: 400;
     }
 
     &--address {
-      padding: 9px 3px 14px;
-      font-size: 0.937rem;
       letter-spacing: 0.2px;
-      width: 42%;
-    }
-
-    &--contact {
-      width: 28%;
-      padding: 9px 3px 14px;
-    }
-
-    &--map {
-      padding: 16px 3px 14px;
-      vertical-align: middle;
-      min-width: 58px;
     }
   }
 
@@ -386,16 +364,16 @@
 }
 
 .p-companyOverseas {
-  padding: 4.6% 15.2% 0;
+  padding: 4.6% 15.2% 7%;
 
   &__sectionTitle {
     font-size: 1.5rem;
     font-weight: normal;
+    letter-spacing: 1.4px;
   }
 
   &__contentsWrap {
     margin-top: 52px;
-    letter-spacing: 1.4px;
   }
 
   &__contents {
@@ -404,7 +382,6 @@
 
   &__content {
     padding: 20px 0;
-    display: flex;
 
     &:not(:first-of-type) {
       border-top: 0.5px solid #b3b3b3;
@@ -444,30 +421,237 @@
     align-items: center;
     letter-spacing: 1.1px;
 
-    &:not(:first-of-type) {
-      margin-left: 12px;
-    }
-
     & > img {
       margin-right: 9px;
     }
   }
 
   &__link {
+    letter-spacing: 1.4px;
     margin-top: 6px;
     display: inline-block;
+  }
+
+  &__agencyWrap {
+    margin-top: 34px;
+  }
+
+  &__agency {
+    margin-top: 30px;
+  }
+
+  &__table {
+    width: 100%;
+
+    & thead {
+      letter-spacing: 1px;
+      color: #a62121;
+      font-weight: bold;
+    }
+
+    & tbody > tr {
+      &:nth-of-type(2n - 1) {
+        background-color: #faf7f7;
+      }
+    }
+  }
+
+  &__tableHeading {
+    padding: 0 9px 9px;
+    white-space: nowrap;
+  }
+
+  &__tableDescription {
+    &:first-of-type {
+      font-weight: 400;
+    }
+
+    &--address {
+      font-size: 0.937rem;
+      letter-spacing: 0.2px;
+    }
+
+    &--tell {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__tableTellWrap {
+    display: flex;
+    letter-spacing: 0.2px;
+
+    & > img {
+      margin-top: 5px;
+      margin-right: 3px;
+    }
+  }
+
+  &__tableMailWrap {
+    display: flex;
+    letter-spacing: 0.2px;
+
+    & > img {
+      margin-top: 5px;
+      margin-right: 3px;
+    }
+  }
+}
+
+.p-companyClient {
+  background-color: #f0f0f0;
+  padding: 4% 15.2% 7%;
+
+  &__listWrap {
+    margin-top: 50px;
+  }
+
+  &__list {
+    letter-spacing: 0.8px;
   }
 }
 
 @media (--pc-viewport) {
+  .p-company .u-heading {
+    padding-top: 52px;
+  }
+
   .p-companyIntroduction__table {
     &Wrap {
       margin: 51px 15.2% 0;
     }
   }
 
-  .p-companyHistory__section:not(:first-of-type) {
-    border-top: 1px solid #bfbfbf;
+  .p-companyHistory {
+    &__section {
+      &:not(:first-of-type) {
+        border-top: 1px solid #bfbfbf;
+      }
+
+      &:first-of-type &__list {
+        padding-top: 32px;
+      }
+
+      &:last-of-type {
+        & .p-companyHistory__list {
+          padding-bottom: 100px;
+        }
+      }
+    }
+  }
+
+  .p-companyPlaces {
+    &__wrap {
+      display: flex;
+    }
+
+    &__content {
+      max-width: calc(33% - 24px);
+
+      &:not(:first-of-type) {
+        margin-left: 36px;
+      }
+    }
+  }
+
+  .p-companyOffice {
+    &__tableDescription {
+      line-height: 1.5;
+
+      &:first-of-type {
+        width: 22.1%;
+        padding: 9px 3px 14px 10px;
+      }
+
+      &--address {
+        padding: 9px 3px 14px;
+        font-size: 0.937rem;
+        width: 42%;
+      }
+
+      &--contact {
+        width: 28%;
+        padding: 9px 3px 14px;
+      }
+
+      &--map {
+        padding: 16px 3px 14px;
+        vertical-align: middle;
+        min-width: 58px;
+      }
+    }
+  }
+
+  .p-companyOverseas {
+    &__content {
+      display: flex;
+    }
+
+    &__contact {
+      display: flex;
+      align-items: center;
+    }
+
+    &__tellWrap {
+      &:not(:first-of-type) {
+        margin-left: 12px;
+      }
+    }
+
+    &__table {
+      text-align: left;
+    }
+
+    &__tableDescription {
+      &:first-of-type {
+        min-width: 33.5%;
+        padding: 9px 6px 10px 11px;
+      }
+
+      &--address {
+        padding: 9px 6px 10px;
+        white-space: nowrap;
+      }
+
+      &--tell {
+        padding: 9px 15px 10px 6px;
+      }
+    }
+
+    &__tableMailWrap {
+      margin-left: 29px;
+    }
+  }
+
+  .p-companyClient {
+    &__listWrap {
+      display: flex;
+    }
+
+    &__list {
+      &:not(:first-of-type) {
+        margin-left: 5.6%;
+      }
+
+      & > li {
+        &:not(:first-of-type) {
+          margin-top: 15px;
+        }
+      }
+
+      &:last-of-type {
+        & > li:last-of-type {
+          &::after {
+            content: '※英語表記時のアルファベット順';
+            color: #333;
+            font-size: 0.875rem;
+            display: inline-block;
+            margin-top: 40px;
+            letter-spacing: 0;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -478,20 +662,233 @@
 }
 
 @media (--sp-viewport) {
-  .p-companySectionHeading {
-    font-size: 2rem;
-    line-height: 1.4;
-    letter-spacing: 3px;
+  .p-company .u-heading {
+    padding-top: 58px;
   }
 
-  .p-companyIntroduction__table {
-    &Term {
-      padding: 13px 33px 13px 25px;
-      width: auto;
+  .p-company .u-heading__main {
+    font-size: 2.5rem;
+    margin-top: 4px;
+  }
+
+  .p-companySectionHeading {
+    line-height: 1.4;
+    letter-spacing: 3px;
+
+    .p-companyIntroduction & {
+      font-size: 2rem;
+    }
+  }
+
+  .p-companyNavi {
+    padding: 0;
+  }
+
+  .p-companyIntroduction {
+    &__content {
+      padding-top: 30px;
+      padding-bottom: 110px;
     }
 
-    &Description {
-      width: auto;
+    &__heading {
+      padding: 0 6.2%;
+    }
+
+    &__tableWrap {
+      margin-top: 18px;
+    }
+
+    &__table {
+      &Term {
+        padding: 13px 18px 13px 25px;
+        width: auto;
+      }
+
+      &Description {
+        width: auto;
+      }
+    }
+  }
+
+  .p-companyHistory {
+    padding: 3.6% 2.5% 10% 6.2%;
+
+    &__content {
+      margin-top: 26px;
+    }
+
+    &__list {
+      padding: 0;
+      letter-spacing: 0.8px;
+    }
+
+    &__section:not(:first-of-type) {
+      margin-top: 38px;
+    }
+  }
+
+  .p-companyPlaces {
+    padding-top: 56px;
+
+    &__square {
+      top: 0%;
+      width: 57%;
+    }
+
+    &__main {
+      width: 100%;
+      padding: 9.8% 3% 20.7% 5.5%;
+    }
+
+    &__wrap {
+      margin-top: 25px;
+    }
+
+    &__content {
+      padding: 0 7% 0 3%;
+
+      &:not(:first-of-type) {
+        margin-top: 64px;
+      }
+    }
+  }
+
+  .p-companyOffice {
+    padding: 16% 0;
+
+    &__headingWrap {
+      padding: 0 6.2%;
+    }
+
+    &__table {
+      & tbody > tr {
+        display: flex;
+        flex-direction: column;
+        padding: 6% 6.5% 15%;
+
+        &:nth-of-type(2n - 1) {
+          padding: 3% 6.5% 6.8%;
+        }
+      }
+    }
+
+    &__tableDescription {
+      &--address {
+        margin-top: 26px;
+        font-size: 0.937rem;
+        line-height: 1.5;
+      }
+
+      &--contact {
+        margin-top: 10px;
+      }
+
+      &--map {
+        margin-top: 27px;
+      }
+    }
+
+    &__tableMailWrap {
+      margin-top: 4px;
+    }
+
+    &__tableMap {
+      display: inline-block;
+      padding: 8px 54px;
+      border-radius: 17px;
+      font-size: 1rem;
+    }
+  }
+
+  .p-companyOverseas {
+    padding: 21.5% 0 21%;
+
+    &__main,
+    &__headingWrap,
+    &__agencyWrap &__sectionTitle {
+      padding: 0 6%;
+    }
+
+    &__contentsWrap {
+      margin-top: 25px;
+    }
+
+    &__contents {
+      margin-top: 66px;
+    }
+
+    &__content {
+      padding: 0;
+
+      &:not(:first-of-type) {
+        margin-top: 52px;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      max-width: 374px;
+    }
+
+    &__textWrap {
+      margin: 14px 0 0;
+    }
+
+    &__tellWrap {
+      &:not(:first-of-type) {
+        margin-top: 6px;
+      }
+    }
+
+    &__agencyWrap {
+      margin-top: 66px;
+    }
+
+    &__table {
+      & tbody > tr {
+        display: flex;
+        flex-direction: column;
+        padding: 6% 6.5% 15%;
+
+        &:nth-last-of-type(2n - 1) {
+          padding: 3% 6.5% 6.8%;
+        }
+      }
+    }
+
+    &__tableTellWrap,
+    &__tableMailWrap {
+      display: block;
+    }
+
+    &__tableDescription {
+      &--tell {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      &--address {
+        margin-top: 13px;
+      }
+
+      &--tell {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .p-companyClient {
+    padding: 9% 6.5% 7%;
+
+    &__listWrap {
+      margin-top: 60px;
+      padding-left: 5px;
+    }
+
+    &__list {
+      & > li:not(:first-of-type) {
+        margin-top: 13px;
+      }
     }
   }
 }
