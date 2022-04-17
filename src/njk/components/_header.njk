@@ -57,7 +57,7 @@
           </form>
         </div>
         <ul class="c-headerGnavLists">
-          <li class="c-headerGnavList" data-layer="1">
+          <li class="c-headerGnavList" data-category="product">
             <button type="button" class="js-trigger u-w100" data-type="top-menu" aria-controls="top-menu-goods">
               <span class="c-headerGnavList__triggerText u-d-flex u-align-items-center u-justify-content-between">製品情報</span>
             </button>
@@ -147,7 +147,7 @@
               </div>
             </div>
           </li>
-          <li class="c-headerGnavList" data-layer="1">
+          <li class="c-headerGnavList" data-category="solution">
             <button type="button" class="js-trigger u-w100" data-type="top-menu" aria-controls="top-menu-solution">
               <span class="c-headerGnavList__triggerText u-d-flex u-align-items-center u-justify-content-between">ソリューション</span>
             </button>
@@ -206,17 +206,17 @@
               </div>
             </div>
           </li>
-          <li class="c-headerGnavList" data-layer="1">
+          <li class="c-headerGnavList" data-category="caseStudy">
             <a href="" class="u-d-block u-w100">
               <span>ケーススタディ</span>
             </a>
           </li>
-          <li class="c-headerGnavList" data-layer="1">
+          <li class="c-headerGnavList" data-category="faq">
             <a href="" class="u-d-block u-w100">
               <span>よくあるご質問</span>
             </a>
           </li>
-          <li class="c-headerGnavList" data-layer="1">
+          <li class="c-headerGnavList" data-category="company">
             <button type="button" class="js-trigger u-w100" data-type="top-menu" aria-controls="top-menu-guide">
               <span class="c-headerGnavList__triggerText u-d-flex u-align-items-center u-justify-content-between">会社案内</span>
             </button>
@@ -272,7 +272,7 @@
               </div>
             </div>
           </li>
-          <li class="u-show--pc" data-layer="1">
+          <li class="u-show--pc" data-category="search">
             <button type="button" class="js-trigger" data-type="top-menu" aria-controls="top-menu-search">
               <img src="/img/icons/icon-search-black.svg" alt="検索" width="15" height="15">
             </button>
@@ -300,7 +300,8 @@
 </header>
 
 <style>
-  [data-type="top-menu"][aria-controls={{ isCurrent }}] .c-headerGnavList__triggerText {
+  .c-headerGnavList[data-category="{{ isCurrent }}"] > button,
+  .c-headerGnavList[data-category="{{ isCurrent }}"] > a {
     color: #c6141f;
   }
 </style>

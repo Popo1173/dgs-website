@@ -1,0 +1,33 @@
+{% macro products (
+  linkList = [
+    {
+      text: '',
+      href: ''
+    },
+    {
+      text: '',
+      href: ''
+    },
+    {
+      text: '',
+      href: ''
+    }
+  ]
+) %}
+
+<div class="m-product">
+  <h2 class="m-productHeading">関連製品</h2>
+  <ul class="m-productList u-d-flex">
+  {% for linkItem in linkList %}
+    <li class="m-productItem">
+      <p>
+        <a href="{{ linkItem.href }}" class="m-productLink u-d-inline-flex u-link-hoverLine u-link-hoverLine--purple">
+          <img src="/img/icons/icon-link-chevron-right.svg" alt="" width="7" height="14">
+          <span>{{ linkItem.text }}</span>
+        </a>
+      </p>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+{% endmacro %}

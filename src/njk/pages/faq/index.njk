@@ -1,5 +1,5 @@
-{%- from '../../../components/_header.njk' import header -%}
-{% extends "../../_base.njk" %}
+{%- from '../../components/_header.njk' import header -%}
+{% extends "../_base.njk" %}
 
 {% block meta -%}
   {{ super() }}
@@ -12,7 +12,7 @@
 
 {% block header %}
   {{ header(
-    isCurrent="company"
+    isCurrent="faq"
   ) }}
 {% endblock %}
 

@@ -1,0 +1,35 @@
+{%- from '../../../modules/_heading.njk' import heading -%}
+
+<div class="p-faq">
+  <section class="p-faqHeading">
+    {{ heading(
+      introduction = 'Q&A',
+      title = 'よくあるご質問',
+      modifier = '--type1'
+    ) }}
+  </section>
+  <section class="p-faqContent">
+    <div class="p-faqContent__accordion">
+      <p class="p-faqContent__accordionToggle is-opened" data-toggle="accordion" data-target="p-faqAnswer-1">
+        <span>Q</span>
+        質問内容が入ります質問内容が入ります質問内容が入ります。
+      </p>
+      <div id="p-faqAnswer-1" class="p-faqContent__accordionTarget">
+        <p>
+          <span>A</span>
+          回答文が入ります。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
+        <div>
+          <img src="" alt="">
+          <p></p>
+        </div>
+        <div>
+
+        </div>
+      </div>
+    </div>
+    <div class="p-faqItem">
+
+    </div>
+  </section>
+</div>

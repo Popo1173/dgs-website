@@ -1,5 +1,22 @@
 {%- from '../../../modules/_section-logo.njk' import sectionLogo -%}
 {%- from '../../../modules/_heading.njk' import heading -%}
+{%- from '../../../modules/_products.njk' import products -%}
+{% set thisLinkList = [
+  {
+    text: 'コンデンサ式NDZ',
+    href: ''
+  },
+  {
+    text: 'コンパクトフィーダ',
+    href: ''
+  },
+  {
+    text: 'LinearWave',
+    href: ''
+  }
+] %}
+
+
 <div class="p-solution p-solution--decarbonization">
   <section class="p-solutionHeading">
     {{ heading(
@@ -68,34 +85,8 @@
     </div>
   </section>
   <section class="p-solutionProductWrap">
-    <div class="p-solutionProduct">
-      <h2 class="p-solutionProductHeading">関連製品</h2>
-      <ul class="p-solutionProductList u-d-flex">
-        <li class="p-solutionProductItem">
-          <p>
-            <a href="" class="p-solutionProductLink u-d-inline-flex u-link-hoverLine u-link-hoverLine--purple">
-              <img src="{{ data.root }}img/icons/icon-link-chevron-right.svg" alt="" width="7" height="14">
-              <span>コンデンサ式NDZ</span>
-            </a>
-          </p>
-        </li>
-        <li class="p-solutionProductItem">
-          <p>
-            <a href="" class="p-solutionProductLink u-d-inline-flex u-link-hoverLine u-link-hoverLine--purple">
-              <img src="{{ data.root }}img/icons/icon-link-chevron-right.svg" alt="" width="7" height="14">
-              <span>コンパクトフィーダ</span>
-            </a>
-          </p>
-        </li>
-        <li class="p-solutionProductItem">
-          <p>
-            <a href="" class="p-solutionProductLink u-d-inline-flex u-link-hoverLine u-link-hoverLine--purple">
-              <img src="{{ data.root }}img/icons/icon-link-chevron-right.svg" alt="" width="7" height="14">
-              <span>LinearWave</span>
-            </a>
-          </p>
-        </li>
-      </ul>
-    </div>
+    {{ products(
+      linkList = thisLinkList
+    ) }}
   </section>
 </div>
