@@ -713,7 +713,7 @@
   }
 
   .p-companyNavi {
-    padding: 0 15.2%;
+    padding: 0;
 
     &Wrap {
       position: absolute;
@@ -777,10 +777,6 @@
     .p-companyIntroduction & {
       font-size: 2rem;
     }
-  }
-
-  .p-companyNavi {
-    padding: 0;
   }
 
   .p-companyIntroduction {

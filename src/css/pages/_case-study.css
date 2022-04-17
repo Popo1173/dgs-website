@@ -1,0 +1,288 @@
+.p-caseStudy {
+  & .u-heading {
+    padding-top: 52px;
+  }
+}
+
+.p-caseStudyNavi {
+  &__case {
+    pointer-events: none;
+    font-weight: bold;
+    color: #e60a1a;
+    font-family: var(--fontFamilyCondensed);
+    margin-right: 8px;
+  }
+}
+
+.p-caseStudyContent {
+  padding-bottom: 17%;
+
+  &__section {
+    padding-top: 20px;
+
+    &:not(:first-of-type) {
+      margin-top: 6.8%;
+    }
+  }
+
+  &__headingWrap {
+    position: relative;
+    background-color: var(--color_purple);
+    color: var(--color_fff);
+    width: 88.8%;
+    padding: 2.5% 2% 2.4% 24%;
+  }
+
+  &__caseNumWrap {
+    position: absolute;
+    top: -20px;
+    left: 24%;
+    background-color: #e60a1a;
+    font-family: var(--fontFamilyCondensed);
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 11px 22px 11px 17px;
+    letter-spacing: 1px;
+    transform: translateX(-100%);
+  }
+
+  &__caseNum {
+    font-size: 1.93rem;
+    display: block;
+  }
+
+  &__headingPlace {
+    font-size: 1.06rem;
+  }
+
+  &__headingText {
+    font-size: 2.25rem;
+    letter-spacing: 1.8px;
+  }
+
+  &__main {
+    padding: 3.7% 15.2% 0;
+  }
+
+  &__subject {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #b8bec6;
+
+    & > img {
+      margin-right: 8px;
+    }
+  }
+
+  &__taskText {
+    margin-top: 17px;
+    letter-spacing: 0.8px;
+  }
+
+  &__suggestion {
+    margin-top: 51px;
+  }
+
+  &__suggestionText {
+    margin-top: 15px;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+  }
+
+  &__suggestionEmp {
+    font-weight: bold;
+    margin-top: 15px;
+    letter-spacing: 0.8px;
+  }
+
+  &__suggestionImg {
+    margin-top: 25px;
+  }
+
+  &__suggestionImgText {
+    font-size: 0.81rem;
+    margin-top: 8px;
+    letter-spacing: 0.8px;
+  }
+
+  &__products {
+    margin-top: 52px;
+  }
+}
+
+@media (--pc-viewport) {
+  .p-caseStudyNavi {
+    padding: 0 15.2% 7.4%;
+    margin-top: -30px;
+
+    &Wrap {
+      background-color: var(--color_fff);
+      box-shadow: 0 10px 33px rgba(0, 0, 0, 0.2);
+    }
+
+    &__items {
+      padding: 4% 5% 5%;
+      width: 100%;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: calc(50% - 27px);
+
+      &:nth-of-type(2n) {
+        margin-left: 54px;
+      }
+
+      &:nth-of-type(n + 3) {
+        margin-top: 22px;
+      }
+
+      & > a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.875rem;
+        letter-spacing: 0.6px;
+
+        & > img {
+          margin-left: 6px;
+        }
+      }
+    }
+
+    &__case {
+      font-size: 1rem;
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media (--sp-viewport) {
+  .p-caseStudyHeading {
+    padding-top: 54px;
+  }
+
+  .p-caseStudy {
+    & .u-heading {
+      padding-top: 62px;
+      padding-bottom: 140px;
+    }
+
+    & .u-heading__main {
+      font-size: 2.5rem;
+    }
+
+    & .m-product {
+      padding: 7.2% 3.2% 14.2%;
+    }
+
+    & .m-productList {
+      margin-top: 27px;
+      padding-left: 2%;
+    }
+
+    & .m-productItem:not(:first-of-type) {
+      margin-top: 20px;
+    }
+  }
+
+  .p-caseStudyNavi {
+    padding: 0;
+
+    &Wrap {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+    }
+
+    &__items {
+      padding: 0 26px;
+      width: 100%;
+    }
+
+    &__item {
+      border-top: 1px solid #ccc;
+
+      & > a {
+        display: flex;
+        padding: 17px 0;
+      }
+    }
+
+    &__case {
+      margin: 0 8px;
+      white-space: nowrap;
+    }
+
+    &__toggle {
+      position: relative;
+      display: block;
+      padding: 17px 26px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 17px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url(/img/icons/icon-red-chevron-down.svg);
+      }
+
+      &.is-opened::after {
+        background-image: url(/img/icons/icon-red-chevron-up.svg);
+      }
+    }
+  }
+
+  .p-caseStudyContent {
+    margin-top: 9%;
+
+    &__headingWrap {
+      width: 100%;
+      padding: 22.7% 3% 9% 7%;
+    }
+
+    &__caseNumWrap {
+      left: 29%;
+    }
+
+    &__headingText {
+      margin-top: 8px;
+      line-height: 1.4;
+    }
+
+    &__main {
+      padding: 6% 7% 0;
+    }
+
+    &__suggestion {
+      margin-top: 72px;
+    }
+
+    &__suggestionText {
+      line-height: 1.7;
+    }
+
+    &__suggestionText {
+      margin-top: 18px;
+    }
+
+    &__products {
+      margin-top: 22px;
+    }
+  }
+}

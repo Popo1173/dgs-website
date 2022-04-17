@@ -1,0 +1,181 @@
+{%- from '../../../modules/_heading.njk' import heading -%}
+{%- from '../../../modules/_products.njk' import products -%}
+{% set thisLinkList = [
+  {
+    text: '【カテゴリー】製品名',
+    href: ''
+  },
+  {
+    text: '【カテゴリー】製品名',
+    href: ''
+  },
+  {
+    text: '【カテゴリー】製品名',
+    href: ''
+  },
+  {
+    text: '【カテゴリー】製品名',
+    href: ''
+  }
+] %}
+
+<div class="p-caseStudy">
+  <section class="p-caseStudyHeading">
+    {{ heading(
+      introduction = 'Case Study',
+      title = 'ケーススタディ',
+      modifier = '--type1'
+    ) }}
+  </section>
+  <section class="p-caseStudyNavi">
+    <div class="p-caseStudyNaviWrap u-show--pc">
+      <div class="p-caseStudyNavi__items">
+        <div class="p-caseStudyNavi__item">
+          <a href="#p-caseStudy-case1">
+            <span class="p-caseStudyNavi__case">Case 01</span>
+            エナメル線の被覆剥き作業の省力化で生産効率UP
+            <img src="/img/icons/icon-red-chevron-down.svg" width="13" height="7" alt="">
+          </a>
+        </div>
+        <div class="p-caseStudyNavi__item">
+          <a href="#p-caseStudy-case2">
+            <span class="p-caseStudyNavi__case">Case 02</span>
+            電圧変動の問題を改善！溶接の散りも大幅に低減。
+            <img src="/img/icons/icon-red-chevron-down.svg" width="13" height="7" alt="">
+          </a>
+        </div>
+        <div class="p-caseStudyNavi__item">
+          <a href="#p-caseStudy-case3">
+            <span class="p-caseStudyNavi__case">Case 03</span>
+            テキストテキストテキストテキストテキストテキス
+            <img src="/img/icons/icon-red-chevron-down.svg" width="13" height="7" alt="">
+          </a>
+        </div>
+        <div class="p-caseStudyNavi__item">
+          <a href="#p-caseStudy-case4">
+            <span class="p-caseStudyNavi__case">Case 04</span>
+            テキストテキストテキストテキストテキストテキス
+            <img src="/img/icons/icon-red-chevron-down.svg" width="13" height="7" alt="">
+          </a>
+        </div>
+        <div class="p-caseStudyNavi__item">
+          <a href="#p-caseStudy-case5">
+            <span class="p-caseStudyNavi__case">Case 05</span>
+            テキストテキストテキストテキストテキストテキス
+            <img src="/img/icons/icon-red-chevron-down.svg" width="13" height="7" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="p-caseStudyNaviWrap u-show--sp">
+      <a class="is-closed p-caseStudyNavi__toggle" data-toggle="accordion" data-target="#p-caseStudyNaviContent" data-accordion-status="internalToggle">
+        ケーススタディ
+      </a>
+      <div id="p-caseStudyNaviContent" class="p-caseStudyNavi__items is-closed" data-accordion-status="internalTarget" style="display: none;">
+        <div class="p-caseStudyNavi__item">
+          <a href="#p-caseStudy-case1">
+            -
+            <span class="p-caseStudyNavi__case">Case 01</span>
+            エナメル線の被覆剥き作業の省力化で生産効率UP
+          </a>
+        </div>
+        <div class="p-caseStudyNavi__item">
+          <a href="#p-caseStudy-case2">
+            -
+            <span class="p-caseStudyNavi__case">Case 02</span>
+            電圧変動の問題を改善！溶接の散りも大幅に低減。
+          </a>
+        </div>
+        <div class="p-caseStudyNavi__item">
+          <a href="#p-caseStudy-case3">
+            -
+            <span class="p-caseStudyNavi__case">Case 03</span>
+            テキストテキストテキストテキストテキストテキス
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-caseStudyContent">
+    <div id='p-caseStudy-case1' class="p-caseStudyContent__section">
+      <div class="p-caseStudyContent__headingWrap">
+        <div class="p-caseStudyContent__caseNumWrap">
+          <span>Case</span>
+          <span class="p-caseStudyContent__caseNum">01</span>
+        </div>
+        <div class="p-caseStudyContent__headingTextWrap">
+          <p class="p-caseStudyContent__headingPlace">○○工場</p>
+          <p class="p-caseStudyContent__headingText">エナメル線の被覆剥き作業の省力化で生産効率UP</p>
+        </div>
+      </div>
+
+      <div class="p-caseStudyContent__main">
+        <div class="p-caseStudyContent__task">
+          <p class="p-caseStudyContent__subject">
+            <img src="/img/icons/icon-baloon.svg" alt="" width="27" height="31">
+            お客様からの課題・要望
+          </p>
+          <p class="p-caseStudyContent__taskText">複数のエナメル線を束ねて端子に圧着するためにエナメル線を1本1本被覆を剥いているため被覆剝きに多くの労力を使っていた。</p>
+        </div>
+        <div class="p-caseStudyContent__suggestion">
+          <p class="p-caseStudyContent__subject">
+            <img src="/img/icons/icon-miniature-lamp.svg" alt="" width="28" height="32">
+            電元社トーアからの提案
+          </p>
+          <p class="p-caseStudyContent__suggestionText">被覆を剥がさず束ねたエナメル線を端子に通し、<span class="p-caseStudyContent__suggestionEmp">抵抗加熱しながら圧着</span>することで被覆を剥く手間がなくなり量産できるようになった。</p>
+          <div class="p-caseStudyContent__suggestionImg">
+            <img src="/img/images/faq-answer.jpg" alt="">
+            <p class="p-caseStudyContent__suggestionImgText">キャプションがある場合</p>
+          </div>
+
+          <div class="p-caseStudyContent__products">
+            {{ products(
+              linkList = thisLinkList
+            ) }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='p-caseStudy-case2' class="p-caseStudyContent__section">
+      <div class="p-caseStudyContent__headingWrap">
+        <div class="p-caseStudyContent__caseNumWrap">
+          <span>Case</span>
+          <span class="p-caseStudyContent__caseNum">02</span>
+        </div>
+        <div class="p-caseStudyContent__headingTextWrap">
+          <p class="p-caseStudyContent__headingPlace">○○工場</p>
+          <p class="p-caseStudyContent__headingText">エナメル線の被覆剥き作業の省力化で生産効率UP</p>
+        </div>
+      </div>
+
+      <div class="p-caseStudyContent__main">
+        <div class="p-caseStudyContent__task">
+          <p class="p-caseStudyContent__subject">
+            <img src="/img/icons/icon-baloon.svg" alt="" width="27" height="31">
+            お客様からの課題・要望
+          </p>
+          <p class="p-caseStudyContent__taskText">複数のエナメル線を束ねて端子に圧着するためにエナメル線を1本1本被覆を剥いているため被覆剝きに多くの労力を使っていた。</p>
+        </div>
+        <div class="p-caseStudyContent__suggestion">
+          <p class="p-caseStudyContent__subject">
+            <img src="/img/icons/icon-miniature-lamp.svg" alt="" width="28" height="32">
+            電元社トーアからの提案
+          </p>
+          <p class="p-caseStudyContent__suggestionText">被覆を剥がさず束ねたエナメル線を端子に通し、<span class="p-caseStudyContent__suggestionEmp">抵抗加熱しながら圧着</span>することで被覆を剥く手間がなくなり量産できるようになった。</p>
+          <div class="p-caseStudyContent__suggestionImg">
+            <img src="/img/images/faq-answer.jpg" alt="">
+            <p class="p-caseStudyContent__suggestionImgText">キャプションがある場合</p>
+          </div>
+
+          <div class="p-caseStudyContent__products">
+            {{ products(
+              linkList = thisLinkList
+            ) }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
