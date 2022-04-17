@@ -1,0 +1,19 @@
+.m-listSquare {
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+
+  &__left {
+    background-color: #e90b18;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+  }
+
+  &__right {
+    background-color: var(--color_vivid_purple);
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+  }
+}

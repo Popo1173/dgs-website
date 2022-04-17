@@ -659,6 +659,14 @@
     background: #fff;
   }
 
+  &&--thin {
+    padding-bottom: 2px;
+
+    &::after {
+      height: 1px;
+    }
+  }
+
   &::after {
     content: '';
     position: absolute;
