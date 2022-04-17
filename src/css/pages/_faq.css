@@ -1,5 +1,157 @@
 .p-faq {
+  background-color: #f0f0f0;
+
   & .u-heading {
     padding-top: 52px;
+  }
+}
+
+.p-faqContent {
+  padding: 4.8% 15.2%;
+
+  &__accordion {
+    &:not(:first-of-type) {
+      margin-top: 20px;
+    }
+  }
+
+  &__accordionQuestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color_purple);
+    color: var(--color_fff);
+    padding: 15px 30px;
+    letter-spacing: 0.8px;
+  }
+
+  &__accordionQuestionTextWrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__accordionQuestionLogo {
+    font-family: var(--fontFamilyCondensed);
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-right: 12px;
+  }
+
+  &__accordionToggle {
+    font-size: 1.3rem;
+    margin-left: 4px;
+
+    &.is-opened::before {
+      content: '＋';
+    }
+
+    &.is-closed::before {
+      content: 'ー';
+    }
+  }
+
+  &__accordionAnswer {
+    display: flex;
+    padding: 24px 30px 34px;
+    background-color: var(--color_fff);
+  }
+
+  &__accordionAnswerLogo {
+    color: #e60a1a;
+    font-family: var(--fontFamilyCondensed);
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-right: 12px;
+  }
+
+  &__accordionAnswerText {
+    font-size: 0.875rem;
+    line-height: 2;
+    letter-spacing: 0.8px;
+  }
+
+  &__accordionAnswerImg {
+    margin-top: 28px;
+
+    & > img {
+      max-width: 100%;
+    }
+  }
+
+  &__accordionAnswerImgText {
+    margin-top: 5px;
+    font-size: 0.812rem;
+    letter-spacing: 0.8px;
+  }
+
+  &__accordionAnswerProducts {
+    margin-top: 24px;
+  }
+}
+
+@media (--sp-viewport) {
+  .p-faq {
+    & .u-heading {
+      padding-top: 62px;
+      padding-bottom: 140px;
+    }
+
+    & .u-heading__main {
+      font-size: 2.5rem;
+    }
+  }
+
+  .p-faqContent {
+    padding: 19.5% 7%;
+
+    &__accordion {
+      &:not(:first-of-type) {
+        margin-top: 35px;
+      }
+    }
+
+    &__accordionQuestion {
+      padding: 9px 4px 4px 8px;
+    }
+
+    &__accordionQuestionLogo {
+      margin-right: 18px;
+    }
+
+    &__accordionQuestionText {
+      line-height: 1.7;
+    }
+
+    &__accordionAnswer {
+      padding: 8px 22px 24px 7px;
+    }
+
+    &__accordionAnswerLogo {
+      margin-right: 8px;
+    }
+
+    &__accordionAnswerImgText {
+      font-size: 0.687rem;
+    }
+
+    &__accordionAnswerProducts {
+      margin-top: 38px;
+    }
+  }
+
+  .p-faq {
+    & .m-product {
+      padding: 9% 6.2% 14.2%;
+    }
+
+    & .m-productList {
+      margin-top: 27px;
+    }
+
+    & .m-productItem {
+      &:not(:first-of-type) {
+        margin-top: 20px;
+      }
+    }
   }
 }

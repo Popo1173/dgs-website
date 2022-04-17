@@ -22,7 +22,6 @@ export const setAccordion = {
   setEvent: () => {
     $('[data-toggle="accordion"]').on('click', (e) => {
       let state = 'is-closed';
-
       if($(e.target).hasClass(setAccordion.COLLAPSED_CLASS)) {
         state = 'is-closed';
       } else {
