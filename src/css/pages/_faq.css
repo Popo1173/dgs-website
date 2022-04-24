@@ -28,6 +28,7 @@
   &__accordionQuestionTextWrap {
     display: flex;
     align-items: center;
+    pointer-events: none;
   }
 
   &__accordionQuestionLogo {
@@ -40,13 +41,14 @@
   &__accordionToggle {
     font-size: 1.3rem;
     margin-left: 4px;
+    pointer-events: none;
 
-    &.is-opened::before {
-      content: '＋';
+    .p-faqContent__accordionQuestion.is-opened &::before {
+      content: 'ー';
     }
 
-    &.is-closed::before {
-      content: 'ー';
+    .p-faqContent__accordionQuestion.is-closed &::before {
+      content: '＋';
     }
   }
 

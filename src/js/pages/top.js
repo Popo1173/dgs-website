@@ -2,6 +2,9 @@ $(function () {
   const carousel = {
     init: () => {
       const $selector = $('[data-toggle="hero-carousel"]')
+      if (!$selector.length) {
+        return
+      }
       const options = {
         infinite: $selector.attr('data-infinite') == 'true' ? true : false,
         arrows: $selector.attr('data-arrows') == 'true' ? true : false,

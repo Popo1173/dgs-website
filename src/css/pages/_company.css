@@ -684,6 +684,8 @@
     }
 
     &__list {
+      width: calc(88.8% / 3);
+
       &:not(:first-of-type) {
         margin-left: 5.6%;
       }
