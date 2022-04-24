@@ -27,3 +27,9 @@ ul {
 img {
   vertical-align: middle;
 }
+
+@media (--pc-viewport) {
+  a[href^='tel:'] {
+    pointer-events: none;
+  }
+}

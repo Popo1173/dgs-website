@@ -353,10 +353,13 @@
   }
 
   &__tableMap {
-    padding: 0 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 14px;
     background-color: var(--color_purple);
     color: var(--color_fff);
-    border-radius: 12px;
+    border-radius: 14px;
     font-size: 0.937rem;
     vertical-align: text-top;
   }
@@ -561,6 +564,12 @@
   .p-companyIntroduction__table {
     &Wrap {
       margin: 51px 15.2% 0;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   }
 
@@ -617,9 +626,9 @@
       }
 
       &--map {
-        padding: 16px 3px 14px;
+        padding: 16px 10px 14px 3px;
         vertical-align: middle;
-        min-width: 58px;
+        min-width: 71px;
       }
     }
   }
@@ -789,11 +798,11 @@
       padding: 0 6.2%;
     }
 
-    &__tableWrap {
-      margin-top: 18px;
-    }
-
     &__table {
+      &Wrap {
+        margin-top: 18px;
+      }
+
       &Term {
         padding: 13px 18px 13px 25px;
         width: auto;
@@ -859,11 +868,7 @@
       & tbody > tr {
         display: flex;
         flex-direction: column;
-        padding: 6% 6.5% 15%;
-
-        &:nth-of-type(2n - 1) {
-          padding: 3% 6.5% 6.8%;
-        }
+        padding: 3% 6.5% 6.8%;
       }
     }
 

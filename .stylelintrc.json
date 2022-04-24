@@ -1,6 +1,9 @@
 {
   "extends": "stylelint-config-standard",
   "rules": {
-    "string-quotes": "single"
+    "string-quotes": "single",
+    "property-no-unknown": [true,
+      {"ignoreProperties": ["scrollbar-width"]}
+    ]
   }
 }
