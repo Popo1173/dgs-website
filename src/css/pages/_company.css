@@ -471,13 +471,14 @@
 
     &--tell {
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
     }
   }
 
   &__tableTellWrap {
     display: flex;
     letter-spacing: 0.2px;
+    flex: 1 1 0;
 
     & > img {
       margin-top: 5px;
@@ -488,6 +489,7 @@
   &__tableMailWrap {
     display: flex;
     letter-spacing: 0.2px;
+    flex: 1 1 0;
 
     & > img {
       margin-top: 5px;
@@ -674,7 +676,7 @@
     }
 
     &__tableMailWrap {
-      margin-left: 29px;
+      /* margin-left: 29px; */
     }
   }
 
