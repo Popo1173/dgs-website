@@ -39,8 +39,10 @@
 }
 
 .c-footerCopyright {
+  height: 80px;
   padding: 30px 80px;
   background-color: #293345;
+  position: relative;
 }
 
 .c-footerCopyright__text {
@@ -68,6 +70,18 @@
   & li {
     white-space: nowrap;
   }
+}
+
+.c-footer__toTop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 @media (--pc-viewport) and (max-width: 1024px) {

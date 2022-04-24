@@ -9,7 +9,7 @@ export const setScroll = {
       const SPEED = 400;
       const href = $(e.target).attr("href");
       const headerHeight = $('header').height()
-      const target = $(href == "#" || href == "" ? 'html' : href);
+      const target = $(href === "#" || href === "" ? 'html' : href);
       const targetHeight = target.offset().top
       let position;
       if (targetHeight < HEADER_EXIST_BORDER) {
