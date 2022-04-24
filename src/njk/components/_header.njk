@@ -42,7 +42,7 @@
         </ul>
       </div>
       <nav class="c-headerGnav">
-        <div class="u-show--sp u-pt3 u-px1 u-mb4">
+        <div class="u-pt3 u-show--sp u-px1">
           <form id="cse-search-box" action="http://google.com/cse">
             <input type="hidden" name="cx" value="YOUR SEARCH ENGINE ID goes here" />
             <input type="hidden" name="ie" value="UTF-8" />
@@ -59,7 +59,7 @@
         <ul class="c-headerGnavLists">
           <li class="c-headerGnavList" data-category="product">
             <button type="button" class="js-trigger u-w100" data-type="top-menu" aria-controls="top-menu-goods">
-              <span class="c-headerGnavList__triggerText u-d-flex u-align-items-center u-justify-content-between">製品情報</span>
+              <span class="c-headerGnavList__triggerText u-d-flex u-align-items-center u-justify-content-between">製品<span class="u-show--pc">情報</span></span>
             </button>
             <div id="side-menu-goods" class="c-headerGnavSlideItem u-w100" aria-hidden="true">
               <div class="c-headerGnavMenuContent">
@@ -77,69 +77,89 @@
                   <ul class="c-headerGnavMenuLinks">
                     <li class="c-headerGnavMenuLinkItem">
                       <a href="" class="c-headerGnavMenuLink">
-                        <span>スポット溶接機</span>
-                        <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
-                      </a>
-                    </li>
-                    <li class="c-headerGnavMenuLinkItem">
-                      <a href="" class="c-headerGnavMenuLink">
-                        <span>溶接ガン</span>
-                        <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
-                      </a>
-                    </li>
-                    <li class="c-headerGnavMenuLinkItem">
-                      <a href="" class="c-headerGnavMenuLink">
-                        <span>プロジェクション溶接機</span>
-                        <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
-                      </a>
-                    </li>
-                    <li class="c-headerGnavMenuLinkItem">
-                      <a href="" class="c-headerGnavMenuLink">
-                        <span>シーム溶接機</span>
-                        <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
-                      </a>
-                    </li>
-                  </ul>
-                  <ul class="c-headerGnavMenuLinks">
-                    <li class="c-headerGnavMenuLinkItem">
-                      <a href="" class="c-headerGnavMenuLink">
-                        <span>専用溶接機</span>
-                        <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
-                      </a>
-                    </li>
-                    <li class="c-headerGnavMenuLinkItem">
-                      <a href="" class="c-headerGnavMenuLink">
-                        <span>自動供給装置</span>
-                        <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
-                      </a>
-                    </li>
-                    <li class="c-headerGnavMenuLinkItem">
-                      <a href="" class="c-headerGnavMenuLink">
-                        <span>抵抗用制御装置</span>
-                        <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
-                      </a>
-                    </li>
-                    <li class="c-headerGnavMenuLinkItem">
-                      <a href="" class="c-headerGnavMenuLink">
-                        <span>抵抗溶接用トランス</span>
-                        <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
-                      </a>
-                    </li>
-                  </ul>
-                  <ul class="c-headerGnavMenuLinks">
-                    <li class="c-headerGnavMenuLinkItem">
-                      <a href="" class="c-headerGnavMenuLink">
-                        <span>
-                          抵抗加熱装置・<br>
-                          計測量・関連機器
+                        <span class="c-headerGnavMenuLinkText">
+                          <span>スポット溶接機</span>
+                          <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
                         </span>
-                        <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
                       </a>
                     </li>
                     <li class="c-headerGnavMenuLinkItem">
                       <a href="" class="c-headerGnavMenuLink">
-                        <span>接合機器</span>
-                        <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
+                        <span class="c-headerGnavMenuLinkText">
+                          <span>溶接ガン</span>
+                          <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
+                        </span>
+                      </a>
+                    </li>
+                    <li class="c-headerGnavMenuLinkItem">
+                      <a href="" class="c-headerGnavMenuLink">
+                        <span class="c-headerGnavMenuLinkText">
+                          <span>プロジェクション溶接機</span>
+                          <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
+                        </span>
+                      </a>
+                    </li>
+                    <li class="c-headerGnavMenuLinkItem">
+                      <a href="" class="c-headerGnavMenuLink">
+                        <span class="c-headerGnavMenuLinkText">
+                          <span>シーム溶接機</span>
+                          <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="c-headerGnavMenuLinks">
+                    <li class="c-headerGnavMenuLinkItem">
+                      <a href="" class="c-headerGnavMenuLink">
+                        <span class="c-headerGnavMenuLinkText">
+                          <span>専用溶接機</span>
+                          <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
+                        </span>
+                      </a>
+                    </li>
+                    <li class="c-headerGnavMenuLinkItem">
+                      <a href="" class="c-headerGnavMenuLink">
+                        <span class="c-headerGnavMenuLinkText">
+                          <span>自動供給装置</span>
+                          <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
+                        </span>
+                      </a>
+                    </li>
+                    <li class="c-headerGnavMenuLinkItem">
+                      <a href="" class="c-headerGnavMenuLink">
+                        <span class="c-headerGnavMenuLinkText">
+                          <span>抵抗用制御装置</span>
+                          <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
+                        </span>
+                      </a>
+                    </li>
+                    <li class="c-headerGnavMenuLinkItem">
+                      <a href="" class="c-headerGnavMenuLink">
+                        <span class="c-headerGnavMenuLinkText">
+                          <span>抵抗溶接用トランス</span>
+                          <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="c-headerGnavMenuLinks">
+                    <li class="c-headerGnavMenuLinkItem">
+                      <a href="" class="c-headerGnavMenuLink">
+                        <span class="c-headerGnavMenuLinkText">
+                          <span>
+                            抵抗加熱装置・<br class="u-show--pc">
+                            計測量・関連機器
+                          </span>
+                          <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
+                        </span>
+                      </a>
+                    </li>
+                    <li class="c-headerGnavMenuLinkItem">
+                      <a href="" class="c-headerGnavMenuLink">
+                        <span class="c-headerGnavMenuLinkText">
+                          <span>接合機器</span>
+                          <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
+                        </span>
                       </a>
                     </li>
                   </ul>
@@ -166,11 +186,11 @@
                         <div class="c-headerGnavMenuImage">
                           <img src="/img/images/solution-visual-1.jpg" alt="車体軽量化" class="c-headerGnavImage--solution">
                         </div>
-                        <span>
+                        <span class="c-headerGnavMenuLinkText">
                           <span class="u-text-small">車体軽量化</span>
                           <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
                         </span>
-                        <span class="u-text-xsmall u-d-block">マルチマテリアルの溶接に対応</span>
+                        <span class="u-text-xsmall u-d-block c-headerGnavMenuLinkSubText">マルチマテリアルの溶接に対応</span>
                       </a>
                     </li>
                   </ul>
@@ -180,11 +200,11 @@
                         <div class="c-headerGnavMenuImage">
                           <img src="/img/images/solution-visual-2.jpg" alt="脱炭素" class="c-headerGnavImage--solution">
                         </div>
-                        <span>
+                        <span class="c-headerGnavMenuLinkText">
                           <span class="u-text-small">脱炭素</span>
                           <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
                         </span>
-                        <span class="u-text-xsmall u-d-block">溶接時のエネルギーを1/3に低減</span>
+                        <span class="u-text-xsmall u-d-block c-headerGnavMenuLinkSubText">溶接時のエネルギーを1/3に低減</span>
                       </a>
                     </li>
                   </ul>
@@ -194,11 +214,11 @@
                         <div class="c-headerGnavMenuImage">
                           <img src="/img/images/solution-visual-3.jpg" alt="DX" class="c-headerGnavImage--solution">
                         </div>
-                        <span>
+                        <span class="c-headerGnavMenuLinkText">
                           <span class="u-text-small">DX</span>
                           <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
                         </span>
-                        <span class="u-text-xsmall u-d-block">溶接管理業務の変革</span>
+                        <span class="u-text-xsmall u-d-block c-headerGnavMenuLinkSubText">溶接管理業務の変革</span>
                       </a>
                     </li>
                   </ul>
@@ -235,7 +255,7 @@
                         <div class="c-headerGnavMenuImage">
                           <img src="/img/images/guide-visual-1.jpg" alt="トップメッセージ" class="c-headerGnavImage--guide">
                         </div>
-                        <span>
+                        <span class="c-headerGnavMenuLinkText">
                           <span class="u-text-small">トップメッセージ</span>
                           <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
                         </span>
@@ -248,7 +268,7 @@
                         <div class="c-headerGnavMenuImage">
                           <img src="/img/images/guide-visual-2.jpg" alt="会社概要" class="c-headerGnavImage--guide">
                         </div>
-                        <span>
+                        <span class="c-headerGnavMenuLinkText">
                           <span class="u-text-small">会社概要</span>
                           <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
                         </span>
@@ -261,7 +281,7 @@
                         <div class="c-headerGnavMenuImage">
                           <img src="/img/images/guide-visual-3.jpg" alt="SDGsへの取り組み" class="c-headerGnavImage--guide">
                         </div>
-                        <span>
+                        <span class="c-headerGnavMenuLinkText">
                           <span class="u-text-small">SDGsへの取り組み</span>
                           <img src="/img/icons/icon-chevron-right.svg" alt="" width="5" height="9" class="c-headerGnavMenuLinkIcon">
                         </span>

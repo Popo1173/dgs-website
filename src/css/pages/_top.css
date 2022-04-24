@@ -2,14 +2,17 @@
   overflow: hidden;
   position: relative;
   font-size: 0;
+  width: 100vw;
+  height: 43vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .p-top-heroMove {
   z-index: -1;
   width: 100vw;
   min-width: 586px;
-  height: 56.25vw;
-  min-height: 330px;
 }
 
 .p-top-heroLogo {
@@ -30,7 +33,7 @@
 
 .p-top-heroTextBlock__left {
   background-color: #373778;
-  padding: 4.3% 8% 12.3% 5.5%;
+  padding: 4.3% 9% 12.3% 5.5%;
 }
 
 .p-top-heroTextBlock__right {
@@ -57,7 +60,7 @@
   bottom: 0;
   right: 0;
   width: 60%;
-  height: calc(100% - 102px);
+  height: calc(100% - 80px);
   background-color: var(--color_fff);
 }
 
@@ -69,7 +72,7 @@
   position: relative;
   padding: 0 5.5% 100px;
   z-index: 1;
-  margin-top: -9%;
+  margin-top: -80px;
 }
 
 .p-top-heroSolutionItem {
@@ -435,6 +438,10 @@
     font-size: 2rem;
   }
 
+  .p-top-videoWrap {
+    height: auto;
+  }
+
   .p-top-heroCarousel__img {
     height: 330px;
   }
@@ -449,6 +456,14 @@
 
   .slick-arrow {
     display: none !important;
+  }
+
+  .p-top-heroSolutionWrap {
+    margin-top: -92px;
+  }
+
+  .p-top-heroTextBlock__left {
+    padding: 16.3% 7% 46.3% 6.6%;
   }
 
   .p-top-heroTextBlock__right {
@@ -470,6 +485,7 @@
 
   .p-top-heroSolution__subCol {
     width: 50%;
+    height: calc(100% - 92px);
   }
 
   .p-top-heroSolutionItem {

@@ -153,6 +153,13 @@ body.modal-open {
   margin-bottom: 9px;
 }
 
+.c-headerGnavMenuLinkIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
 @media (--pc-viewport) {
   .c-headerGnav {
     margin-top: 6px;
@@ -165,7 +172,7 @@ body.modal-open {
     overflow: hidden;
     visibility: hidden;
     opacity: 0;
-    transition: background-color 0.3s cubic-bezier(0.25, 0, 0.45, 1), visibility 0.3s cubic-bezier(0.25, 0, 0.45, 1);
+    transition: background-color 0.3s cubic-bezier(0.25, 0, 0.45, 1), visibility 0.3s cubic-bezier(0.25, 0, 0.45, 1), opacity 0.3s cubic-bezier(0.25, 0, 0.45, 1);
 
     &[aria-hidden='false'] {
       visibility: visible;
@@ -326,8 +333,9 @@ body.modal-open {
     }
   }
 
-  .c-headerGnavMenuLinkIcon {
-    margin-left: 6px;
+  .c-headerGnavMenuLinkText {
+    padding-right: 12px;
+    position: relative;
   }
 }
 
@@ -398,6 +406,11 @@ body.modal-open {
 }
 
 @media (--sp-viewport) {
+  .c-headerGnavMenuLeftContent,
+  .c-headerGnavMenuImage {
+    display: none;
+  }
+
   .c-headerBanner {
     position: fixed;
     top: 0;
@@ -425,15 +438,17 @@ body.modal-open {
   }
 
   .c-headerGnavLists {
-    padding: 0 24px 40px;
+    padding: 0 20px 30px 26px;
+    margin-top: 16px;
   }
 
   .c-headerGnavList {
+    letter-spacing: 0.7px;
     border-bottom: 1px solid #707070;
 
     & > button,
     & > a {
-      padding: 16px 0;
+      padding: 13px 0;
     }
 
     & button {
@@ -458,12 +473,42 @@ body.modal-open {
     }
   }
 
+  .c-headerGnavMenuLinkSubText {
+    margin-top: 6px;
+  }
+
   .c-headerGnav li[data-layer='1'] > button:not(.is-active) + [id] {
     display: none;
   }
 
   .c-headerGnavSlideItem {
-    margin-top: 24px;
+    margin-top: 10px;
+  }
+
+  .c-headerGnavMenuLink {
+    position: relative;
+    display: block;
+
+    & .u-text-small,
+    & .u-text-xsmall {
+      font-size: 1rem !important;
+    }
+  }
+
+  .c-headerGnavMenuLinkIcon {
+    top: 50%;
+    bottom: auto;
+  }
+
+  .c-headerGnavMenuLinks,
+  .c-headerGnavMenuLinkItem {
+    &:not(:first-of-type) {
+      margin-top: 16px;
+    }
+  }
+
+  .c-headerGnavMenuRightContent {
+    padding: 0 8px 18px 0;
   }
 
   #cse-search-box {

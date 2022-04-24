@@ -2,8 +2,10 @@ export const setHeader = {
 
   init: () => {
     const breakpoint = 768
+    const inittWinWidtht = $(window).width()
     setHeader.setHeaderPosition(breakpoint)
     setHeader.setSpSideNavi(".js-trigger[data-sidenavi-toggle]", breakpoint)
+    setHeader.initSpMenu(inittWinWidtht, breakpoint)
     setHeader.setTopMenuToggle(".js-trigger[data-type='top-menu']", breakpoint)
     setHeader.setCloseMenuEvent(breakpoint)
     setHeader.checkResizeEvent(breakpoint)
@@ -49,8 +51,12 @@ export const setHeader = {
         $('body').removeClass('modal-open')
         window.scrollTo(0, winHeight)
       }
+    })
+  },
+  initSpMenu: (inittWinWidth, breakpoint) => {
+    if (inittWinWidth < breakpoint) {
+      $(".js-trigger[data-type='top-menu']:not(.is-active)").next().css('display', 'none')
     }
-    )
   },
   setTopMenuToggle: (toggle, breakpoint) => {
     const $toggle = $(toggle);
