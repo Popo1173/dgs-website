@@ -33,6 +33,7 @@
       text-align: left;
       font-weight: 500;
       padding: 0.6% 1% 0.85% 0%;
+      white-space: nowrap;
     }
 
     &Description {
@@ -151,6 +152,12 @@
   &__tableWrap {
     margin-top: 55px;
     overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 
@@ -304,6 +311,12 @@
 
       &Wrap {
         overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
       }
 
       & tr {
@@ -401,17 +414,6 @@
 
 @media (--pc-viewport) {
   .p-product {
-    &__table {
-      &Wrap {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-
-        &::-webkit-scrollbar {
-          display: none;
-        }
-      }
-    }
-
     &Navi {
       padding: 63px 15.2%;
       position: relative;
