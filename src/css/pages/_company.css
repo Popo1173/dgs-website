@@ -700,19 +700,6 @@
           margin-top: 15px;
         }
       }
-
-      &:last-of-type {
-        & > li:last-of-type {
-          &::after {
-            content: '※英語表記時のアルファベット順';
-            color: #333;
-            font-size: 0.875rem;
-            display: inline-block;
-            margin-top: 40px;
-            letter-spacing: 0;
-          }
-        }
-      }
     }
   }
 }
