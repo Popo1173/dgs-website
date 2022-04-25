@@ -632,6 +632,15 @@
   justify-content: center;
   transition: all 0.3s;
 
+  &--5652cc {
+    color: #fff;
+    background-color: var(--color_vivid_purple);
+
+    &:hover {
+      background-color: var(--color_red);
+    }
+  }
+
   &--373582 {
     color: #fff;
     background-color: var(--color_purple);
