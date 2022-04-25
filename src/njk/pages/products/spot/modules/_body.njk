@@ -1,0 +1,758 @@
+{%- from '../../../../modules/_section-logo.njk' import sectionLogo -%}
+{%- from '../../../../modules/_heading.njk' import heading -%}
+
+<div class="p-product">
+  <section class="p-productHeading">
+    {{ heading(
+      introduction = 'Product',
+      title = '定置式スポット溶接機',
+      modifier = '--type1'
+    ) }}
+  </section>
+  <section class="p-productNavi">
+    <div class="p-productNaviWrap u-show--pc">
+      <div class="p-productNavi__items">
+        <div class="p-productNavi__item">
+          <a href="#p-product-series-ndz">
+            <span class="p-productNavi__linkContent">
+              NDZシリーズ
+              <img src="/img/icons/icon-red-chevron-down.svg" width="14" height="7" alt="">
+            </span>
+          </a>
+        </div>
+        <div class="p-productNavi__item">
+          <a href="#">
+            <span class="p-productNavi__linkContent">
+              下腕調整式NDZシリーズ
+              <img src="/img/icons/icon-red-chevron-down.svg" width="14" height="7" alt="">
+            </span>
+          </a>
+        </div>
+        <div class="p-productNavi__item">
+          <a href="#">
+            <span class="p-productNavi__linkContent">
+              NDZ-GSZシリーズ
+              <img src="/img/icons/icon-red-chevron-down.svg" width="14" height="7" alt="">
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="p-companyNaviWrap u-show--sp">
+      <a class="is-closed p-companyNavi__toggle" data-toggle="accordion" data-target="#p-companyNaviContent" data-accordion-status="internalToggle">
+        定置式スポット溶接機
+      </a>
+      <div id="p-companyNaviContent" class="p-companyNavi__items" data-accordion-status="internalTarget">
+        <div class="p-companyNavi__item">
+          <a href="#p-product-series-ndz">
+            NDZシリーズ
+          </a>
+        </div>
+        <div class="p-companyNavi__item">
+          <a href="#">
+            下腕調整式NDZシリーズ
+          </a>
+        </div>
+        <div class="p-companyNavi__item">
+          <a href="#">
+            NDZ-GSZシリーズ
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="p-product-series-ndz" class="p-productSeriesHeading">
+    <div class="p-productSeriesHeading__main">
+      <div class="p-productSeriesHeading__mainContent">
+        <div class="p-productSeriesHeading__sectionLogoWrap">
+          {{ sectionLogo(
+            usecase="sectionheading"
+          ) }}
+        </div>
+        <h2 class="p-productSectionHeading">NDZシリーズ</h2>
+        <p class="p-productSeriesHeading__desc">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+        <div class="p-productSeriesHeading__navWrap">
+          <p class="p-productSeriesHeading__nav">
+            <a class="p-productSeriesHeading__navLink" href="#p-product-single-phase">
+              単相交流式
+              <img src="/img/icons/icon-white-chevron-down.svg" alt="" width="10" height="5">
+            </a>
+          </p>
+          <p class="p-productSeriesHeading__nav">
+            <a class="p-productSeriesHeading__navLink" href="#p-product-inverter">
+              直流インバータ式
+              <img src="/img/icons/icon-white-chevron-down.svg" alt="" width="10" height="5">
+            </a>
+          </p>
+          <p class="p-productSeriesHeading__nav">
+            <a class="p-productSeriesHeading__navLink" href="#">
+              交流インバータ式
+              <img src="/img/icons/icon-white-chevron-down.svg" alt="" width="10" height="5">
+            </a>
+          </p>
+          <p class="p-productSeriesHeading__nav">
+            <a class="p-productSeriesHeading__navLink" href="#">
+              コンデンサ式
+              <img src="/img/icons/icon-white-chevron-down.svg" alt="" width="10" height="5">
+            </a>
+          </p>
+        </div>
+        <div class="p-productSeriesHeading__mainBg u-show--sp"></div>
+      </div>
+      <div class="p-productSeriesHeading__imgWrap">
+        <img src="/img/images/product_01.png" alt="">
+      </div>
+    </div>
+    <div class="p-productSeriesHeading__square"></div>
+  </section>
+
+  <section class="p-productSeriesOverview">
+    <div class="p-productSeriesOverview__feature">
+      <p class="p-productSection__heading">シリーズ特長</p>
+      <ul class="p-productSeriesOverview__featureList">
+        <li class="p-productSeriesOverview__featureListItem">
+          <span class="p-productSeriesOverview__featureListNum">01</span>
+          <p>
+            高品質、安定したナット、<span class="u-d-inline-block">ボルト溶接</span>
+          </p>
+        </li>
+        <li class="p-productSeriesOverview__featureListItem">
+          <span class="p-productSeriesOverview__featureListNum">02</span>
+          <p>
+            豊富なバリエーション（容量、
+            <span class="u-d-inline-block">各制御方式”単相交流</span>
+            <span class="u-d-inline-block">・DCインバータ</span>
+            <span class="u-d-inline-block">・ACインバータ・コンデンサ”）</span>
+          </p>
+        </li>
+        <li class="p-productSeriesOverview__featureListItem">
+          <span class="p-productSeriesOverview__featureListNum">03</span>
+          <p>
+            選べる電極ストローク
+            <span class="u-d-inline-block">（75/115/155ｍｍ）</span>
+          </p>
+        </li>
+        <li class="p-productSeriesOverview__featureListItem">
+          <span class="p-productSeriesOverview__featureListNum">04</span>
+          <p>
+            <span class="u-d-inline-block">フィーダとの連携が</span>
+            簡単にセットアップ
+          </p>
+        </li>
+        <li class="p-productSeriesOverview__featureListItem">
+          <span class="p-productSeriesOverview__featureListNum">05</span>
+          <p>
+            <span class="u-d-inline-block">EtherNet通信による</span>
+            <span class="u-d-inline-block">溶接条件管理、</span>
+            <span class="u-d-inline-block">溶接結果モニタによる</span>
+            <span class="u-d-inline-block">トレーサビリティ対応</span>
+          </p>
+        </li>
+        <li class="p-productSeriesOverview__featureListItem">
+          <span class="p-productSeriesOverview__featureListNum">06</span>
+          <p>
+            リニアエンコーダによるナット、
+            <span class="u-d-inline-block">ボルトの検知</span>
+          </p>
+        </li>
+        <li class="p-productSeriesOverview__featureListItem">
+          <span class="p-productSeriesOverview__featureListNum">07</span>
+          <p>
+            <span class="u-d-inline-block">自動化対応のI/O、</span>
+            省配線対応が可能
+          </p>
+        </li>
+        <li class="p-productSeriesOverview__featureListItem">
+          <span class="p-productSeriesOverview__featureListNum">08</span>
+          <p>
+            カスタマイズにお応えします
+          </p>
+        </li>
+        <li class="p-productSeriesOverview__featureListItem">
+          <span class="p-productSeriesOverview__featureListNum">09</span>
+          <p>
+            CE対応
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="p-productSeriesOverview__tableWrap">
+      <p class="p-productSection__heading">シリーズオプション</p>
+      <table class="p-product__table">
+        <tbody>
+          <tr class="p-product__tableRow">
+            <th class="p-product__tableTerm">プラテン</th>
+            <td class="p-product__tableDescription">
+              治具の取り付けや直上加圧による
+              <span class="u-d-inline-block">
+                高品質溶接に対応
+              </span>
+            </td>
+          </tr>
+          <tr class="p-product__tableRow">
+            <th class="p-product__tableTerm">架台</th>
+            <td class="p-product__tableDescription">作業高さを高くしたい場合に使用</td>
+          </tr>
+          <tr class="p-product__tableRow">
+            <th class="p-product__tableTerm">検流計</th>
+            <td class="p-product__tableDescription">冷却水の目視確認が可能</td>
+          </tr>
+          <tr class="p-product__tableRow">
+            <th class="p-product__tableTerm">条件BOX(操作）</th>
+            <td class="p-product__tableDescription">
+              <span class="u-d-inline-block">手元のスイッチで</span>容易に条件切り替えが可能
+            </td>
+          </tr>
+          <tr class="p-product__tableRow">
+            <th class="p-product__tableTerm">可変加圧</th>
+            <td class="p-product__tableDescription">アルミ溶接に対応</td>
+          </tr>
+          <tr class="p-product__tableRow">
+            <th class="p-product__tableTerm">各種電極</th>
+            <td class="p-product__tableDescription">
+              <span class="u-d-inline-block">
+                スポット溶接・ナット溶接・
+              </span>
+              ボルト溶接用電極を選択可能
+            </td>
+          </tr>
+          <tr class="p-product__tableRow">
+            <th class="p-product__tableTerm">省エア(未完成)</th>
+            <td class="p-product__tableDescription">エア消費量を20～40%削減</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="p-productSeriesDetail">
+    <div class="p-productSeriesDetail__navWrap">
+      <p class="p-productSeriesDetail__navHeading">シリーズ製品詳細</p>
+      <div class="p-productSeriesDetail__nav">
+        <p>
+          <a href="#p-product-single-phase" class="p-productSeriesDetail__navLink">
+            <span class="p-productSeriesDetail__linkContent">
+              単相交流式
+              <img src="/img/icons/icon-white-chevron-down.svg" width="14" height="7" alt="">
+            </span>
+          </a>
+        </p>
+        <p>
+          <a href="#p-product-inverter" class="p-productSeriesDetail__navLink">
+            <span class="p-productSeriesDetail__linkContent">
+              直流インバータ式
+              <img src="/img/icons/icon-white-chevron-down.svg" width="14" height="7" alt="">
+            </span>
+          </a>
+        </p>
+        <p>
+          <a href="#" class="p-productSeriesDetail__navLink">
+            <span class="p-productSeriesDetail__linkContent">
+              交流インバータ式
+              <img src="/img/icons/icon-white-chevron-down.svg" width="14" height="7" alt="">
+            </span>
+          </a>
+        </p>
+        <p>
+          <a href="#" class="p-productSeriesDetail__navLink">
+            <span class="p-productSeriesDetail__linkContent">
+              コンデンサ式
+              <img src="/img/icons/icon-white-chevron-down.svg" width="14" height="7" alt="">
+            </span>
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div id="p-product-single-phase" class="p-productSeriesDetail__item">
+      <div class="p-productSeriesDetail__heading">
+        <div class="p-productSeriesDetail__headingImgWrap">
+          <img src="/img/images/product_01.png" alt="">
+        </div>
+        <div class="p-productSeriesDetail__headingTextWrap">
+          <p class="p-productSeriesDetail__headingText">
+            単相交流式
+          </p>
+          <p class="p-productSeriesDetail__headingUnderBar">
+            <span class="p-productSeriesDetail__headingLeftBar"></span>
+            <span class="p-productSeriesDetail__headingRightBar"></span>
+          </p>
+          <div class="p-productSeriesDetail__headingLinkWrap">
+            <p class="p-productSeriesDetail__headingLink">
+              <a href="" class="u-link-button u-link-button--5652cc">各種ダウンロード</a>
+            </p>
+            <p class="p-productSeriesDetail__headingLink">
+              <a href="" class="u-link-button u-link-button--5652cc">導入事例</a>
+            </p>
+            <p class="p-productSeriesDetail__headingLink">
+              <a href="" class="u-link-button u-link-button--5652cc">お問い合わせ</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="p-productSeriesDetail__contents">
+        <div class="p-productSeriesDetail__feature">
+          <p class="p-productSection__heading">特長</p>
+          <ul class="p-productSeriesDetail__featureList">
+            <li>
+              <span class="m-listSquare">
+                <span class="m-listSquare__left"></span>
+                <span class="m-listSquare__right"></span>
+              </span>
+              環境にやさしく安全性と耐久性を備えた溶接機
+            </li>
+            <li>
+              <span class="m-listSquare">
+                <span class="m-listSquare__left"></span>
+                <span class="m-listSquare__right"></span>
+              </span>
+              パイロット電流でハイテン材にナット、ボルトを高品質に溶接
+            </li>
+            <li>
+              <span class="m-listSquare">
+                <span class="m-listSquare__left"></span>
+                <span class="m-listSquare__right"></span>
+              </span>
+              パイロット電流を個別モニタリング、異常検知
+            </li>
+            <li>
+              <span class="m-listSquare">
+                <span class="m-listSquare__left"></span>
+                <span class="m-listSquare__right"></span>
+              </span>
+              黒皮など絶縁被膜にも対応した電流制御モード（PPCL）搭載
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-productSeriesDetail__option">
+          <p class="p-productSection__heading">オプション</p>
+          <table class="p-product__table">
+            <tbody>
+              <tr class="p-product__tableRow">
+                <th class="p-product__tableTerm">プラテン</th>
+                <td class="p-product__tableDescription">治具の取り付けや直上加圧による高品質溶接に対応</td>
+              </tr>
+              <tr class="p-product__tableRow">
+                <th class="p-product__tableTerm">架台</th>
+                <td class="p-product__tableDescription">作業高さを高くしたい場合に使用</td>
+              </tr>
+              <tr class="p-product__tableRow">
+                <th class="p-product__tableTerm">検流計</th>
+                <td class="p-product__tableDescription">冷却水の目視確認が可能</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="p-productSeriesDetail__specification">
+          <p class="p-productSection__heading">仕様表</p>
+          <div class="p-productSeriesDetail__specificationTableWrap">
+            <table class="p-productSeriesDetail__specificationTable">
+                <thead class="p-productSeriesDetail__specificationTableHeading u-show--pc">
+                  <tr>
+                    <th class="">型式</th>
+                    <th class="">定格容量 (kVA)</th>
+                    <th class="">最大短絡電流 (A)</th>
+                    <th class="">最大加圧力／0.5MPa時 (kN)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr class="p-productSeriesDetail__specificationTableRow">
+                  <th class="p-productSeriesDetail__specificationTableTerm">NDZ-035-46**J-*-E</th>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">定格容量 (kVA)</span>
+                    35
+                  </td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">最大短絡電流 (A)</span>
+                    17000
+                  </td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">最大加圧力／0.5MPa時 (kN)</span>
+                    6
+                  </td>
+                </tr>
+                <tr class="p-productSeriesDetail__specificationTableRow">
+                  <th class="p-productSeriesDetail__specificationTableTerm">NDZ-035-66**J-*-E</th>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">定格容量 (kVA)</span>
+                    35
+                  </td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">最大短絡電流 (A)</span>
+                    15000
+                  </td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">最大加圧力／0.5MPa時 (kN)</span>
+                    6
+                  </td>
+                </tr>
+                <tr class="p-productSeriesDetail__specificationTableRow">
+                  <th class="p-productSeriesDetail__specificationTableTerm">NDZ-050-46**J-*-E</th>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">定格容量 (kVA)</span>
+                    50
+                  </td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">最大短絡電流 (A)</span>
+                    20000
+                  </td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">最大加圧力／0.5MPa時 (kN)</span>
+                    6
+                  </td>
+                </tr>
+                <tr class="p-productSeriesDetail__specificationTableRow">
+                  <th class="p-productSeriesDetail__specificationTableTerm">NDZ-050-41**J-*-E</th>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">定格容量 (kVA)</span>
+                    50
+                  </td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">最大短絡電流 (A)</span>
+                    20000
+                  </td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">最大加圧力／0.5MPa時 (kN)</span>
+                    10
+                  </td>
+                </tr>
+                <tr class="p-productSeriesDetail__specificationTableRow">
+                  <th class="p-productSeriesDetail__specificationTableTerm">NDZ-050-66**J-*-E</th>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">定格容量 (kVA)</span>
+                    50
+                  </td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">最大短絡電流 (A)</span>
+                    17000
+                  </td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">最大加圧力／0.5MPa時 (kN)</span>
+                    6
+                  </td>
+                </tr>
+                <tr class="p-productSeriesDetail__specificationTableRow">
+                  <th class="p-productSeriesDetail__specificationTableTerm">NDZ-070-41**J-*-E</th>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">定格容量 (kVA)</span>
+                    70
+                  </td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">最大短絡電流 (A)</span>
+                    25000
+                  </td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">最大加圧力／0.5MPa時 (kN)</span>
+                    10
+                  </td>
+                </tr>
+                <tr class="p-productSeriesDetail__specificationTableRow">
+                  <th class="p-productSeriesDetail__specificationTableTerm">NDZ-100-41**J-*-E</th>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">定格容量 (kVA)</span>
+                    100
+                  </td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">最大短絡電流 (A)</span>
+                    33000
+                  </td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">
+                    <span class="u-show--sp">最大加圧力／0.5MPa時 (kN)</span>
+                    10
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="p-productSeriesDetail__work">
+          <p class="p-productSection__heading">対象ワーク</p>
+          <table class="p-productSeriesDetail__workTable">
+            <tbody>
+              <tr class="p-producSeriesDetailt__workTableRow">
+                <th class="p-productSeriesDetail__workTableTerm">鋼板</th>
+                <td class="p-productSeriesDetail__workTableDescription">0.6t～4.5t</td>
+              </tr>
+              <tr class="p-productSeriesDetail__workTableRow">
+                <th class="p-productSeriesDetail__workTableTerm">ナット</th>
+                <td class="p-productSeriesDetail__workTableDescription">M5～M14突起</td>
+              </tr>
+              <tr class="p-productSeriesDetail__workTableRow">
+                <th class="p-productSeriesDetail__workTableTerm">ボルト</th>
+                <td class="p-productSeriesDetail__workTableDescription">M5～M12突起</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="p-productSeriesDetail__connection">
+          <p class="p-productSection__heading">関連製品・組み合わせ製品</p>
+          <div class="p-productSeriesDetail__connectionProductWrap">
+            <div class="m-product">
+              <ul class="m-productList u-d-flex">
+                <li class="m-productItem">
+                  <p>
+                    <a href="" class="m-productLink u-d-inline-flex u-link-hoverLine u-link-hoverLine--purple">
+                      <img src="/img/icons/icon-link-chevron-right.svg" alt="" width="7" height="14">
+                      <span>【カテゴリー】製品名</span>
+                    </a>
+                  </p>
+                </li>
+                <li class="m-productItem">
+                  <p>
+                    <a href="" class="m-productLink u-d-inline-flex u-link-hoverLine u-link-hoverLine--purple">
+                      <img src="/img/icons/icon-link-chevron-right.svg" alt="" width="7" height="14">
+                      <span>【カテゴリー】製品名</span>
+                    </a>
+                  </p>
+                </li>
+                <li class="m-productItem">
+                  <p>
+                    <a href="" class="m-productLink u-d-inline-flex u-link-hoverLine u-link-hoverLine--purple">
+                      <img src="/img/icons/icon-link-chevron-right.svg" alt="" width="7" height="14">
+                      <span>【カテゴリー】製品名</span>
+                    </a>
+                  </p>
+                </li>
+                <li class="m-productItem">
+                  <p>
+                    <a href="" class="m-productLink u-d-inline-flex u-link-hoverLine u-link-hoverLine--purple">
+                      <img src="/img/icons/icon-link-chevron-right.svg" alt="" width="7" height="14">
+                      <span>【カテゴリー】製品名</span>
+                    </a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-productSeriesDetail__movieWrap">
+          <p class="p-productSection__heading">製品動画</p>
+          <div class="p-productSeriesDetail__movie">
+            <img src="/img/images/productMovie.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="p-product-inverter" class="p-productSeriesDetail__item">
+      <div class="p-productSeriesDetail__heading">
+        <div class="p-productSeriesDetail__headingImgWrap">
+          <img src="/img/images/product_inverter.png" alt="">
+        </div>
+        <div class="p-productSeriesDetail__headingTextWrap">
+          <p class="p-productSeriesDetail__headingText">
+            直流インバータ式
+          </p>
+          <p class="p-productSeriesDetail__headingUnderBar">
+            <span class="p-productSeriesDetail__headingLeftBar"></span>
+            <span class="p-productSeriesDetail__headingRightBar"></span>
+          </p>
+          <div class="p-productSeriesDetail__headingLinkWrap">
+            <p class="p-productSeriesDetail__headingLink">
+              <a href="" class="u-link-button u-link-button--5652cc">各種ダウンロード</a>
+            </p>
+            <p class="p-productSeriesDetail__headingLink">
+              <a href="" class="u-link-button u-link-button--5652cc">導入事例</a>
+            </p>
+            <p class="p-productSeriesDetail__headingLink">
+              <a href="" class="u-link-button u-link-button--5652cc">お問い合わせ</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-productSeriesDetail__contents">
+        <div class="p-productSeriesDetail__feature">
+          <p class="p-productSection__heading">特長</p>
+          <ul class="p-productSeriesDetail__featureList">
+            <li>
+              <span class="m-listSquare">
+                <span class="m-listSquare__left"></span>
+                <span class="m-listSquare__right"></span>
+              </span>
+              環境にやさしく安全性と耐久性を備えた溶接機
+            </li>
+            <li>
+              <span class="m-listSquare">
+                <span class="m-listSquare__left"></span>
+                <span class="m-listSquare__right"></span>
+              </span>
+              パイロット電流でハイテン材にナット、ボルトを高品質に溶接
+            </li>
+            <li>
+              <span class="m-listSquare">
+                <span class="m-listSquare__left"></span>
+                <span class="m-listSquare__right"></span>
+              </span>
+              パイロット電流を個別モニタリング、異常検知
+            </li>
+            <li>
+              <span class="m-listSquare">
+                <span class="m-listSquare__left"></span>
+                <span class="m-listSquare__right"></span>
+              </span>
+              黒皮など絶縁被膜にも対応した電流制御モード（PPCL）搭載
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-productSeriesDetail__option">
+          <p class="p-productSection__heading">オプション</p>
+          <table class="p-product__table">
+            <tbody>
+              <tr class="p-product__tableRow">
+                <th class="p-product__tableTerm">プラテン</th>
+                <td class="p-product__tableDescription">治具の取り付けや直上加圧による高品質溶接に対応</td>
+              </tr>
+              <tr class="p-product__tableRow">
+                <th class="p-product__tableTerm">架台</th>
+                <td class="p-product__tableDescription">作業高さを高くしたい場合に使用</td>
+              </tr>
+              <tr class="p-product__tableRow">
+                <th class="p-product__tableTerm">検流計</th>
+                <td class="p-product__tableDescription">冷却水の目視確認が可能</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="p-productSeriesDetail__specification">
+          <p class="p-productSection__heading">仕様表</p>
+          <div class="p-productSeriesDetail__specificationTableWrap">
+            <table class="p-productSeriesDetail__specificationTable">
+                <thead class="p-productSeriesDetail__specificationTableHeading u-show--pc">
+                  <tr>
+                    <th class="">型式</th>
+                    <th class="">定格容量 (kVA)</th>
+                    <th class="">最大短絡電流 (A)</th>
+                    <th class="">最大加圧力／0.5MPa時 (kN)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr class="p-productSeriesDetail__specificationTableRow">
+                  <th class="p-productSeriesDetail__specificationTableTerm">NDZ-035-46**J-*-E</th>
+                  <td class="p-productSeriesDetail__specificationTableDescription">35</td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">17000</td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">6</td>
+                </tr>
+                <tr class="p-productSeriesDetail__specificationTableRow">
+                  <th class="p-productSeriesDetail__specificationTableTerm">NDZ-035-66**J-*-E</th>
+                  <td class="p-productSeriesDetail__specificationTableDescription">35</td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">15000</td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">6</td>
+                </tr>
+                <tr class="p-productSeriesDetail__specificationTableRow">
+                  <th class="p-productSeriesDetail__specificationTableTerm">NDZ-050-46**J-*-E</th>
+                  <td class="p-productSeriesDetail__specificationTableDescription">50</td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">20000</td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">6</td>
+                </tr>
+                <tr class="p-productSeriesDetail__specificationTableRow">
+                  <th class="p-productSeriesDetail__specificationTableTerm">NDZ-050-41**J-*-E</th>
+                  <td class="p-productSeriesDetail__specificationTableDescription">50</td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">20000</td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">10</td>
+                </tr>
+                <tr class="p-productSeriesDetail__specificationTableRow">
+                  <th class="p-productSeriesDetail__specificationTableTerm">NDZ-050-66**J-*-E</th>
+                  <td class="p-productSeriesDetail__specificationTableDescription">50</td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">17000</td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">6</td>
+                </tr>
+                <tr class="p-productSeriesDetail__specificationTableRow">
+                  <th class="p-productSeriesDetail__specificationTableTerm">NDZ-070-41**J-*-E</th>
+                  <td class="p-productSeriesDetail__specificationTableDescription">70</td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">25000</td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">10</td>
+                </tr>
+                <tr class="p-productSeriesDetail__specificationTableRow">
+                  <th class="p-productSeriesDetail__specificationTableTerm">NDZ-100-41**J-*-E</th>
+                  <td class="p-productSeriesDetail__specificationTableDescription">100</td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">33000</td>
+                  <td class="p-productSeriesDetail__specificationTableDescription">10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="p-productSeriesDetail__work">
+          <p class="p-productSection__heading">対象ワーク</p>
+          <table class="p-productSeriesDetail__workTable">
+            <tbody>
+              <tr class="p-producSeriesDetailt__workTableRow">
+                <th class="p-productSeriesDetail__workTableTerm">鋼板</th>
+                <td class="p-productSeriesDetail__workTableDescription">0.6t～4.5t</td>
+              </tr>
+              <tr class="p-productSeriesDetail__workTableRow">
+                <th class="p-productSeriesDetail__workTableTerm">ナット</th>
+                <td class="p-productSeriesDetail__workTableDescription">M5～M14突起</td>
+              </tr>
+              <tr class="p-productSeriesDetail__workTableRow">
+                <th class="p-productSeriesDetail__workTableTerm">ボルト</th>
+                <td class="p-productSeriesDetail__workTableDescription">M5～M12突起</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="p-productSeriesDetail__connection">
+          <p class="p-productSection__heading">関連製品・組み合わせ製品</p>
+          <div class="p-productSeriesDetail__connectionProductWrap">
+            <div class="m-product">
+              <ul class="m-productList u-d-flex">
+                <li class="m-productItem">
+                  <p>
+                    <a href="" class="m-productLink u-d-inline-flex u-link-hoverLine u-link-hoverLine--purple">
+                      <img src="/img/icons/icon-link-chevron-right.svg" alt="" width="7" height="14">
+                      <span>【カテゴリー】製品名</span>
+                    </a>
+                  </p>
+                </li>
+                <li class="m-productItem">
+                  <p>
+                    <a href="" class="m-productLink u-d-inline-flex u-link-hoverLine u-link-hoverLine--purple">
+                      <img src="/img/icons/icon-link-chevron-right.svg" alt="" width="7" height="14">
+                      <span>【カテゴリー】製品名</span>
+                    </a>
+                  </p>
+                </li>
+                <li class="m-productItem">
+                  <p>
+                    <a href="" class="m-productLink u-d-inline-flex u-link-hoverLine u-link-hoverLine--purple">
+                      <img src="/img/icons/icon-link-chevron-right.svg" alt="" width="7" height="14">
+                      <span>【カテゴリー】製品名</span>
+                    </a>
+                  </p>
+                </li>
+                <li class="m-productItem">
+                  <p>
+                    <a href="" class="m-productLink u-d-inline-flex u-link-hoverLine u-link-hoverLine--purple">
+                      <img src="/img/icons/icon-link-chevron-right.svg" alt="" width="7" height="14">
+                      <span>【カテゴリー】製品名</span>
+                    </a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-productSeriesDetail__movieWrap">
+          <p class="p-productSection__heading">製品動画</p>
+          <div class="p-productSeriesDetail__movie">
+            <img src="/img/images/productMovie.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</div>
