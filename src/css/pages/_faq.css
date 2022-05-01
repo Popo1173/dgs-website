@@ -19,10 +19,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color_purple);
-    color: var(--color_fff);
     padding: 15px 30px;
     letter-spacing: 0.8px;
+    transition: background-color 0.5s ease;
+    background-color: var(--color_fff);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.03);
+
+    &.is-opened {
+      background-color: var(--color_purple);
+      color: var(--color_fff);
+
+      & .p-faqContent__accordionQuestionLogo {
+        color: var(--color_fff);
+      }
+    }
   }
 
   &__accordionQuestionTextWrap {
@@ -36,6 +46,8 @@
     font-size: 1.875rem;
     font-weight: bold;
     margin-right: 12px;
+    transition: background-color 0.5s ease;
+    color: var(--color_purple);
   }
 
   &__accordionToggle {
