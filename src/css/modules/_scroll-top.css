@@ -24,4 +24,8 @@
     opacity: 0;
     visibility: hidden;
   }
+
+  & img {
+    pointer-events: none;
+  }
 }
