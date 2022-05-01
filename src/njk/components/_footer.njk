@@ -1,5 +1,9 @@
-{% include "./_contack.njk" %}
+{%- from '../modules/_scroll-top.njk' import scrollTop -%}
+{{ scrollTop(
+  usecase = ""
+) }}
 
+{% include "./_contack.njk" %}
 <footer class="c-footer">
   <div class="c-footerContent">
     <div class="c-footerLeft">

@@ -1,0 +1,27 @@
+.scroll-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(41, 51, 69, 0.6);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba(41, 51, 69, 1);
+  }
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

@@ -756,15 +756,19 @@
 
       &Table {
         text-align: left;
-        margin-top: 18px;
+        margin-top: 24px;
+        border-top: 1px solid rgba(179, 179, 179, 0.4);
 
         & tr {
           display: flex;
           flex-direction: column;
+          padding-bottom: 10%;
+          border-bottom: 1px solid rgba(179, 179, 179, 0.4);
+        }
 
-          &:not(:first-of-type) {
-            margin-top: 17px;
-          }
+        & th {
+          padding: 4.2% 0;
+          background-color: #f0f4fa;
         }
 
         & td {
