@@ -1,0 +1,26 @@
+{%- from '../../../components/_header.njk' import header -%}
+{% extends "../../_base.njk" %}
+
+{% block meta -%}
+  {{ super() }}
+{%- endblock %}
+
+{% block insertHead -%}
+  {# headで読みたいもの #}
+  {{ super() }}
+{%- endblock %}
+
+{% block header %}
+  {{ header(
+    isCurrent="product"
+  ) }}
+{% endblock %}
+
+{% block content -%}
+  {% include "./modules/_body.njk" %}
+{%- endblock %}
+
+{% block insertBody -%}
+  {# bodyの締めタグ直前で読みたいもの #}
+  {{ super() }}
+{%- endblock %}

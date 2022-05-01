@@ -650,6 +650,12 @@
     background-color: var(--color_purple);
   }
 
+  &--000 {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #b7bec7;
+  }
+
   &--fff {
     color: #fff;
     border: 1px solid #fff;
