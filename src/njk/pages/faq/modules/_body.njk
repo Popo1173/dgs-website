@@ -2,19 +2,13 @@
 {%- from '../../../modules/_products.njk' import products -%}
 {% set thisLinkList = [
   {
-    text: '【カテゴリー】製品名',
+    text: 'スポット溶接の概略図',
     href: ''
-  },
+  }
+] %}
+{% set thisLinkList01 = [
   {
-    text: '【カテゴリー】製品名',
-    href: ''
-  },
-  {
-    text: '【カテゴリー】製品名',
-    href: ''
-  },
-  {
-    text: '【カテゴリー】製品名',
+    text: 'スポット溶接の概略図22',
     href: ''
   }
 ] %}
@@ -33,7 +27,7 @@
         <div class="p-faqContent__accordionQuestionTextWrap">
           <span class="p-faqContent__accordionQuestionLogo">Q</span>
           <p class="p-faqContent__accordionQuestionText">
-            質問内容が入ります質問内容が入ります質問内容が入ります。
+            抵抗溶接はどの様な原理ですか。
           </p>
         </div>
         <span class="p-faqContent__accordionToggle"></span>
@@ -42,17 +36,19 @@
         <span class="p-faqContent__accordionAnswerLogo">A</span>
         <div class="p-faqContent__accordionAnswerTexts">
           <p class="p-faqContent__accordionAnswerText">
-            回答文が入ります。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            被溶接物を電極で加圧し、電流を流すことでジュール発熱により、加圧部分を局所的に溶融し接合するものです。
+            <br>被溶接物には電極を介して電流を流しますが、電極には銅合金等を使用するため、電極は被溶接物に比べて抵抗が低く、相対的に接合部の温度上昇が大きくなり、被溶接物だけが溶接されます。
+            <br>接合部に集中的に熱を発生させるため、アーク溶接などに比べて一般的に短時間で熱歪みの少ない溶接が可能です。
           </p>
           <div class="p-faqContent__accordionAnswerImg">
-            <img src="/img/images/faq-answer.jpg" alt="">
-            <p class="p-faqContent__accordionAnswerImgText">キャプションがある場合</p>
+            <img src="/img/images/faq-answer.jpg" alt="スポット溶接の概略図">
+            <p class="p-faqContent__accordionAnswerImgText">スポット溶接の概略図</p>
           </div>
-          <div class="p-faqContent__accordionAnswerProducts">
+          {# <div class="p-faqContent__accordionAnswerProducts">
             {{ products(
               linkList = thisLinkList
             ) }}
-          </div>
+          </div> #}
         </div>
       </div>
     </div>
@@ -61,7 +57,7 @@
         <div class="p-faqContent__accordionQuestionTextWrap">
           <span class="p-faqContent__accordionQuestionLogo">Q</span>
           <p class="p-faqContent__accordionQuestionText">
-            質問内容が入ります質問内容が入ります質問内容が入ります。
+            抵抗溶接にはどのような種類がありますか。
           </p>
         </div>
         <span class="p-faqContent__accordionToggle"></span>
@@ -70,17 +66,24 @@
         <span class="p-faqContent__accordionAnswerLogo">A</span>
         <div class="p-faqContent__accordionAnswerTexts">
           <p class="p-faqContent__accordionAnswerText">
-            回答文が入ります。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            抵抗溶接は大きく分けて重ね抵抗溶接と突合せ抵抗溶接に分類されます。
+            <br>重ね抵抗溶接はスポット溶接、プロジェクション溶接、シーム溶接に、突合せ抵抗溶接はバット溶接、フラッシュ溶接に分類されます。
+            <br>スポット溶接は一対の電極で複数枚の板を挟み、大電流を流すことで板の重ね部を溶かし、ナゲットを作り溶接する方法です。
+            <br>自動車のボデー組立などに多用されています。
+            <br>プロジェクション溶接は一方の被溶接物に突起（プロジェクション）を設けることで相手部材と溶接する方法です。
+            <br>自動車のボデー部品等にナットを溶接する際に多く使用されています。
+            <br>シーム溶接は原理的にはスポット溶接と同じですが、電極を回転可能な円板状とし連続で溶接する方法です。
+            <br>自動車のガソリンタンクやドラム缶、灯油の燃料タンクなど気密を要する溶接に多く使用されています。
           </p>
           <div class="p-faqContent__accordionAnswerImg">
-            <img src="/img/images/faq-answer.jpg" alt="">
-            <p class="p-faqContent__accordionAnswerImgText">キャプションがある場合</p>
+            <img src="/img/images/faq-answer02.jpg" alt="抵抗溶接の分類">
+            <p class="p-faqContent__accordionAnswerImgText">抵抗溶接の分類</p>
           </div>
-          <div class="p-faqContent__accordionAnswerProducts">
+          {# <div class="p-faqContent__accordionAnswerProducts">
             {{ products(
-              linkList = thisLinkList
+              linkList = thisLinkList01
             ) }}
-          </div>
+          </div> #}
         </div>
       </div>
     </div>
