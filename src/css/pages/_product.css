@@ -17,6 +17,7 @@
 
   &Section__heading {
     font-size: 1.5rem;
+    font-weight: 400;
     letter-spacing: 2px;
   }
 
@@ -213,6 +214,7 @@
 
   &__headingText {
     font-size: 2rem;
+    font-weight: 400;
     letter-spacing: 3px;
   }
 
