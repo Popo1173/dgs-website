@@ -13,6 +13,7 @@ body {
   position: relative;
   -webkit-text-size-adjust: 100%;
   word-break: break-all;
+  margin-top: 100px;
 }
 
 a {
@@ -31,5 +32,11 @@ img {
 @media (--pc-viewport) {
   a[href^='tel:'] {
     pointer-events: none;
+  }
+}
+
+@media (--sp-viewport) {
+  body {
+    margin-top: 71.6px;
   }
 }

@@ -16,6 +16,7 @@
   justify-content: center;
   background-color: rgba(41, 51, 69, 0.6);
   transition: all 0.3s ease;
+  z-index: 9999;
 
   &:hover {
     background-color: rgba(41, 51, 69, 1);
