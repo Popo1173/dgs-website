@@ -65,7 +65,7 @@
         color: var(--color_purple);
         font-size: 0.9375rem;
 
-        & .u-link-hoverLine--text {
+        & .u-link-hoverLine__text {
           margin: 0 5px 0 4px;
         }
       }

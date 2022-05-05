@@ -63,6 +63,18 @@
     &:not(:first-of-type) {
       margin-top: 17px;
     }
+
+    & .u-link-hoverLine {
+      color: var(--color_purple);
+
+      & span {
+        margin-right: 4px;
+      }
+
+      & img {
+        margin-top: 4px;
+      }
+    }
   }
 }
 

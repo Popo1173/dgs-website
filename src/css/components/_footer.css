@@ -67,6 +67,18 @@
 .c-footerLinks {
   font-size: 0.8rem;
 
+  &:not(:first-of-type) {
+    margin-left: 2%;
+  }
+
+  & a {
+    display: block;
+
+    & > span {
+      display: block;
+    }
+  }
+
   & li {
     white-space: nowrap;
   }
