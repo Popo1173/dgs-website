@@ -257,6 +257,7 @@
 .p-top-productContent {
   background-color: #373778;
   padding: 14px 5.5% 7%;
+  margin-top: -1px;
 }
 
 .p-top-productLists {
