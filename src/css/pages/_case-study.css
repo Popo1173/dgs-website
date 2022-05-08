@@ -12,6 +12,16 @@
     font-family: var(--fontFamilyCondensed);
     margin-right: 8px;
   }
+
+  &__item {
+    & img {
+      pointer-events: none;
+    }
+
+    & .u-link-hoverLine__text {
+      pointer-events: none;
+    }
+  }
 }
 
 .p-caseStudyContent {

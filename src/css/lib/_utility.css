@@ -648,6 +648,10 @@
   &--373582 {
     color: #fff;
     background-color: var(--color_purple);
+
+    &:hover {
+      background-color: var(--color_red);
+    }
   }
 
   &--000 {
@@ -661,7 +665,7 @@
     border: 1px solid #fff;
 
     &:hover {
-      background-color: var(--color_vivid_purple);
+      background-color: var(--color_red);
     }
   }
 }

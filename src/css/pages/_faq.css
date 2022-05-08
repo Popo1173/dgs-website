@@ -33,6 +33,10 @@
         color: var(--color_fff);
       }
     }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__accordionQuestionTextWrap {
