@@ -7,13 +7,18 @@
           <img src="/img/images/header-logo.png" alt="DENGENSHA TOA co., LTD." class="c-headerBannerLogo__image">
         </a>
       </div>
-      <div class="u-show--sp c-header-toggl-wrapper js-triggerWrapper" data-sidenavi-status="hide">
-        <button class="c-headerHumberger js-trigger" type="button" data-sidenavi-toggle="open" data-trigger-target="side-navi">
-          <img src="/img/icons/icon-humberger.svg" alt="OPENサイドナビ" width="27" height="20">
-        </button>
-        <button class="c-headerClose js-trigger" type="button" data-sidenavi-toggle="close" data-trigger-target="side-navi">
-          <img src="/img/icons/icon-close.svg" alt="CLOSEサイドナビ" width="20" height="20">
-        </button>
+      <div class="u-show--sp u-d-flex u-aligin-items-center">
+        <a href="tel:044-922-1121">
+          <img src="/img/icons/icon-purple-tell.svg" alt="電話番号" width="25" height="25">
+        </a>
+        <div class="c-header-toggl-wrapper js-triggerWrapper" data-sidenavi-status="hide">
+          <button class="c-headerHumberger js-trigger" type="button" data-sidenavi-toggle="open" data-trigger-target="side-navi">
+            <img src="/img/icons/icon-humberger.svg" alt="OPENサイドナビ" width="27" height="20">
+          </button>
+          <button class="c-headerClose js-trigger" type="button" data-sidenavi-toggle="close" data-trigger-target="side-navi">
+            <img src="/img/icons/icon-close.svg" alt="CLOSEサイドナビ" width="20" height="20">
+          </button>
+        </div>
       </div>
     </div>
 
@@ -28,7 +33,7 @@
           </li>
           <li class="u-d-flex u-align-items-center">
             <img src="/img/icons/icon-language.svg" alt="言語切り替え" width="15" height="15">
-            <select id="select_lang">
+            <select class="select_lang">
               <option class="jpBtn" value="">English</option>
               <option class="enBtn" value="">Japanese</option>
             </select>
@@ -294,6 +299,11 @@
               </div>
             </div>
           </li>
+          <li class="c-headerGnavList u-show--sp" data-category="careerOpportunities">
+            <a href="" class="u-d-block u-w100">
+              <span>採用情報</span>
+            </a>
+          </li>
           <li class="u-show--pc" data-category="search">
             <button type="button" class="js-trigger" data-type="top-menu" aria-controls="top-menu-search">
               <img src="/img/icons/icon-search-black.svg" alt="検索" width="15" height="15">
@@ -316,6 +326,21 @@
             </div>
           </li>
         </ul>
+        <div class="c-headerOtherContent u-show--sp">
+          <p>
+            <a href="" class="u-link-button u-link-button--000">
+              <img src="/img/icons/icon-purple-mail.svg" alt="mail" width="20" height="16">
+              お問い合わせ
+            </a>
+          </p>
+          <div class="c-headerOtherContentLanguage u-d-inline-flex u-align-items-center">
+            <img src="/img/icons/icon-white-language.svg" alt="言語切り替え" width="16" height="16">
+            <select class="select_lang">
+              <option class="jpBtn" value="">English</option>
+              <option class="enBtn" value="">Japanese</option>
+            </select>
+          </div>
+        </div>
       </nav>
     </div>
   </div>

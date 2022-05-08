@@ -67,6 +67,32 @@ body.modal-open {
   }
 }
 
+.c-headerOtherContent {
+  text-align: center;
+  margin-top: 9px;
+
+  & .u-link-button--000 {
+    color: var(--color_deep_purple);
+    padding: 18px 54px;
+    font-weight: 500;
+
+    & > img {
+      margin-right: 10px;
+    }
+  }
+
+  &Language {
+    margin-top: 32px;
+
+    & .select_lang {
+      margin-left: 15px;
+      font-size: 0.93rem;
+      background-color: transparent;
+      color: var(--color_fff);
+    }
+  }
+}
+
 #cse-search-box {
   & .searchBoxContent {
     height: 30px;
@@ -135,7 +161,7 @@ body.modal-open {
   }
 }
 
-#select_lang {
+.select_lang {
   &:hover {
     cursor: pointer;
   }
@@ -406,6 +432,10 @@ body.modal-open {
 }
 
 @media (--sp-viewport) {
+  .c-headerGnav {
+    padding-bottom: 15%;
+  }
+
   .c-headerGnavMenuLeftContent,
   .c-headerGnavMenuImage {
     display: none;
@@ -432,9 +462,15 @@ body.modal-open {
     width: 100%;
     z-index: 100;
     overflow: auto;
-    background-color: var(--color_000);
-    opacity: 0.85;
+    background-color: rgba(0, 0, 0, 0.85);
     color: var(--color_fff);
+  }
+
+  .c-header-toggl-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    width: 27px;
   }
 
   .c-headerGnavLists {
