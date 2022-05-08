@@ -78,6 +78,12 @@
 .p-top-heroSolutionItem {
   width: 100%;
   z-index: 1;
+
+  &:hover {
+    & .p-top-heroSolution__img {
+      opacity: 1;
+    }
+  }
 }
 
 .p-top-heroSolution__img {
@@ -297,8 +303,14 @@
 }
 
 .p-top-productList__link {
-  &:hover .p-top-productList__linkTextWrap::after {
-    transform: scale(1, 1);
+  &:hover {
+    & .p-top-productList__linkTextWrap::after {
+      transform: scale(1, 1);
+    }
+
+    & .p-top-productList__linkImg {
+      opacity: 1;
+    }
   }
 }
 
@@ -340,6 +352,11 @@
 
   .p-top-heroSolutionItem:not(:first-of-type) {
     margin-left: 40px;
+  }
+
+  .p-top-heroSolution__img {
+    opacity: 0.75;
+    transition: opacity 0.4s ease;
   }
 
   .p-top-heroSolution__text {
@@ -411,6 +428,11 @@
     &:not(:first-of-type) {
       margin-left: 18px;
     }
+  }
+
+  .p-top-productList__linkImg {
+    opacity: 0.6;
+    transition: opacity 0.4s ease;
   }
 }
 
