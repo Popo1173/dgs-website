@@ -1,0 +1,109 @@
+{%- from '../../../modules/_heading.njk' import heading -%}
+{%- from '../../../modules/_section-logo.njk' import sectionLogo -%}
+
+
+<div class="p-catalog">
+  <section class="p-catalogHeading">
+    {{ heading(
+      introduction = 'Download Form',
+      title = '<span class="u-d-inline-block">ダウンロード</span><span class="u-d-inline-block">リクエスト</span><span class="u-d-inline-block">フォーム</span>',
+      modifier = '--type1'
+    ) }}
+  </section>
+  <section class="p-catalogContent">
+    <div class="p-catalogContent__introduction">
+      <div>
+        {{ sectionLogo(
+          usecase="sectionheading"
+        ) }}
+      </div>
+      <h2 class="p-catalogContent__sectionHeading">
+        資料ダウンロード
+      </h2>
+      <p class="p-catalogContent__introductionText">
+        カタログ、外形図、取扱説明書、<span class="u-d-inline-block">アップデータ</span>がダウンロードいただけます。<br>
+        入力していただいたメールアドレスに<span class="u-d-inline-block">ダウンロード用のURLをお送りします。</span>
+      </p>
+    </div>
+    <div class="p-catalogContent__form">
+      <div class="p-catalogContent__formRow">
+        <div class="p-catalogContent__formTeamWrap">
+          <span class="p-catalogContent__formTeam">会社名</span>
+          <span class="p-catalogContent__formMustLogo">必須</span>
+        </div>
+        <p class="p-catalogContent__formInputWrap">
+          <input type="text" class="p-catalogContent__formInput" placeholder="例）電元社トーア株式会社">
+        </p>
+      </div>
+      <div class="p-catalogContent__formRow">
+        <div class="p-catalogContent__formTeamWrap">
+          <span class="p-catalogContent__formTeam">氏名</span>
+          <span class="p-catalogContent__formMustLogo">必須</span>
+        </div>
+        <p class="p-catalogContent__formInputWrap">
+          <input type="text" class="p-catalogContent__formInput p-catalogContent__formInput--harf" placeholder="例）山田">
+          <input type="text" class="p-catalogContent__formInput p-catalogContent__formInput--harf" placeholder="例）太郎">
+        </p>
+      </div>
+      <div class="p-catalogContent__formRow">
+        <div class="p-catalogContent__formTeamWrap">
+          <span class="p-catalogContent__formTeam">メールアドレス</span>
+          <span class="p-catalogContent__formMustLogo">必須</span>
+        </div>
+        <p class="p-catalogContent__formInputWrap">
+          <input type="text" class="p-catalogContent__formInput" placeholder="例）abc@dengenshatoa.jp">
+        </p>
+      </div>
+      <div class="p-catalogContent__formSelectRow">
+        <p class="p-catalogContent__formSelectTermWrap">興味のある製品</p>
+        <p class="p-catalogContent__formInputWrap">
+          <span class="p-catalogContent__formCheckboxWrap">
+            <input type="checkbox" name="catalog" value="spot" id="checkbox__spot" />
+            <label for="checkbox__spot" class="p-catalogContent__formCheckbox">スポット溶接機</label>
+          </span>
+          <span class="p-catalogContent__formCheckboxWrap">
+            <input type="checkbox" name="catalog" value="spot" id="checkbox__gun" />
+            <label for="checkbox__gun" class="p-catalogContent__formCheckbox">溶接ガン</label>
+          </span>
+          <span class="p-catalogContent__formCheckboxWrap">
+            <input type="checkbox" name="catalog" value="spot" id="checkbox__projection" />
+            <label for="checkbox__projection" class="p-catalogContent__formCheckbox">プロジェクション溶接機</label>
+          </span>
+          <span class="p-catalogContent__formCheckboxWrap">
+            <input type="checkbox" name="catalog" value="spot" id="checkbox__seam" />
+            <label for="checkbox__seam" class="p-catalogContent__formCheckbox">シーム溶接機</label>
+          </span>
+          <span class="p-catalogContent__formCheckboxWrap">
+            <input type="checkbox" name="catalog" value="spot" id="checkbox__dedicated" />
+            <label for="checkbox__dedicated" class="p-catalogContent__formCheckbox">専用溶接機</label>
+          </span>
+          <span class="p-catalogContent__formCheckboxWrap">
+            <input type="checkbox" name="catalog" value="spot" id="checkbox__automaticSupply" />
+            <label for="checkbox__automaticSupply" class="p-catalogContent__formCheckbox">自動供給装置</label>
+          </span>
+          <span class="p-catalogContent__formCheckboxWrap">
+            <input type="checkbox" name="catalog" value="spot" id="checkbox__weldingControl" />
+            <label for="checkbox__weldingControl" class="p-catalogContent__formCheckbox">抵抗溶接制御装置</label>
+          </span>
+          <span class="p-catalogContent__formCheckboxWrap">
+            <input type="checkbox" name="catalog" value="spot" id="checkbox__trance" />
+            <label for="checkbox__trance" class="p-catalogContent__formCheckbox">抵抗溶接用トランス</label>
+          </span>
+          <span class="p-catalogContent__formCheckboxWrap">
+            <input type="checkbox" name="catalog" value="spot" id="checkbox__resistanceHeating" />
+            <label for="checkbox__resistanceHeating" class="p-catalogContent__formCheckbox">抵抗加熱装置・計測器・関連機器</label>
+          </span>
+          <span class="p-catalogContent__formCheckboxWrap">
+            <input type="checkbox" name="catalog" value="spot" id="checkbox__joining" />
+            <label for="checkbox__joining" class="p-catalogContent__formCheckbox">接合機器</label>
+          </span>
+        </p>
+      </div>
+      <div class="p-catalogContent__formToNext">
+        <a href="" class="u-link-button u-link-button--373582">
+          <span class="c-footerMailText">確認画面へ</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>

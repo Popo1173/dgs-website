@@ -7,8 +7,8 @@
 <div class="u-heading u-heading{{ modifier }}">
   <p class="u-heading__introduction u-font-condensed">{{ introduction }}</p>
   {% if subTitle %}
-  <p class="u-heading__sub">{{ subTitle }}</p>
+  <p class="u-heading__sub">{{ subTitle|safe }}</p>
   {% endif %}
-  <h1 class="u-heading__main">{{ title }}</h1>
+  <h1 class="u-heading__main">{{ title|safe }}</h1>
 </div>
 {% endmacro %}
