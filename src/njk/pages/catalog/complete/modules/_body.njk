@@ -1,0 +1,28 @@
+{%- from '../../../../modules/_heading.njk' import heading -%}
+{%- from '../../../../modules/_section-logo.njk' import sectionLogo -%}
+
+
+<div class="p-catalogComplete">
+  <section class="p-catalogHeading">
+    {{ heading(
+      introduction = 'Download Form',
+      title = '<span class="u-d-inline-block">ダウンロード</span><span class="u-d-inline-block">リクエスト</span><span class="u-d-inline-block">フォーム</span>',
+      modifier = '--type1'
+    ) }}
+  </section>
+  <section class="p-catalogContent">
+    <div class="p-catalogContent__introduction">
+      <div>
+        {{ sectionLogo(
+          usecase="sectionheading"
+        ) }}
+      </div>
+      <h2 class="p-catalogContent__sectionHeading">
+        資料のご請求<span class="u-d-inline-block">ありがとうございます。</span>
+      </h2>
+      <p class="p-catalogContent__introductionText">
+        入力していただいたメールアドレスに<span class="u-d-inline-block">ダウンロード用のURLお送りしています。</span>
+      </p>
+    </div>
+  </section>
+</div>
