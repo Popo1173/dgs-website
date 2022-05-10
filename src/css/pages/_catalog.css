@@ -1,3 +1,14 @@
+.p-catalog,
+.p-catalogConfirmation {
+  & .u-link-button {
+    padding: 19px 112px;
+  }
+
+  & .c-footerMailText {
+    margin-left: 0;
+  }
+}
+
 .p-catalogContent {
   & input[type=checkbox] {
     display: none;
@@ -115,19 +126,40 @@
       }
     }
 
-    &ToNext {
+    &ButtonWrap {
       margin-top: 152px;
       padding-top: 30px;
       text-align: center;
       border-top: 1px solid #b3b3b3;
+    }
 
-      & .u-link-button {
-        padding: 19px 112px;
-      }
+    &Confirm {
+      padding-top: 18px;
+    }
 
-      & .c-footerMailText {
-        margin-left: 0;
-      }
+    &ConfirmIntroduction {
+      font-size: 1.25rem;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    &ConfirmTable {
+      width: 100%;
+      border-spacing: 0 32px;
+      border-collapse: inherit;
+    }
+
+    &ConfirmRow {
+      font-weight: 500;
+    }
+
+    &ConfirmTeam {
+      width: 100px;
+      padding: 10px 15px;
+      font-size: 0.93rem;
+      white-space: nowrap;
+      text-align: left;
+      background-color: var(--color_fff);
     }
   }
 }
@@ -160,12 +192,41 @@
       &InputWrap {
         width: calc(73.5% + 2px);
       }
+
+      &ConfirmRow {
+        &:not(:first-of-type) {
+          margin-top: 31px;
+        }
+      }
+
+      &ConfirmDescription {
+        padding-left: 10%;
+        letter-spacing: -1px;
+      }
+
+      &ConfirmName {
+        display: inline-block;
+        margin-left: 28px;
+      }
+
+      &Button {
+        &:not(:first-of-type) {
+          margin-left: 48px;
+        }
+      }
     }
   }
 }
 
 @media (--sp-viewport) {
-  .p-catalog .u-heading {
+  .p-catalogConfirmation {
+    & .u-link-button {
+      width: 100%;
+    }
+  }
+
+  .p-catalog .u-heading,
+  .p-catalogConfirmation .u-heading {
     padding-top: 75px;
     padding-bottom: 35px;
 
@@ -182,6 +243,10 @@
 
     &__form {
       padding: 12% 5% 41% 6.2%;
+
+      .p-catalogConfirmation & {
+        background-color: #f0f0f0;
+      }
 
       &Row {
         &:not(:first-of-type) {
@@ -230,8 +295,34 @@
         }
       }
 
-      &ToNext {
+      &ButtonWrap {
         margin-top: 66px;
+      }
+
+      &ConfirmRow {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:first-of-type) {
+          margin-top: 20px;
+        }
+      }
+
+      &ConfirmTeam {
+        width: 100%;
+        white-space: inherit;
+        letter-spacing: -1px;
+      }
+
+      &ConfirmDescription {
+        margin-top: 22px;
+        padding-left: 16px;
+      }
+
+      &Button {
+        &:not(:first-of-type) {
+          margin-top: 20px;
+        }
       }
     }
   }

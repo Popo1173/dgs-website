@@ -1,0 +1,65 @@
+{%- from '../../../../modules/_heading.njk' import heading -%}
+{%- from '../../../../modules/_section-logo.njk' import sectionLogo -%}
+
+
+<div class="p-catalogConfirmation">
+  <section class="p-catalogHeading">
+    {{ heading(
+      introduction = 'Download Form',
+      title = '<span class="u-d-inline-block">ダウンロード</span><span class="u-d-inline-block">リクエスト</span><span class="u-d-inline-block">フォーム</span>',
+      modifier = '--type1'
+    ) }}
+  </section>
+  <section class="p-catalogContent">
+    <div class="p-catalogContent__introduction">
+      <div>
+        {{ sectionLogo(
+          usecase="sectionheading"
+        ) }}
+      </div>
+      <h2 class="p-catalogContent__sectionHeading">
+        資料ダウンロード
+      </h2>
+      <p class="p-catalogContent__introductionText">
+        カタログ、外形図、取扱説明書、<span class="u-d-inline-block">アップデータ</span>がダウンロードいただけます。<br>
+        入力していただいたメールアドレスに<span class="u-d-inline-block">ダウンロード用のURLをお送りします。</span>
+      </p>
+    </div>
+    <div class="p-catalogContent__form">
+      <div class="p-catalogContent__formConfirm">
+        <p class="p-catalogContent__formConfirmIntroduction">内容を確認し、よろしければ「送信」ボタンを押してください。</p>
+        <table class="p-catalogContent__formConfirmTable">
+          <tbody>
+            <tr class="p-catalogContent__formConfirmRow">
+              <th class="p-catalogContent__formConfirmTeam">会社名</th>
+              <td class="p-catalogContent__formConfirmDescription">例）電元社トーア株式会社</td>
+            </tr>
+            <tr class="p-catalogContent__formConfirmRow">
+              <th class="p-catalogContent__formConfirmTeam">氏名</th>
+              <td class="p-catalogContent__formConfirmDescription">
+                例）山田
+                <span class="p-catalogContent__formConfirmName">例）太郎</span>
+              </td>
+            </tr>
+            <tr class="p-catalogContent__formConfirmRow">
+              <th class="p-catalogContent__formConfirmTeam">メールアドレス</th>
+              <td class="p-catalogContent__formConfirmDescription">例）abc@dengenshatoa.jp</td>
+            </tr>
+            <tr class="p-catalogContent__formConfirmRow">
+              <th class="p-catalogContent__formConfirmTeam">興味のある製品</th>
+              <td class="p-catalogContent__formConfirmDescription">スポット溶接機</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="p-catalogContent__formButtonWrap">
+        <a href="" class="u-link-button u-link-button--000 p-catalogContent__formButton">
+          戻る
+        </a>
+        <a href="" class="u-link-button u-link-button--373582 p-catalogContent__formButton">
+          <span class="c-footerMailText">送信</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
