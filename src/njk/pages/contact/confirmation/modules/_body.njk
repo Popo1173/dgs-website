@@ -1,0 +1,109 @@
+{%- from '../../../../modules/_heading.njk' import heading -%}
+{%- from '../../../../modules/_section-logo.njk' import sectionLogo -%}
+
+
+<div class="p-contactConfirmation">
+  <section class="p-contactHeading">
+    {{ heading(
+      introduction = 'INQUIRY',
+      title = 'お問い合わせ',
+      modifier = '--type1'
+    ) }}
+  </section>
+  <section class="p-contactContent">
+    <div class="p-contactContent__introduction">
+      <div>
+        {{ sectionLogo(
+          usecase="sectionheading"
+        ) }}
+      </div>
+      <p class="p-contactContent__introductionText">
+        入力内容が正しければ、<span class="u-d-inline-block">送信ボタンを押してください。</span>
+      </p>
+    </div>
+    <div class="p-contactContent__form">
+      <div class="p-contactContent__formConfirm">
+        <p class="p-contactContent__formConfirmIntroduction u-show--pc">内容を確認し、よろしければ「送信」ボタンを押してください。</p>
+        <table class="p-contactContent__formConfirmTable">
+          <tbody>
+            <tr class="p-contactContent__formConfirmRow">
+              <th class="p-contactContent__formConfirmTeam">
+                <span class="p-contactContent__formConfirmTeamText">件名</span>
+              </th>
+              <td class="p-contactContent__formConfirmDescription">例）商品へのご質問</td>
+            </tr>
+            <tr class="p-contactContent__formConfirmRow">
+              <th class="p-contactContent__formConfirmTeam">
+                <span class="p-contactContent__formConfirmTeamText">会社名</span>
+              </th>
+              <td class="p-contactContent__formConfirmDescription">例）電元社トーア株式会社</td>
+            </tr>
+            <tr class="p-contactContent__formConfirmRow">
+              <th class="p-contactContent__formConfirmTeam">
+                <span class="p-contactContent__formConfirmTeamText">部署名</span>
+              </th>
+              <td class="p-contactContent__formConfirmDescription">例）営業部</td>
+            </tr>
+            <tr class="p-contactContent__formConfirmRow">
+              <th class="p-contactContent__formConfirmTeam">
+                <span class="p-contactContent__formConfirmTeamText">氏名</span>
+              </th>
+              <td class="p-contactContent__formConfirmDescription">
+                例）山田
+                <span class="p-contactContent__formConfirmName">例）太郎</span>
+              </td>
+            </tr>
+            <tr class="p-contactContent__formConfirmRow">
+              <th class="p-contactContent__formConfirmTeam">
+                <span class="p-contactContent__formConfirmTeamText">氏名（ふりがな）</span>
+              </th>
+              <td class="p-contactContent__formConfirmDescription">
+                例）やまだ
+                <span class="p-contactContent__formConfirmName">例）たろう</span>
+              </td>
+            </tr>
+            <tr class="p-contactContent__formConfirmRow">
+              <th class="p-contactContent__formConfirmTeam">
+                <span class="p-contactContent__formConfirmTeamText">メールアドレス</span>
+              </th>
+              <td class="p-contactContent__formConfirmDescription">例）abc@dengenshatoa.jp</td>
+            </tr>
+            <tr class="p-contactContent__formConfirmRow">
+              <th class="p-contactContent__formConfirmTeam">
+                <span class="p-contactContent__formConfirmTeamText">郵便番号</span>
+              </th>
+              <td class="p-contactContent__formConfirmDescription">例）214-0032</td>
+            </tr>
+            <tr class="p-contactContent__formConfirmRow">
+              <th class="p-contactContent__formConfirmTeam">
+                <span class="p-contactContent__formConfirmTeamText">ご住所</span>
+              </th>
+              <td class="p-contactContent__formConfirmDescription">例）神奈川県川崎市多摩区</td>
+            </tr>
+            <tr class="p-contactContent__formConfirmRow">
+              <th class="p-contactContent__formConfirmTeam">
+                <span class="p-contactContent__formConfirmTeamText">お電話番号</span>
+              </th>
+              <td class="p-contactContent__formConfirmDescription">例）044−922−1121</td>
+            </tr>
+            <tr class="p-contactContent__formConfirmRow">
+              <th class="p-contactContent__formConfirmTeam">
+                <span class="p-contactContent__formConfirmTeamText">お問い合わせ内容</span>
+              </th>
+              <td class="p-contactContent__formConfirmDescription">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="p-contactContent__formButtonWrap">
+        <a href="" class="u-link-button u-link-button--000 p-contactContent__formButton">
+          戻る
+        </a>
+        <a href="" class="u-link-button u-link-button--373582 p-contactContent__formButton">
+          <span class="c-footerMailText">送信</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>

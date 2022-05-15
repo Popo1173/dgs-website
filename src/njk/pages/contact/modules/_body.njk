@@ -1,0 +1,130 @@
+{%- from '../../../modules/_heading.njk' import heading -%}
+{%- from '../../../modules/_section-logo.njk' import sectionLogo -%}
+
+
+<div class="p-contact">
+  <section class="p-contactHeading">
+    {{ heading(
+      introduction = 'INQUIRY',
+      title = 'お問い合わせ',
+      modifier = '--type1'
+    ) }}
+  </section>
+  <section class="p-contactContent">
+    <div class="p-contactContent__introduction">
+      <div>
+        {{ sectionLogo(
+          usecase="sectionheading"
+        ) }}
+      </div>
+      <p class="p-contactContent__introductionText">
+        お問い合わせは<span class="u-d-inline-block">こちらからお願いいたします。</span><br>
+        以下のフォームにご記入後、<span class="u-d-inline-block">“確認” ボタンをクリックしてください。</span>
+      </p>
+    </div>
+    <div class="p-contactContent__form">
+      <div class="p-contactContent__formRow">
+        <div class="p-contactContent__formTeamWrap">
+          <span class="p-contactContent__formTeam">件名</span>
+          <span class="p-contactContent__formMustLogo">必須</span>
+        </div>
+        <p class="p-contactContent__formInputWrap">
+          <input type="text" class="p-contactContent__formInput" placeholder="例）商品へのご質問">
+          <span class="p-contactContent__formErrorMessage">！ 必須項目です</span>
+        </p>
+      </div>
+      <div class="p-contactContent__formRow">
+        <div class="p-contactContent__formTeamWrap">
+          <span class="p-contactContent__formTeam">会社名</span>
+          <span class="p-contactContent__formMustLogo">必須</span>
+        </div>
+        <p class="p-contactContent__formInputWrap">
+          <input type="text" class="p-contactContent__formInput" placeholder="例）電元社トーア株式会社">
+          <span class="p-contactContent__formErrorMessage">！ 必須項目です</span>
+        </p>
+      </div>
+      <div class="p-contactContent__formRow">
+        <div class="p-contactContent__formTeamWrap">
+          <span class="p-contactContent__formTeam">部署名</span>
+        </div>
+        <p class="p-contactContent__formInputWrap">
+          <input type="text" class="p-contactContent__formInput" placeholder="例）営業部">
+        </p>
+      </div>
+      <div class="p-contactContent__formRow">
+        <div class="p-contactContent__formTeamWrap">
+          <span class="p-contactContent__formTeam">氏名</span>
+        </div>
+        <p class="p-contactContent__formInputWrap">
+          <span>
+            <input type="text" class="p-contactContent__formInput p-contactContent__formInput--harf" placeholder="例）山田">
+            <input type="text" class="p-contactContent__formInput p-contactContent__formInput--harf" placeholder="例）太郎">
+          </span>
+        </p>
+      </div>
+      <div class="p-contactContent__formRow">
+        <div class="p-contactContent__formTeamWrap">
+          <span class="p-contactContent__formTeam">氏名（ふりがな）</span>
+        </div>
+        <p class="p-contactContent__formInputWrap">
+          <span>
+            <input type="text" class="p-contactContent__formInput p-contactContent__formInput--harf" placeholder="例）やまだ">
+            <input type="text" class="p-contactContent__formInput p-contactContent__formInput--harf" placeholder="例）たろう">
+          </span>
+        </p>
+      </div>
+      <div class="p-contactContent__formRow">
+        <div class="p-contactContent__formTeamWrap">
+          <span class="p-contactContent__formTeam">メールアドレス</span>
+          <span class="p-contactContent__formMustLogo">必須</span>
+        </div>
+        <p class="p-contactContent__formInputWrap">
+          <input type="text" class="p-contactContent__formInput" placeholder="例）abc@dengenshatoa.jp">
+          <span class="p-contactContent__formErrorMessage">！ 必須項目です</span>
+        </p>
+      </div>
+      <div class="p-contactContent__formRow">
+        <div class="p-contactContent__formTeamWrap">
+          <span class="p-contactContent__formTeam">郵便番号</span>
+        </div>
+        <p class="p-contactContent__formInputWrap">
+          <input type="text" class="p-contactContent__formInput" placeholder="例）214-0032">
+        </p>
+      </div>
+      <div class="p-contactContent__formRow">
+        <div class="p-contactContent__formTeamWrap">
+          <span class="p-contactContent__formTeam">ご住所</span>
+        </div>
+        <p class="p-contactContent__formInputWrap">
+          <input type="text" class="p-contactContent__formInput" placeholder="例）神奈川県川崎市多摩区">
+        </p>
+      </div>
+      <div class="p-contactContent__formRow">
+        <div class="p-contactContent__formTeamWrap">
+          <span class="p-contactContent__formTeam">お電話番号</span>
+        </div>
+        <p class="p-contactContent__formInputWrap">
+          <input type="text" class="p-contactContent__formInput" placeholder="例）044-922-1121">
+        </p>
+      </div>
+      <div class="p-contactContent__formRow">
+        <div class="p-contactContent__formTeamWrap">
+          <span class="p-contactContent__formTeam">お問い合わせ内容</span>
+          <span class="p-contactContent__formMustLogo">必須</span>
+        </div>
+        <p class="p-contactContent__formInputWrap">
+          <textarea class="p-contactContent__formInput u-show--pc" name="" id="" cols="30" rows="6"></textarea>
+          <textarea class="p-contactContent__formInput u-show--sp" name="" id="" cols="30" rows="10"></textarea>
+          <span class="p-contactContent__formErrorMessage">！ 必須項目です</span>
+        </p>
+      </div>
+
+
+      <div class="p-contactContent__formButtonWrap">
+        <a href="" class="u-link-button u-link-button--373582 p-contactContent__formButton">
+          <span class="c-footerMailText">確認画面へ</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
