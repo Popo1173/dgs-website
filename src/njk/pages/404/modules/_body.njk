@@ -1,0 +1,38 @@
+{%- from '../../../modules/_heading.njk' import heading -%}
+{%- from '../../../modules/_products.njk' import products -%}
+{% set thisLinkList = [
+  {
+    text: 'スポット溶接の概略図',
+    href: ''
+  }
+] %}
+{% set thisLinkList01 = [
+  {
+    text: 'スポット溶接の概略図22',
+    href: ''
+  }
+] %}
+
+<div class="p-notFound">
+  <section class="p-notFoundHeading">
+    {{ heading(
+      introduction = '404',
+      title = 'NotFound',
+      modifier = '--type1'
+    ) }}
+  </section>
+  <section class="p-notFonudContent">
+    <div class="p-notFonudContent__sectionLogoWrap">
+      <span class="m-sectionLogo sectionheading">
+        <span class="m-sectionLogo__left"></span>
+        <span class="m-sectionLogo__right"></span>
+      </span>
+      <h2 class="p-notFonudContent__heading">ご指定のページが見つかりませんでした。</h2>
+
+      <p class="p-notFonudContent__text">
+        アクセスしたページは、削除、変更されたか、現在利用できない可能性があります。
+        <br>お手数ですが電元トーア社トップ、まはた下記のリンクより再度お探しください。
+      </p>
+    </div>
+  </section>
+</div>
