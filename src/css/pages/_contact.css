@@ -1,5 +1,9 @@
-.p-catalog,
-.p-catalogConfirmation {
+.p-contact,
+.p-contactConfirmation {
+  & .u-heading {
+    padding-top: 54px;
+  }
+
   & .u-link-button {
     padding: 19px 0;
   }
@@ -9,7 +13,7 @@
   }
 }
 
-.p-catalogContent {
+.p-contactContent {
   & input[type=checkbox] {
     display: none;
   }
@@ -17,8 +21,24 @@
   &__introduction {
     padding: 4% 15.3% 2.7%;
 
-    .p-catalogComplete & {
-      padding: 4% 15.2% 234px;
+    .p-contactComplete & {
+      padding: 4% 2% 234px 15.2%;
+    }
+
+    &Text {
+      margin-top: 20px;
+      letter-spacing: 0.8px;
+      line-height: 1.65;
+
+      .p-contactConfirmation & {
+        margin-top: 18px;
+        letter-spacing: 0.8px;
+      }
+
+      .p-contactComplete & {
+        margin-top: 50px;
+        letter-spacing: 1.6px;
+      }
     }
   }
 
@@ -29,34 +49,24 @@
     font-weight: normal;
   }
 
-  &__introductionText {
-    margin-top: 28px;
-    letter-spacing: 1px;
-    line-height: 1.65;
-
-    .p-catalogComplete & {
-      margin-top: 50px;
-      letter-spacing: 1.6px;
-    }
-  }
-
   &__form {
-    padding: 2% 15.3% 7%;
+    padding: 2% 15.3% 8%;
+    background-color: #f0f0f0;
 
     &Row {
       display: flex;
 
       &:not(:first-of-type) {
-        margin-top: 20px;
+        margin-top: 24px;
       }
     }
 
     &MustLogo {
       color: var(--color_fff);
       background-color: #be0f16;
-      white-space: nowrap;
       font-size: 0.75rem;
       padding: 2.4px 12px;
+      white-space: nowrap;
     }
 
     &Team,
@@ -67,10 +77,15 @@
 
     &Input {
       width: 100%;
-      padding: 15px 18px;
+      padding: 10px 18px;
       border: 1px solid #b3b3b3;
       font-size: 1rem;
       border-radius: 4px;
+      line-height: 1.8;
+
+      textarea& {
+        letter-spacing: 1px;
+      }
 
       &::placeholder,
       &::-webkit-input-placeholder,
@@ -96,65 +111,18 @@
       color: #be0f16;
       font-weight: bold;
       display: block;
-      margin-top: 10px;
-    }
-
-    &Checkbox {
-      position: relative;
-      padding: 0 0 0 28px;
-      font-size: 0.93rem;
-
-      &Wrap {
-        display: block;
-
-        &:not(:first-of-type) {
-          margin-top: 12px;
-        }
-      }
-
-      &::before {
-        position: absolute;
-        content: '';
-        display: inline-block;
-        left: 0;
-        top: 50%;
-        width: 20px;
-        height: 20px;
-        border: 1px solid #b3b3b3;
-        border-radius: 3px;
-        transform: translateY(-50%);
-        background-color: var(--color_fff);
-      }
-
-      input[type=checkbox]:checked + & {
-        &::before {
-          background-color: var(--color_purple);
-        }
-
-        &::after {
-          position: absolute;
-          content: '';
-          display: inline-block;
-          top: 6px;
-          left: 5px;
-          width: 11px;
-          height: 8px;
-          border-left: 2px solid var(--color_fff);
-          border-bottom: 2px solid var(--color_fff);
-          border-radius: 1px;
-          transform: rotate(-45deg);
-        }
-      }
+      margin-top: 6px;
+      letter-spacing: 1px;
     }
 
     &ButtonWrap {
-      margin-top: 152px;
+      margin-top: 64px;
       padding-top: 30px;
       text-align: center;
       border-top: 1px solid #b3b3b3;
 
-      .p-catalogConfirmation & {
-        margin-top: 96px;
+      .p-contactConfirmation & {
+        margin-top: 94px;
       }
     }
 
@@ -176,20 +144,22 @@
 
     &ConfirmTeam {
       width: 100px;
+      text-align: left;
+    }
+
+    &ConfirmTeamText {
+      display: block;
       padding: 10px 15px;
       font-size: 0.93rem;
       white-space: nowrap;
-      text-align: left;
       background-color: var(--color_fff);
     }
   }
 }
 
 @media (--pc-viewport) {
-  .p-catalogContent {
+  .p-contactContent {
     &__form {
-      background-color: #f0f0f0;
-
       &SelectRow {
         margin-top: 43px;
         display: flex;
@@ -213,10 +183,6 @@
         width: calc(73.5% + 2px);
       }
 
-      &MustLogo {
-        margin-left: 8px;
-      }
-
       &Confirm {
         padding-top: 18px;
       }
@@ -232,6 +198,10 @@
         letter-spacing: -1px;
       }
 
+      &MustLogo {
+        margin-left: 8px;
+      }
+
       &Button {
         width: calc(33.2% - 24px);
 
@@ -244,11 +214,17 @@
 }
 
 @media (--sp-viewport) {
-  .p-catalog .u-heading,
-  .p-catalogConfirmation .u-heading,
-  .p-catalogComplete .u-heading {
-    padding-top: 75px;
-    padding-bottom: 35px;
+  .p-contactConfirmation {
+    & .u-link-button {
+      width: 100%;
+    }
+  }
+
+  .p-contact .u-heading,
+  .p-contactConfirmation .u-heading,
+  .p-contactComplete .u-heading {
+    padding-top: 72px;
+    padding-bottom: 136px;
 
     &__main {
       font-size: 2.5rem;
@@ -256,23 +232,27 @@
     }
   }
 
-  .p-catalogContent {
+  .p-contactContent {
     &__introduction {
-      padding: 15% 3% 8% 6.2%;
+      padding: 58px 3% 9% 6.2%;
 
-      .p-catalogComplete & {
-        padding: 38px 3% 323px 6.6%;
+      .p-contactComplete & {
+        padding: 12% 2% 308px 6.2%;
       }
 
       &Text {
-        .p-catalogComplete & {
-          margin-top: 40px;
+        margin-top: 21px;
+        letter-spacing: 1px;
+        line-height: 1.8;
+
+        .p-contactComplete & {
+          margin-top: 38px;
         }
       }
     }
 
     &__sectionHeading {
-      .p-catalogComplete & {
+      .p-contactComplete & {
         font-size: 1.75rem;
         letter-spacing: 3px;
         line-height: 1.4;
@@ -280,10 +260,9 @@
     }
 
     &__form {
-      padding: 28px 5% 154px 6.3%;
+      padding: 9% 4.4% 152px 6.4%;
 
-      .p-catalogConfirmation & {
-        background-color: #f0f0f0;
+      .p-contactConfirmation & {
         padding-top: 0;
       }
 
@@ -312,14 +291,14 @@
       }
 
       &Input {
-        padding: 15px 0;
+        padding: 10px 0;
         font-size: 0.93rem;
 
         &&--harf {
           width: calc(50% - 8px);
 
           &:not(:first-of-type) {
-            margin-left: 8px;
+            margin-left: 12px;
           }
         }
       }
@@ -327,7 +306,7 @@
       &SelectRow {
         margin-top: 34px;
 
-        & .p-catalogContent__formInputWrap {
+        & .p-contactContent__formInputWrap {
           width: 100%;
           margin-left: 0;
           padding: 20px 0 0 20px;
@@ -335,15 +314,11 @@
       }
 
       &ButtonWrap {
-        margin-top: 66px;
+        margin-top: 100px;
 
-        .p-catalogConfirmation & {
-          margin-top: 64px;
+        .p-contactConfirmation & {
+          margin-top: 80px;
         }
-      }
-
-      &ConfirmTable {
-        letter-spacing: -1px;
       }
 
       &ConfirmRow {
@@ -358,6 +333,7 @@
       &ConfirmTeam {
         width: 100%;
         white-space: inherit;
+        letter-spacing: -1px;
       }
 
       &ConfirmDescription {

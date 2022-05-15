@@ -1,0 +1,28 @@
+{%- from '../../../../modules/_heading.njk' import heading -%}
+{%- from '../../../../modules/_section-logo.njk' import sectionLogo -%}
+
+
+<div class="p-contactComplete">
+  <section class="p-contactHeading">
+    {{ heading(
+      introduction = 'INQUIRY',
+      title = 'お問い合わせ',
+      modifier = '--type1'
+    ) }}
+  </section>
+  <section>
+    <div class="p-contactContent__introduction">
+      <div>
+        {{ sectionLogo(
+          usecase="sectionheading"
+        ) }}
+      </div>
+      <h2 class="p-contactContent__sectionHeading">
+        お問い合わせいただき、<span class="u-d-inline-block">誠にありがとうございました。</span>
+      </h2>
+      <p class="p-contactContent__introductionText">
+        お問い合わせ内容の送信が完了しました。
+      </p>
+    </div>
+  </section>
+</div>
