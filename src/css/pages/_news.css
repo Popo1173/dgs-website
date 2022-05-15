@@ -5,6 +5,13 @@
     font-weight: normal;
     padding-top: 25px;
   }
+
+  &__date {
+    margin: 11px 0 0 2px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    font-family: var(--fontFamilyCondensed);
+  }
 }
 
 .p-newsContent {
@@ -12,6 +19,27 @@
 
   .p-newsArchive & {
     padding-bottom: 1.8%;
+  }
+
+  .p-newsDetail & {
+    padding-bottom: 5.2%;
+  }
+
+  &__item {
+    margin-top: 27px;
+  }
+
+  &__Text {
+    letter-spacing: 0.8px;
+    line-height: 1.6;
+
+    &--emp {
+      font-weight: bold;
+    }
+
+    &:not(:first-of-type) {
+      margin-top: 36px;
+    }
   }
 
   &__table {
@@ -37,6 +65,30 @@
     letter-spacing: 0.8px;
     line-height: 1.6;
     color: var(--color_purple);
+  }
+
+  &__buttonLinks {
+    margin-top: 218px;
+
+    & .u-link-button {
+      padding: 15px 38px;
+      min-width: 280px;
+    }
+  }
+
+  &__buttonWrap {
+    &:not(:first-of-type) {
+      margin-top: 16px;
+    }
+  }
+
+  &__backButtonWrap {
+    text-align: center;
+    margin-top: 50px;
+
+    & .u-link-button {
+      width: 310px;
+    }
   }
 }
 
@@ -84,12 +136,31 @@
         padding: 16px 60px 16px 15px;
       }
     }
+
+    &__item {
+      padding-left: 13px;
+    }
   }
 }
 
 @media (--sp-viewport) {
+  .p-news {
+    &__heading {
+      .p-newsDetail & {
+        letter-spacing: 3px;
+        font-size: 2rem;
+        line-height: 1.4;
+      }
+    }
+
+    &__date {
+      margin-top: 15px;
+    }
+  }
+
   .p-news .u-heading,
-  .p-newsArchive .u-heading {
+  .p-newsArchive .u-heading,
+  .p-newsDetail .u-heading {
     padding-top: 72px;
     padding-bottom: 138px;
 
@@ -105,6 +176,11 @@
     .p-newsArchive & {
       padding-top: 58px;
       padding-bottom: 96px;
+    }
+
+    .p-newsDetail & {
+      padding-top: 60px;
+      padding-bottom: 95px;
     }
 
     &__table {
@@ -129,6 +205,19 @@
 
     &__tableDescription {
       line-height: 1.4;
+    }
+
+    &__item {
+      margin-top: 37px;
+    }
+
+    &__buttonLinks {
+      margin-top: 80px;
+      text-align: center;
+    }
+
+    &__backButtonWrap {
+      margin-top: 28px;
     }
   }
 

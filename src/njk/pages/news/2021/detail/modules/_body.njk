@@ -1,0 +1,46 @@
+{%- from '../../../../../modules/_heading.njk' import heading -%}
+{%- from '../../../../../modules/_section-logo.njk' import sectionLogo -%}
+
+<div class="p-newsDetail">
+  <section class="p-newsHeading">
+    {{ heading(
+      introduction = 'NEWS',
+      title = 'ニュース',
+      modifier = '--type1'
+    ) }}
+  </section>
+  <section class="p-newsContent">
+    <div class="p-news__headingWrap">
+      <div>
+        {{ sectionLogo(
+          usecase="sectionheading"
+        ) }}
+      </div>
+      <h2 class="p-news__heading">ニュースタイトルが<span class="u-d-inline-block">入ります。</span></h2>
+      <p class="p-news__date">2022.01.23</p>
+    </div>
+    <div class="p-newsContent__item">
+      <p class="p-newsContent__Text">
+        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      </p>
+      <p class="p-newsContent__Text p-newsContent__Text--emp">
+        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+        テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      </p>
+      <div class="p-newsContent__buttonLinks">
+        <p class="p-newsContent__buttonWrap">
+          <a href="" class="u-link-button u-link-button--5652cc">資料ダウンロードフォーム</a>
+        </p>
+        <p class="p-newsContent__buttonWrap">
+          <a href="" class="u-link-button u-link-button--5652cc">PDFダウンロード</a>
+        </p>
+      </div>
+    </div>
+    <p class="p-newsContent__backButtonWrap">
+      <a href="" class="u-link-button u-link-button--000">
+        一覧に戻る
+      </a>
+    </p>
+  </section>
+</div>
