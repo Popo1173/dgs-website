@@ -116,6 +116,7 @@ body.modal-open {
       font-size: 14px;
       padding: 0 12px;
       border-radius: 0;
+      line-height: 2.4em;
     }
   }
 
@@ -130,6 +131,12 @@ body.modal-open {
     margin-left: 15px;
     padding: 7px 10px;
     border-radius: 0;
+  }
+
+  & .gsc-results-wrapper-overlay {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
   }
 }
 
@@ -556,4 +563,9 @@ body.modal-open {
       border-radius: 0 8px 8px 0;
     }
   }
+}
+
+.gsst_a {
+  position: relative;
+  top: 2px;
 }
