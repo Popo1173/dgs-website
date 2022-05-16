@@ -678,6 +678,7 @@
   &__text {
     position: relative;
     padding-bottom: 8px;
+    display: inline-block;
 
     &::after {
       content: '';

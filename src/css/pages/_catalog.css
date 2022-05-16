@@ -128,6 +128,7 @@
 
       input[type=checkbox]:checked + & {
         &::before {
+          border: none;
           background-color: var(--color_purple);
         }
 
