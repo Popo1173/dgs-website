@@ -30,15 +30,8 @@
       border-bottom: 1px solid #b8bec6;
     }
 
-    &Term {
-      text-align: left;
-      font-weight: 500;
-      padding: 0.6% 1% 0.85% 0%;
-      white-space: nowrap;
-    }
-
     &Description {
-      width: 80.8%;
+      padding: 0.6% 0 0.85% 1.2%;
     }
 
     &List {
@@ -501,17 +494,10 @@
         min-width: 1000px;
         text-align: center;
         margin-top: 24px;
-        border-top: 1px solid #b3b3b3;
-        border-bottom: 1px solid #b3b3b3;
+        border: 1px solid #b3b3b3;
 
         &Wrap {
           overflow-x: auto;
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-
-          &::-webkit-scrollbar {
-            display: none;
-          }
         }
 
         & tr {
@@ -602,11 +588,6 @@
           transform: rotate(45deg) translateY(-50%);
           background-color: var(--color_000);
         }
-      }
-
-      &Row {
-        display: flex;
-        flex-direction: column;
       }
 
       &Description {

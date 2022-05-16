@@ -92,7 +92,8 @@
     margin-top: 28px;
 
     & > img {
-      max-width: 100%;
+      max-width: 350px;
+      width: 100%;
     }
   }
 
