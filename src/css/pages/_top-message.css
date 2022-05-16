@@ -1,4 +1,6 @@
 .p-top-message {
+  padding-bottom: 170px;
+
   & .u-heading {
     padding-top: 60px;
   }
@@ -52,6 +54,8 @@
 
   &__history {
     margin-top: 73px;
+    z-index: 1;
+    position: relative;
   }
 
   &__middleHistory {
@@ -71,7 +75,7 @@
 
 .p-top-messageVision {
   position: relative;
-  padding: 0 15.3% 14.1%;
+  padding: 0 15.3% 150px;
   background-color: #f0f0f0;
   letter-spacing: 0.8px;
   line-height: 1.7;
@@ -105,11 +109,11 @@
 
   &__square {
     position: absolute;
-    bottom: 23.6%;
+    top: 0;
     left: 0;
     background-color: var(--color_purple);
     width: 41.6%;
-    height: 76.4%;
+    padding-top: 38.6%;
   }
 
   &__subHero {

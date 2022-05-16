@@ -26,10 +26,6 @@
   margin-left: 12px;
 }
 
-.c-footerLinkHeading {
-  font-weight: 500;
-}
-
 .c-footerLinks > li {
   &:not(:first-of-type) {
     margin-top: 10px;
