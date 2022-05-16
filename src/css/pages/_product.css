@@ -429,7 +429,8 @@
 
     &__imgWrap {
       right: 15.5%;
-      bottom: -16%;
+      top: 16%;
+      max-width: 440px;
     }
 
     &__mainContent {
@@ -548,10 +549,6 @@
   .p-productSeriesHeading {
     &__mainContent {
       padding: 5.8% 5% 10% 0;
-    }
-
-    &__imgWrap {
-      bottom: -8%;
     }
   }
 }
@@ -834,6 +831,14 @@
 
     &__movieWrap {
       margin-top: 34px;
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .p-productSeriesHeading {
+    &__imgWrap {
+      padding-top: 440px;
     }
   }
 }
