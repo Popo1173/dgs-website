@@ -15,7 +15,7 @@
   }
 
   &__introduction {
-    padding: 4% 15.3% 234px;
+    padding: 4% 15.3% 2.7%;
 
     .p-catalogComplete & {
       padding: 4% 15.2% 234px;
