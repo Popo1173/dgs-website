@@ -31,7 +31,14 @@
     }
 
     &Description {
-      padding: 0.6% 0 0.85% 1.2%;
+      padding: 0.6% 0 0.85%;
+      display: flex;
+
+      &-item {
+        font-weight: bold;
+        width: 150px;
+        min-width: 10%;
+      }
     }
 
     &List {
@@ -506,10 +513,10 @@
         }
 
         & thead th {
-          width: 24%;
+          width: auto;
 
           &:first-of-type {
-            width: 27.8%;
+            width: 20%;
           }
         }
 
