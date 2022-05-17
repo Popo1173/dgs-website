@@ -235,6 +235,7 @@
 
       &Button {
         width: calc(33.2% - 24px);
+        border: none;
 
         &:not(:first-of-type) {
           margin-left: 48px;
