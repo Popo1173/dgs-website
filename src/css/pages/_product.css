@@ -596,8 +596,9 @@
 
       &Description {
         width: auto;
-        padding: 2px 18px 0;
-        line-height: 2.2;
+        padding: 10px 0;
+        line-height: 1.1;
+        flex-direction: column;
       }
     }
   }
