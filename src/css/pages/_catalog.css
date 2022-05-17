@@ -42,9 +42,11 @@
 
   &__form {
     padding: 2% 15.3% 7%;
+    background-color: #f0f0f0;
 
     &Row {
       display: flex;
+      align-items: center;
 
       &:not(:first-of-type) {
         margin-top: 20px;
@@ -162,7 +164,7 @@
     &ConfirmIntroduction {
       font-size: 1.25rem;
       letter-spacing: 2px;
-      margin-bottom: 20px;
+      margin-bottom: 60px;
     }
 
     &ConfirmTable {
@@ -189,7 +191,9 @@
 @media (--pc-viewport) {
   .p-catalogContent {
     &__form {
-      background-color: #f0f0f0;
+      &Team {
+        flex: 2 0 100px;
+      }
 
       &SelectRow {
         margin-top: 43px;
@@ -207,7 +211,6 @@
         justify-content: space-between;
         width: calc(26.5% - 32px);
         margin-right: 30px;
-        margin-top: 16px;
       }
 
       &InputWrap {
@@ -216,6 +219,8 @@
 
       &MustLogo {
         margin-left: 8px;
+        flex: 1 0 50px;
+        text-align: center;
       }
 
       &Confirm {
@@ -235,6 +240,8 @@
 
       &Button {
         width: calc(33.2% - 24px);
+        border: none;
+        cursor: pointer;
 
         &:not(:first-of-type) {
           margin-left: 48px;
@@ -265,6 +272,10 @@
         padding: 38px 3% 323px 6.6%;
       }
 
+      &Team {
+        flex: 2 0 50px;
+      }
+
       &Text {
         .p-catalogComplete & {
           margin-top: 40px;
@@ -289,6 +300,9 @@
       }
 
       &Row {
+        flex-direction: column;
+        align-items: flex-start;
+
         &:not(:first-of-type) {
           margin-top: 30px;
         }
@@ -300,20 +314,24 @@
 
       &MustLogo {
         display: inline-block;
-        margin-top: 5px;
+        margin-top: 0;
+        margin-left: 10px;
       }
 
       &TeamWrap {
-        width: 34%;
+        width: auto;
+        display: flex;
+        align-items: center;
       }
 
       &InputWrap {
-        width: calc(66% - 7px);
-        margin-left: 7px;
+        width: auto;
+        margin-left: 0;
+        margin-top: 15px;
       }
 
       &Input {
-        padding: 15px 0;
+        padding: 15px;
         font-size: 0.93rem;
 
         &&--harf {
@@ -368,6 +386,7 @@
 
       &Button {
         width: 100%;
+        border: none;
 
         &:not(:first-of-type) {
           margin-top: 30px;
@@ -375,4 +394,54 @@
       }
     }
   }
+}
+
+/*  MW WP FORMにて必須エラー表示でレイアウトが崩れるため対応 */
+.p-catalogContent {
+  /* .p-catalogContent__formlist */
+  &__formlist {
+    display: flex;
+  }
+
+  /* .p-catalogContent__formitem */
+  &__formitem {
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    input {
+      width: 100% !important;
+    }
+  }
+}
+
+/*  MW WP FORM画面モードで読み込むCSS  確認画面用 */
+
+.mw_wp_form_preview {
+  /* 必須アイコンを非表示 */
+  .p-catalogContent__formMustLogo {
+    display: none;
+  }
+
+  /* 項目の背景色を白にする */
+  .p-catalogContent__formTeam,
+  .p-catalogContent__formSelectTermWrap {
+    background: #fff;
+    padding: 10px;
+    width: 135px;
+  }
+
+  .p-catalogContent__formTeamWrap {
+    width: auto;
+  }
+
+  .p-catalogContent__formSelectRow {
+    margin-top: 20px;
+    align-items: center;
+  }
+}
+
+/*  MW WP FORM画面モードで読み込むCSS  完了画面用 */
+.mw_wp_form_complete .p-catalogContent__introduction {
+  padding: 4% 15.3% 234px;
 }

@@ -131,6 +131,12 @@ body.modal-open {
     padding: 7px 10px;
     border-radius: 0;
   }
+
+  & .gsc-results-wrapper-overlay {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+  }
 }
 
 .c-header-toggl-wrapper[data-sidenavi-status='hide'] {
@@ -556,4 +562,9 @@ body.modal-open {
       border-radius: 0 8px 8px 0;
     }
   }
+}
+
+.gsst_a {
+  position: relative;
+  top: 2px;
 }

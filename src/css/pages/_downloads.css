@@ -200,3 +200,9 @@
     }
   }
 }
+
+/* reCAPTCHA v3 */
+.grecaptcha-badge {
+  bottom: 90px !important;
+}
+
