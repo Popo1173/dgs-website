@@ -378,3 +378,22 @@
     }
   }
 }
+
+/*  MW WP FORMにて必須エラー表示でレイアウトが崩れるため対応 */
+.p-catalogContent {
+  /* .p-catalogContent__formlist */
+  &__formlist {
+    display: flex;
+  }
+
+  /* .p-catalogContent__formitem */
+  &__formitem {
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    input {
+      width: 100% !important;
+    }
+  }
+}
