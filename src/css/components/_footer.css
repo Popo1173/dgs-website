@@ -58,9 +58,16 @@
   &:not(:first-of-type) {
     margin-left: 24px;
   }
+
+  .u-mb3 {
+    &:nth-of-type(2) {
+      margin-top: 30px;
+    }
+  }
 }
 
 .c-footerLinks {
+  margin-right: 20px;
   font-size: 0.8rem;
 
   &:not(:first-of-type) {
