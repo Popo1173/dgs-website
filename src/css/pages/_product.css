@@ -355,10 +355,10 @@
 
   &__movie {
     position: relative;
-    width: 100%;
+    width: 90%;
     padding-top: 56.25%;
     text-align: center;
-    margin-top: 24px;
+    margin: 30px auto;
 
     & > iframe {
       position: absolute;
