@@ -5,15 +5,15 @@
 
   &__left {
     background-color: #e90b18;
-    width: 50%;
-    height: 100%;
+    width: 6px;
+    height: 12px;
     display: inline-block;
   }
 
   &__right {
     background-color: var(--color_vivid_purple);
-    width: 50%;
-    height: 100%;
+    width: 6px;
+    height: 12px;
     display: inline-block;
   }
 }

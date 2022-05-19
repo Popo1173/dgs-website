@@ -677,7 +677,8 @@
 .u-link-hoverLine {
   &__text {
     position: relative;
-    padding-bottom: 8px;
+
+    /* padding-bottom: 8px; */
     display: inline-block;
 
     &::after {
