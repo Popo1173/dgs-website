@@ -278,8 +278,8 @@
   }
 
   &__workImage {
-    max-width: 500px;
-    margin: 25px auto 0;
+    max-width: 440px;
+    margin: 30px auto;
 
     > img {
       width: 100%;
@@ -382,25 +382,28 @@
         left: 50%;
         transform: translateX(-50%);
         width: 69.8%;
-        padding: 43px 24px 55px;
+        padding: 3% 2% 1.5%;
         background-color: var(--color_fff);
         box-shadow: 0 10px 33px rgba(0, 0, 0, 0.2);
       }
 
       &__items {
-        display: inline-flex;
-        justify-content: center;
+        display: flex;
         align-items: center;
+        flex-wrap: wrap;
         width: 100%;
       }
 
       &__item {
+        margin-right: 30px;
+        margin-bottom: 15px;
+
         &:not(:first-of-type) {
-          margin-left: 50px;
+          /* margin-left: 50px; */
         }
 
         & > a {
-          display: inline-block;
+          /* display: inline-block; */
         }
       }
 
@@ -408,6 +411,7 @@
         display: flex;
         align-items: center;
         pointer-events: none;
+        justify-content: center;
 
         & > img {
           margin-left: 6px;
@@ -430,6 +434,8 @@
 
           & .p-productSeriesHeading__nav {
             width: calc(50% - 4px);
+            margin-right: 0;
+            margin-bottom: 0;
 
             &:nth-of-type(n + 3) {
               margin-top: 20px;
@@ -470,14 +476,16 @@
     }
 
     &__nav {
-      width: calc(25% - 6px);
+      /* width: calc(25% - 6px); */
+      margin-right: 20px;
+      margin-bottom: 20px;
 
       &:nth-of-type(n + 5) {
-        margin-top: 20px;
+        /* margin-top: 20px; */
       }
 
       &:not(:nth-of-type(4n + 1)) {
-        margin-left: 8px;
+        /* margin-left: 8px; */
       }
 
       & > img {
@@ -489,12 +497,17 @@
   .p-productSeriesDetail {
     &__nav {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       margin-top: 46px;
       font-size: 0.875rem;
 
       & > p:not(:first-of-type) {
         margin-left: 36px;
+      }
+
+      p {
+        margin-bottom: 20px;
       }
     }
 
@@ -523,6 +536,7 @@
 
         &Wrap {
           overflow-x: auto;
+          overflow-y: hidden;
         }
 
         & tr {
