@@ -28,14 +28,16 @@
 
 @media (--pc-viewport) {
   .m-productItem {
-    width: calc(25% - 15px);
+    /* width: calc(25% - 15px); */
+    margin-right: 30px;
+    margin-bottom: 15px;
 
     &:not(:nth-of-type(4n+1)) {
-      margin-left: 20px;
+      /* margin-left: 20px; */
     }
 
     &:nth-of-type(n+5) {
-      margin-top: 16px;
+      /* margin-top: 16px; */
     }
 
     &:last-of-type {
