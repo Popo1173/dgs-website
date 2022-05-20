@@ -282,7 +282,7 @@ body.modal-open {
 
     &:not(:first-of-type) {
       #side-menu-goods & {
-        margin-left: 17%;
+        margin-left: 9.5%;
       }
 
       #side-menu-solution &,
