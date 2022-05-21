@@ -606,33 +606,6 @@
       height: 12px;
       flex-shrink: 0;
     }
-
-    &__table {
-      &Term {
-        padding: 8px 18px 7px;
-        width: auto;
-        position: relative;
-        border-bottom: 1px solid #b8bec6;
-
-        &::before {
-          width: 10px;
-          height: 10px;
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 50%;
-          transform: rotate(45deg) translateY(-50%);
-          background-color: var(--color_000);
-        }
-      }
-
-      &Description {
-        width: auto;
-        padding: 10px 0;
-        line-height: 1.1;
-        flex-direction: column;
-      }
-    }
   }
 
   .p-productNavi {
