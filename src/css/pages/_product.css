@@ -263,7 +263,6 @@
 
       & > li {
         display: flex;
-        align-items: center;
         letter-spacing: 0.8px;
 
         &:not(:first-of-type) {
