@@ -36,7 +36,6 @@
 
       &-item {
         font-weight: bold;
-        width: 150px;
         min-width: 10%;
       }
     }
@@ -646,6 +645,13 @@
     .u-heading {
       padding-top: 37px;
       padding-bottom: 90px;
+    }
+
+    &__table {
+      &Description {
+        padding: 5% 0 3%;
+        flex-direction: column;
+      }
     }
 
     & .m-listSquare {
