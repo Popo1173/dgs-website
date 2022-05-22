@@ -123,12 +123,12 @@
 .p-downloadsReturn {
   &Wrap {
     padding: 0 14.2%;
-    text-align: right;
+    text-align: center;
     margin-top: 3.5%;
   }
 
   &.u-link-button {
-    padding: 18px 136px;
+    width: 280px;
   }
 }
 
@@ -137,6 +137,10 @@
     &__accordion {
       &Wrap {
         margin-top: 45px;
+      }
+
+      &Toggle {
+        cursor: pointer;
       }
 
       &Content {
@@ -184,6 +188,10 @@
         margin-top: 40px;
       }
 
+      &Toggle {
+        padding: 5% 2%;
+      }
+
       &Content {
         &:not(:first-of-type) {
           margin-top: 16px;
@@ -191,6 +199,10 @@
 
         &Wrap {
           padding: 6% 4%;
+        }
+
+        &Text {
+          padding: 5% 0;
         }
       }
     }
@@ -205,4 +217,3 @@
 .grecaptcha-badge {
   bottom: 90px !important;
 }
-
