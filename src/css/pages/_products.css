@@ -37,7 +37,7 @@
     padding-top: 100%;
 
     & > img {
-      padding: 7.5% 0;
+      padding: 7.5% 5%;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -96,6 +96,10 @@
         margin-top: 58px;
       }
     }
+  }
+
+  .p-productsContent__imgWrap:hover {
+    opacity: 0.9;
   }
 }
 
