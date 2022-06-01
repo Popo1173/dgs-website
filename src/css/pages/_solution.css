@@ -23,6 +23,8 @@
 }
 
 .p-solutionIntroduction__img {
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+
   &.u-show--pc {
     max-width: 1000px;
     width: 69.5%;
