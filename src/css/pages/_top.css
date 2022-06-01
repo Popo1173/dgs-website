@@ -89,6 +89,7 @@
 .p-top-heroSolution__img {
   & > img {
     width: 98%;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.2);
   }
 }
 
