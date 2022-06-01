@@ -572,3 +572,9 @@ body.modal-open {
   position: relative;
   top: 2px;
 }
+
+/* googleカスタム検索用 */
+.gsc-above-wrapper-area,
+.gsc-resultsHeader {
+  display: none;
+}
