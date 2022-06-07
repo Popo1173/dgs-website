@@ -18,6 +18,8 @@
   }
 
   &__accordion {
+    cursor: pointer;
+
     &Toggle {
       display: flex;
       justify-content: space-between;
