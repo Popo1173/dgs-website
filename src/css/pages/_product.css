@@ -36,8 +36,6 @@
 
       &-item {
         font-weight: bold;
-        width: 150px;
-        min-width: 10%;
       }
     }
 
@@ -652,6 +650,11 @@
       width: 12px;
       height: 12px;
       flex-shrink: 0;
+    }
+
+    &__tableDescription {
+      flex-direction: column;
+      padding: 20px 0 10px;
     }
   }
 

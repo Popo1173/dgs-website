@@ -619,6 +619,23 @@
   .u-show--sp {
     display: none !important;
   }
+
+  /* 製品詳細オプション関連で調整するスタイル */
+  .u-width20 {
+    width: 20%;
+  }
+
+  .u-width30 {
+    width: 30%;
+  }
+
+  .u-width40 {
+    width: 40%;
+  }
+
+  .u-width50 {
+    width: 50%;
+  }
 }
 
 @media (--sp-viewport) {

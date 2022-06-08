@@ -32,7 +32,6 @@
 }
 
 .p-top-heroTextBlock__left {
-  background-color: #373778;
   padding: 4.3% 9% 12.3% 5.5%;
 }
 
@@ -341,6 +340,7 @@
 @media (--pc-viewport) {
   .p-top-heroTextBlock__left {
     position: absolute;
+    background: rgba(55, 55, 120, 0.7);
     bottom: 0;
     left: 0;
   }
@@ -485,6 +485,7 @@
   }
 
   .p-top-heroTextBlock__left {
+    background-color: #373778;
     padding: 16.3% 7% 46.3% 6.6%;
   }
 
