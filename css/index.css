@@ -657,7 +657,7 @@ select {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding-top: 5px;
+  padding-top: 3px;
   width: 12px;
   height: 12px;
 }.m-listSquare__left {
@@ -1778,10 +1778,10 @@ select {
     letter-spacing: 0.8px;
   }.p-sdgsContent__list .m-listSquare {
       margin-right: 6px;
+    }.p-sdgsContent__list p {
+      margin-left: 6px;
     }.p-sdgsContent__list > li {
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      /* align-items: center; */
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2061,8 +2061,6 @@ select {
       display: flex;
     }.p-product__tableDescription-item {
         font-weight: bold;
-        width: 150px;
-        min-width: 10%;
       }.p-product__tableList > li:not(:first-of-type) {
         margin-top: 12px;
       }.p-product__tableEmp {
@@ -2333,6 +2331,8 @@ select {
     font-size: 2.25rem;
     font-weight: normal;
     margin-top: 25px;
+  }.p-downloads__accordion {
+    cursor: pointer;
   }.p-downloads__accordionToggle {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2816,6 +2816,23 @@ select {
   .u-show--sp {
     display: none !important;
   }
+
+  /* 製品詳細オプション関連で調整するスタイル */
+  .u-width20 {
+    width: 20%;
+  }
+
+  .u-width30 {
+    width: 30%;
+  }
+
+  .u-width40 {
+    width: 40%;
+  }
+
+  .u-width50 {
+    width: 50%;
+  }
   .m-productItem {
     /* width: calc(25% - 15px); */
     margin-right: 30px;
@@ -3019,6 +3036,13 @@ select {
     position: absolute;
     bottom: 0;
     left: 0;
+    margin-bottom: 160px;
+    background: rgb(55, 55, 120, 0.7);
+    padding: 4.3% 9% 5% 5.5%;
+  }
+
+  .p-top-heroTextBlock__right {
+    height: 160px;
   }
 
   .p-top-heroSolutionWrap {
@@ -3197,6 +3221,10 @@ select {
         padding: 26px 0 21px;
         display: block;
       }
+
+        .p-companyNavi__item > a:hover {
+          opacity: 0.7;
+        }
 
     .p-companyNavi__linkContent {
       pointer-events: none;
@@ -4941,6 +4969,14 @@ select {
           flex-shrink: 0;
     }
 
+    .p-product__tableDescription {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 20px 0 10px;
+    }
+
   .p-productNavi {
     padding: 0;
   }
@@ -5096,6 +5132,16 @@ select {
 
     .p-productSeriesDetail__headingLinkWrap {
       margin-top: 28px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
     }
 
     .p-productSeriesDetail__contents {
@@ -5589,8 +5635,26 @@ select {
     }
 
   .p-newsYears {
-    padding: 41px 6.5% 120px;
+    padding: 41px 6.5% 70px;
   }
+
+    .p-newsYears__list {
+      display: block;
+    }
+
+    .p-newsYears__listItem {
+      display: inline-block;
+      margin-bottom: 20px;
+      border: none !important;
+    }
+
+      .p-newsYears__listItem:first-of-type {
+        padding: 1px 28px;
+      }
+
+      .p-newsYears__listItem:last-of-type {
+        padding: 1px 28px;
+      }
 }@media (min-width: 768px) and (max-width: 1100px) {
     .c-headerGnavList:not(:last-of-type), .c-headerSubNavLists li:not(:last-of-type) {
       margin-right: 10px;
