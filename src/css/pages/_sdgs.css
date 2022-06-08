@@ -50,8 +50,12 @@
       margin-right: 6px;
     }
 
+    & p {
+      margin-left: 6px;
+    }
+
     & > li {
-      align-items: center;
+      /* align-items: center; */
       display: flex;
 
       &:not(:first-of-type) {

@@ -813,6 +813,9 @@
 
     &__headingLinkWrap {
       margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     &__contents {
