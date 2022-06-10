@@ -32,7 +32,11 @@
 
     &Description {
       padding: 0.6% 0 0.85%;
-      display: flex;
+
+      &.description-title {
+        padding-right: 30px;
+        font-weight: bold;
+      }
 
       &-item {
         font-weight: bold;
@@ -337,24 +341,6 @@
         padding-right: 3px;
       }
     }
-
-    /* &Table {
-      width: 100%;
-      text-align: center;
-      margin-top: 24px;
-      font-size: 0.875rem;
-      letter-spacing: 0.8px;
-
-      & th {
-        font-weight: 500;
-      }
-    }
-
-    &TableDescription {
-      &:first-of-type {
-        font-weight: 400;
-      }
-    } */
   }
 
   &__work {
@@ -442,14 +428,6 @@
 
       &__item {
         margin: 0 20px 15px;
-
-        &:not(:first-of-type) {
-          /* margin-left: 50px; */
-        }
-
-        & > a {
-          /* display: inline-block; */
-        }
       }
 
       &__linkContent {
@@ -571,61 +549,6 @@
         width: 86.5%;
       }
     }
-
-    /* &__specification {
-      &Table {
-        min-width: 1000px;
-        text-align: center;
-        margin-top: 24px;
-        border: 1px solid #b3b3b3;
-
-        &Wrap {
-          overflow-x: auto;
-          overflow-y: hidden;
-        }
-
-        & tr {
-          border-bottom: 1px solid #b3b3b3;
-        }
-
-        & thead th {
-          width: auto;
-
-          &:first-of-type {
-            width: 20%;
-          }
-        }
-
-        & th {
-          background-color: #f0f4fa;
-          padding: 1.1%;
-
-          &:not(:last-of-type) {
-            border-right: 1px solid #b3b3b3;
-          }
-        }
-
-        & td {
-          border-left: 1px solid #b3b3b3;
-          padding: 5px;
-        }
-      }
-
-      &TableHeading {
-        padding-bottom: 9px;
-
-        &:first-of-type {
-          padding-left: 10px;
-          padding-right: 3px;
-        }
-      }
-
-      &TableDescription {
-        &:first-of-type {
-          font-weight: 400;
-        }
-      }
-    } */
   }
 }
 
@@ -653,8 +576,9 @@
     }
 
     &__tableDescription {
+      display: flex;
       flex-direction: column;
-      padding: 20px 0 10px;
+      padding: 10px 0;
     }
   }
 
@@ -843,34 +767,6 @@
 
     &__specification {
       margin-top: 20px;
-
-      /* &Table {
-        text-align: left;
-        margin-top: 24px;
-        border-top: 1px solid rgba(179, 179, 179, 0.4);
-
-        & tr {
-          display: flex;
-          flex-direction: column;
-          padding-bottom: 10%;
-          border-bottom: 1px solid rgba(179, 179, 179, 0.4);
-        }
-
-        & th {
-          padding: 4.2% 0 4.2% 3%;
-          background-color: #f0f4fa;
-        }
-
-        & td {
-          padding: 0 15px;
-          margin-top: 18px;
-
-          & > span {
-            margin-right: 10px;
-            font-weight: normal;
-          }
-        }
-      } */
     }
 
     &__work {
