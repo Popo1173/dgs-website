@@ -23,6 +23,7 @@
 
   &__table {
     width: 100%;
+    max-width: 1000px;
     margin-top: 21px;
     letter-spacing: 0.8px;
 
@@ -34,7 +35,11 @@
       padding: 0.6% 0 0.85%;
 
       &.description-title {
-        padding-right: 30px;
+        padding-right: 10px;
+        font-weight: bold;
+      }
+
+      &.description-only-title {
         font-weight: bold;
       }
 
@@ -546,7 +551,7 @@
 
     &__option {
       & .p-product__tableDescription {
-        width: 86.5%;
+        /* width: 86.5%; */
       }
     }
   }
