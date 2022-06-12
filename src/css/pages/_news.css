@@ -228,13 +228,15 @@
     padding: 41px 6.5% 70px;
 
     &__list {
+      max-width: 300px;
+      margin: 0 auto;
       display: block;
     }
 
     &__listItem {
       display: inline-block;
       margin-bottom: 20px;
-      border: none !important;
+      border-left: 1px solid #b3b3b3;
 
       &:first-of-type {
         padding: 1px 28px;
