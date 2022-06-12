@@ -109,18 +109,6 @@
 
   &__listItem {
     padding: 1px 28px;
-
-    /* &:first-of-type {
-      padding-left: 0;
-    } */
-
-    /* &:last-of-type {
-      padding-right: 0;
-    } */
-
-    &:not(:first-of-type) {
-      border-left: 1px solid #b3b3b3;
-    }
   }
 }
 
@@ -153,6 +141,10 @@
 
       &:last-of-type {
         padding-right: 0;
+      }
+
+      &:not(:first-of-type) {
+        border-left: 1px solid #b3b3b3;
       }
     }
   }
@@ -249,15 +241,30 @@
       display: inline-block;
       padding: 1px 28px;
       margin-bottom: 20px;
-      border-left: 1px solid #b3b3b3;
 
-      /* &:first-of-type {
-        padding: 1px 28px;
+      &:nth-of-type(2) {
+        border-left: 1px solid #b3b3b3;
+        border-right: 1px solid #b3b3b3;
       }
 
-      &:last-of-type {
+      &:nth-of-type(5) {
+        border-left: 1px solid #b3b3b3;
+        border-right: 1px solid #b3b3b3;
+      }
+
+      &:nth-of-type(8) {
+        border-left: 1px solid #b3b3b3;
+        border-right: 1px solid #b3b3b3;
+      }
+
+      &:nth-of-type(11) {
+        border-left: 1px solid #b3b3b3;
+        border-right: 1px solid #b3b3b3;
+      }
+
+      &:first-of-type {
         padding: 1px 28px;
-      } */
+      }
     }
   }
 }
