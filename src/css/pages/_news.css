@@ -134,9 +134,15 @@
   }
 
   .p-newsYears {
+    &__list {
+      flex-wrap: wrap;
+    }
+
     &__listItem {
+      margin-bottom: 20px;
+
       &:first-of-type {
-        padding-left: 0;
+        padding-right: 29px;
       }
 
       &:last-of-type {
