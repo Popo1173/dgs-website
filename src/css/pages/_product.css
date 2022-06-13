@@ -363,7 +363,7 @@
 
       & td {
         width: auto;
-        padding: 8px 0 8px 21px;
+        padding: 8px 0;
         letter-spacing: 1px;
       }
     }
@@ -778,8 +778,13 @@
       margin-top: 28px;
 
       &Table {
-        & th {
-          font-weight: normal;
+        &Row {
+          display: flex;
+          flex-direction: column;
+
+          & td {
+            padding-left: 0;
+          }
         }
       }
     }

@@ -448,7 +448,8 @@ body.modal-open {
     top: 0;
     bottom: 0;
     width: 100%;
-    overflow-y: scroll;
+
+    /* overflow-y: scroll; */
   }
 
   .c-headerBannerLogoWrapper {
@@ -597,5 +598,9 @@ body.modal-open {
     font-size: 0.93rem;
     background-color: transparent;
     color: #fff;
+  }
+
+  .pll-switcher-select option {
+    color: #000;
   }
 }
