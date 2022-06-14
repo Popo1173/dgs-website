@@ -89,6 +89,7 @@
 .p-top-heroSolution__img {
   & > img {
     width: 98%;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -227,8 +228,8 @@
 }
 
 .p-top-product {
-  color: #fff;
   margin-bottom: 80px;
+  color: #fff;
 }
 
 .p-top-productColorBlocks {
@@ -276,12 +277,9 @@
   letter-spacing: 2px;
 }
 
-.p-top-productList__content {
-  padding: 40px 0 80px;
-}
-
 .p-top-productList__mainContent {
   width: 33%;
+  max-width: 360px;
 }
 
 .p-top-productList__linkTextWrap {
@@ -304,6 +302,10 @@
 }
 
 .p-top-productList__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &:hover {
     & .p-top-productList__linkTextWrap::after {
       transform: scale(1, 1);
@@ -333,6 +335,10 @@
   }
 }
 
+.p-top-productList__otherItem .p-top-productList__link {
+  align-items: flex-start;
+}
+
 .u-link-button.p-top-product__otherLink {
   padding: 18px 68px;
 }
@@ -342,6 +348,13 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    margin-bottom: 160px;
+    background: rgb(55, 55, 120, 0.7);
+    padding: 4.3% 9% 5% 5.5%;
+  }
+
+  .p-top-heroTextBlock__right {
+    height: 160px;
   }
 
   .p-top-heroSolutionWrap {
@@ -411,12 +424,13 @@
 
   .p-top-productList__content {
     display: flex;
+    padding: 0 0 80px;
   }
 
   .p-top-productList__otherList {
-    margin-left: 64px;
-    padding-top: 20px;
-    width: 30.5%;
+    padding-top: 40px;
+    padding-left: 20px;
+    width: auto;
   }
 
   .p-top-otherContent--questionWrap {
@@ -426,6 +440,10 @@
   .p-top-productList__mainContent {
     &:not(:first-of-type) {
       margin-left: 18px;
+    }
+
+    &.the-top-list-width {
+      width: 54%;
     }
   }
 
@@ -518,6 +536,10 @@
     &:not(:first-of-type) {
       margin-top: 60px;
     }
+  }
+
+  .p-top-productList__content {
+    padding: 0 0 40px;
   }
 
   .p-top-otherContent {
@@ -613,9 +635,14 @@
     &:nth-child(n+3) {
       margin-top: 40px;
     }
+
+    &.the-top-list-width {
+      width: 100%;
+    }
   }
 
   .p-top-productList__otherList {
-    margin-top: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }

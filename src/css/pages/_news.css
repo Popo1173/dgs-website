@@ -109,18 +109,6 @@
 
   &__listItem {
     padding: 1px 28px;
-
-    &:first-of-type {
-      padding-left: 0;
-    }
-
-    &:last-of-type {
-      padding-right: 0;
-    }
-
-    &:not(:first-of-type) {
-      border-left: 1px solid #b3b3b3;
-    }
   }
 }
 
@@ -142,6 +130,28 @@
 
     &__item {
       padding-left: 13px;
+    }
+  }
+
+  .p-newsYears {
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__listItem {
+      margin-bottom: 20px;
+
+      &:first-of-type {
+        padding-right: 29px;
+      }
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+
+      &:not(:first-of-type) {
+        border-left: 1px solid #b3b3b3;
+      }
     }
   }
 }
@@ -225,6 +235,42 @@
   }
 
   .p-newsYears {
-    padding: 41px 6.5% 120px;
+    padding: 41px 6.5% 70px;
+
+    &__list {
+      max-width: 300px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    &__listItem {
+      display: inline-block;
+      padding: 1px 20px;
+      margin-bottom: 20px;
+
+      &:nth-of-type(2) {
+        border-left: 1px solid #b3b3b3;
+        border-right: 1px solid #b3b3b3;
+      }
+
+      &:nth-of-type(5) {
+        border-left: 1px solid #b3b3b3;
+        border-right: 1px solid #b3b3b3;
+      }
+
+      &:nth-of-type(8) {
+        border-left: 1px solid #b3b3b3;
+        border-right: 1px solid #b3b3b3;
+      }
+
+      &:nth-of-type(11) {
+        border-left: 1px solid #b3b3b3;
+        border-right: 1px solid #b3b3b3;
+      }
+
+      &:first-of-type {
+        padding: 1px 20px;
+      }
+    }
   }
 }

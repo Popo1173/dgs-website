@@ -3,6 +3,15 @@
   background-color: #fff;
   padding: 5% 15% 234px;
   position: relative;
+
+  &__backButtonWrap {
+    text-align: center;
+    margin-top: 50px;
+
+    & .u-link-button {
+      width: 310px;
+    }
+  }
 }
 
 .p-notFonudContent__heading {
@@ -16,4 +25,15 @@
   margin-top: 50px;
   letter-spacing: 0.8px;
   line-height: 1.7;
+}
+
+@media (--sp-viewport) {
+  .p-notFonudContent {
+    padding: 72px 6.4% 52px;
+  }
+
+  .u-heading {
+    padding-top: 72px;
+    padding-bottom: 138px;
+  }
 }

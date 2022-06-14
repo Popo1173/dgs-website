@@ -1,3 +1,9 @@
+
+/* iOSデフォルト打ち消し */
+input[type='submit'] {
+  -webkit-appearance: none;
+}
+
 .p-contact,
 .p-contactConfirmation {
   & .u-heading {
@@ -311,7 +317,6 @@
         width: 100%;
         margin-left: 0;
         margin-top: 15px;
-        line-height: 0;
       }
 
       &Input {
@@ -392,9 +397,13 @@
   /* 項目の背景色を白にする */
   .p-contactContent__formTeam,
   .p-contactContent__formSelectTermWrap {
-    background: #fff;
     padding: 10px;
     width: 170px;
+  }
+
+  .p-contactContent__formInputWrap {
+    background: #fff;
+    padding: 10px;
   }
 
   .p-contactContent__formTeamWrap {
@@ -408,7 +417,7 @@
   }
 
   .is-lineheight-none {
-    line-height: 0;
+    /* line-height: 0; */
   }
 }
 

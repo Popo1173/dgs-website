@@ -23,6 +23,7 @@
 
   &__table {
     width: 100%;
+    max-width: 1000px;
     margin-top: 21px;
     letter-spacing: 0.8px;
 
@@ -32,11 +33,18 @@
 
     &Description {
       padding: 0.6% 0 0.85%;
-      display: flex;
+
+      &.description-title {
+        padding-right: 10px;
+        font-weight: bold;
+      }
+
+      &.description-only-title {
+        font-weight: bold;
+      }
 
       &-item {
         font-weight: bold;
-        min-width: 10%;
       }
     }
 
@@ -338,24 +346,6 @@
         padding-right: 3px;
       }
     }
-
-    /* &Table {
-      width: 100%;
-      text-align: center;
-      margin-top: 24px;
-      font-size: 0.875rem;
-      letter-spacing: 0.8px;
-
-      & th {
-        font-weight: 500;
-      }
-    }
-
-    &TableDescription {
-      &:first-of-type {
-        font-weight: 400;
-      }
-    } */
   }
 
   &__work {
@@ -367,13 +357,12 @@
       width: auto;
 
       & th {
-        width: auto;
         padding: 8px 21px 8px 0;
       }
 
       & td {
         width: auto;
-        padding: 8px 0 8px 21px;
+        padding: 8px 0;
         letter-spacing: 1px;
       }
     }
@@ -443,14 +432,6 @@
 
       &__item {
         margin: 0 20px 15px;
-
-        &:not(:first-of-type) {
-          /* margin-left: 50px; */
-        }
-
-        & > a {
-          /* display: inline-block; */
-        }
       }
 
       &__linkContent {
@@ -569,64 +550,9 @@
 
     &__option {
       & .p-product__tableDescription {
-        width: 86.5%;
+        /* width: 86.5%; */
       }
     }
-
-    /* &__specification {
-      &Table {
-        min-width: 1000px;
-        text-align: center;
-        margin-top: 24px;
-        border: 1px solid #b3b3b3;
-
-        &Wrap {
-          overflow-x: auto;
-          overflow-y: hidden;
-        }
-
-        & tr {
-          border-bottom: 1px solid #b3b3b3;
-        }
-
-        & thead th {
-          width: auto;
-
-          &:first-of-type {
-            width: 20%;
-          }
-        }
-
-        & th {
-          background-color: #f0f4fa;
-          padding: 1.1%;
-
-          &:not(:last-of-type) {
-            border-right: 1px solid #b3b3b3;
-          }
-        }
-
-        & td {
-          border-left: 1px solid #b3b3b3;
-          padding: 5px;
-        }
-      }
-
-      &TableHeading {
-        padding-bottom: 9px;
-
-        &:first-of-type {
-          padding-left: 10px;
-          padding-right: 3px;
-        }
-      }
-
-      &TableDescription {
-        &:first-of-type {
-          font-weight: 400;
-        }
-      }
-    } */
   }
 }
 
@@ -658,6 +584,12 @@
       width: 12px;
       height: 12px;
       flex-shrink: 0;
+    }
+
+    &__tableDescription {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0;
     }
   }
 
@@ -819,6 +751,9 @@
 
     &__headingLinkWrap {
       margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     &__contents {
@@ -843,42 +778,19 @@
 
     &__specification {
       margin-top: 20px;
-
-      /* &Table {
-        text-align: left;
-        margin-top: 24px;
-        border-top: 1px solid rgba(179, 179, 179, 0.4);
-
-        & tr {
-          display: flex;
-          flex-direction: column;
-          padding-bottom: 10%;
-          border-bottom: 1px solid rgba(179, 179, 179, 0.4);
-        }
-
-        & th {
-          padding: 4.2% 0 4.2% 3%;
-          background-color: #f0f4fa;
-        }
-
-        & td {
-          padding: 0 15px;
-          margin-top: 18px;
-
-          & > span {
-            margin-right: 10px;
-            font-weight: normal;
-          }
-        }
-      } */
     }
 
     &__work {
       margin-top: 28px;
 
       &Table {
-        & th {
-          font-weight: normal;
+        &Row {
+          display: flex;
+          flex-direction: column;
+
+          & td {
+            padding-left: 0;
+          }
         }
       }
     }
