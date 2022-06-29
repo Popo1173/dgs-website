@@ -34,22 +34,28 @@
       border-bottom: 1px solid rgba(112, 112, 112, 0.4);
 
       &.is-opened {
-        & .p-downloads__accordionLogo--opened {
-          display: block;
-        }
-
-        & .p-downloads__accordionLogo--closed {
-          display: none;
+        &::after {
+          content: '';
+          left: 3px;
+          width: 10px;
+          height: 10px;
+          border-top: 2px solid #606094;
+          border-right: 2px solid #606094;
+          -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
         }
       }
 
       &.is-closed {
-        & .p-downloads__accordionLogo--opened {
-          display: none;
-        }
-
-        & .p-downloads__accordionLogo--closed {
-          display: block;
+        &::after {
+          content: '';
+          left: 3px;
+          width: 10px;
+          height: 10px;
+          border-top: 2px solid #606094;
+          border-right: 2px solid #606094;
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
         }
       }
     }
@@ -207,4 +213,3 @@
 .grecaptcha-badge {
   bottom: 90px !important;
 }
-
